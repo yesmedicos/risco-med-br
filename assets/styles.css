@@ -228,8 +228,8 @@ p {
 
 .btn-outline {
     background: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--white);
+    border: 2px solid var(--white);
 }
 
 .btn-outline:hover {
@@ -271,7 +271,7 @@ p {
     border-radius: var(--radius-md);
     font-weight: 600;
     font-size: 14px;
-    color: white;
+    color: white !important;
 }
 
 .btn-login:hover {
