@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Risco MED - Laudo de Risco Cirúrgico Online | Avaliação Pré-Operatória Digital</title>
+    <meta name="description" content="Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação. Sem mensalidade. Laudo em 3 minutos. EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen.">
+    <meta name="keywords" content="risco cirúrgico, laudo pré operatório, avaliação cardiológica, risco cardíaco cirurgia, EMAPO, Detsky, ACP, Goldman, Lee, ASA, Larsen, laudo médico digital, assinatura digital médica">
+    <meta name="author" content="YES Médicos">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://risco.med.br">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://risco.med.br">
+    <meta property="og:title" content="Risco MED - Laudo de Risco Cirúrgico Online">
+    <meta property="og:description" content="Gere laudos de risco cirúrgico em 3 minutos com 7 índices de avaliação. Sem mensalidade. Sistema digital completo para avaliação pré-operatória.">
+    <meta property="og:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Risco MED">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://risco.med.br">
+    <meta name="twitter:title" content="Risco MED - Laudo de Risco Cirúrgico Online">
+    <meta name="twitter:description" content="Gere laudos de risco cirúrgico em 3 minutos com 7 índices de avaliação. Sem mensalidade.">
+    <meta name="twitter:image" content="https://risco.med.br/assets/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="manifest" href="https://risco.med.br/site.webmanifest">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Risco MED",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "1.00",
+        "priceCurrency": "BRL",
+        "description": "R$MEU_MED_PRECO_LAUDO por laudo gerado"
+      },
+      "description": "Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "156"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "YES Médicos",
+        "url": "https://yesmedicos.com.br"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Risco MED",
+      "url": "https://risco.med.br",
+      "logo": "https://risco.med.br/assets/logo.jpg",
+      "description": "Plataforma digital para geração de laudos de risco cirúrgico pré-operatório",
+      "telephone": "+55-(37)99121-62656265",
+      "email": "comercial@risco.med.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://yesmedicos.com.br"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa o Risco MED?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Risco MED não possui mensalidade. Você paga apenas R$MEU_MED_PRECO_LAUDO por laudo gerado. Oferecemos R$5,00 de crédito para você começar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais índices de risco cirúrgico estão disponíveis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O sistema oferece 7 índices: EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen. Você pode escolher quais índices utilizar em cada laudo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo leva para gerar um laudo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Com o Risco MED, você gera um laudo completo de risco cirúrgico em apenas 3 minutos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O laudo tem validade jurídica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, os laudos podem ser assinados digitalmente usando certificado digital ou VIDaaS do CFM, garantindo validade jurídica e médica."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    
+    <!-- Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.jpg" alt="Risco MED - Sistema de Laudo de Risco Cirúrgico" width="180" height="50">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#indices">Índices</a></li>
+                <li><a href="#precos">Preços</a></li> 
+                <li><a href="https://app.risco.med.br/">Login</a></li>
+                <li><a href="£cadastrar" class="btn-login">Cadastrar</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0L10.4 5.6L16 8L10.4 10.4L8 16L5.6 10.4L0 8L5.6 5.6L8 0Z" fill="currentColor"/>
+                    </svg>
+                    <span>Sistema aprovado por cardiologistas</span>
+                </div>
+                <h1>Laudos de Risco Cirúrgico<br>em <span class="highlight">3 minutos</span></h1>
+                <p class="hero-description">Gere avaliações pré-operatórias completas com 7 índices de risco cardiológico. Sistema digital, prático e seguro para sua rotina médica.</p>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Sem mensalidade</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Laudo em 3 minutos</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>7 índices disponíveis</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#cadastrar" class="btn btn-primary">
+                        Testar Gratuitamente
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16663 10H15.8333M15.8333 10L9.99996 4.16669M15.8333 10L9.99996 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#exemplo" class="btn btn-secondary">Ver Exemplo de Laudo</a>
+                </div>
+                
+                <p class="hero-credit">R$ 5,00 de crédito para você começar • Sem fidelidade</p>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="mockup-container">
+                    <img src="assets/laudo-mockup.jpg" alt="Exemplo de laudo de risco cirúrgico gerado pelo Risco MED" class="mockup-image" loading="eager">
+                    <div class="mockup-badge badge-1">
+                        <span class="badge-number">7</span>
+                        <span class="badge-text">Índices</span>
+                    </div>
+                    <div class="mockup-badge badge-2">
+                        <span class="badge-number">3min</span>
+                        <span class="badge-text">Geração</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Índices de risco disponíveis</div>
+                    <p class="stat-description">EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3min</div>
+                    <div class="stat-label">Para gerar um laudo completo</div>
+                    <p class="stat-description">Processo automatizado e eficiente</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">R$1</div>
+                    <div class="stat-label">Preço por laudo gerado</div>
+                    <p class="stat-description">Sem mensalidade ou taxa de instalação</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Digital e seguro</div>
+                    <p class="stat-description">Assinatura digital com validade jurídica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades Section -->
+    <section class="features-section" id="funcionalidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Funcionalidades</span>
+                <h2>Tudo que você precisa para<br>avaliar risco cirúrgico</h2>
+                <p>Sistema completo desenvolvido com e para cardiologistas</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 16L14.6667 18.6667L20 13.3333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>7 Índices de Avaliação</h3>
+                    <p>Escolha entre EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen. Avaliação completa com análise de risco trombótico (Pádua e IMPROVE).</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 8V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Rapidez e Eficiência</h3>
+                    <p>Gere laudos completos em apenas 3 minutos. Processo automatizado para você focar no que realmente importa: o atendimento ao paciente.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 12V10C20 7.79086 18.2091 6 16 6C13.7909 6 12 7.79086 12 10V12M8 12H24V26H8V12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="18" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Assinatura Digital</h3>
+                    <p>Assine laudos com seu certificado digital ICP-Brasil ou com o VIDaaS do CFM. Validade jurídica garantida com segurança total.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 8H28M4 16H28M4 24H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Totalmente Personalizável</h3>
+                    <p>Laudos adaptáveis às suas necessidades. Inclua anamnese, alergias, medicamentos em uso e personalize conforme sua prática clínica.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 12V16M16 20H16.02" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Recursos Integrados</h3>
+                    <p>Acesso a DEF (Dicionário de Especialidades Farmacêuticas), CID-10 e Bulário completo integrados ao sistema.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 20L20 28M20 28L12 20M20 28V12M4 12L12 4M12 4L20 12M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Múltiplas Formas de Envio</h3>
+                    <p>Imprima, envie por e-mail ou SMS. Flexibilidade total para entregar o laudo da forma mais conveniente para você e seu paciente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Índices Section -->
+    <section class="indices-section" id="indices">
+        <div class="container">
+            <div class="indices-content">
+                <div class="indices-text">
+                    <span class="section-tag">Avaliação Completa</span>
+                    <h2>7 índices de risco<br>em um único laudo</h2>
+                    <p>Nosso sistema oferece os principais índices utilizados na avaliação pré-operatória cardiológica, permitindo uma análise completa e fundamentada.</p>
+                    
+                    <div class="indices-list">
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>EMAPO</strong>
+                                <span>Estudo Multicêntrico de Avaliação Perioperatória</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>Detsky</strong>
+                                <span>Índice Modificado de Risco Cardíaco</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>ACP</strong>
+                                <span>American College of Physicians</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>Goldman</strong>
+                                <span>Índice de Risco Cardíaco de Goldman</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>Lee (RCRI)</strong>
+                                <span>Revised Cardiac Risk Index</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>ASA</strong>
+                                <span>American Society of Anesthesiologists</span>
+                            </div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-dot"></div>
+                            <div>
+                                <strong>Larsen</strong>
+                                <span>Classificação de Risco Anestésico</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#exemplo" class="btn btn-secondary">Ver Laudo de Exemplo</a>
+                </div>
+                
+                <div class="indices-visual">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <span>Avaliação de Risco</span>
+                            <span class="chart-badge">7 índices</span>
+                        </div>
+                        <div class="risk-bars">
+                            <div class="risk-bar">
+                                <span class="bar-label">EMAPO</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 25%; background: #10b981;"></div>
+                                </div>
+                                <span class="bar-value">Baixo</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">Detsky</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 35%; background: #10b981;"></div>
+                                </div>
+                                <span class="bar-value">Baixo</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">ACP</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 45%; background: #f59e0b;"></div>
+                                </div>
+                                <span class="bar-value">Médio</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">Goldman</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 30%; background: #10b981;"></div>
+                                </div>
+                                <span class="bar-value">Baixo</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">Lee (RCRI)</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 40%; background: #10b981;"></div>
+                                </div>
+                                <span class="bar-value">Baixo</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">ASA</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 50%; background: #f59e0b;"></div>
+                                </div>
+                                <span class="bar-value">Médio</span>
+                            </div>
+                            <div class="risk-bar">
+                                <span class="bar-label">Larsen</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 35%; background: #10b981;"></div>
+                                </div>
+                                <span class="bar-value">Baixo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemplo de Laudo Section -->
+    <section class="exemplo-section" id="exemplo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Veja na prática</span>
+                <h2>Exemplo de laudo gerado</h2>
+                <p>Laudo completo, profissional e pronto para uso clínico</p>
+            </div>
+            
+            <div class="exemplo-container">
+                <div class="laudo-preview">
+                    <img src="assets/laudo-exemplo-1.jpg" alt="Exemplo de laudo de risco cirúrgico - página 1" loading="lazy">
+                    <img src="assets/laudo-exemplo-2.jpg" alt="Exemplo de laudo de risco cirúrgico - página 2" loading="lazy">
+                </div>
+                <div class="exemplo-cta">
+                    <a href="/assets/exemplo-laudo.pdf" class="btn btn-primary" download>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M5.83333 8.33333L10 12.5M10 12.5L14.1667 8.33333M10 12.5V2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Baixar Exemplo em PDF
+                    </a>
+                    <p class="exemplo-note">Veja um laudo real gerado pelo sistema</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços Section -->
+    <section class="pricing-section" id="precos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Preços</span>
+                <h2>Pague somente pelo que usar</h2>
+                <p>Sem mensalidade, taxa de instalação ou fidelidade</p>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-badge">Recomendado</div>
+                    <h3>Pague por uso</h3>
+                    <p class="pricing-subtitle">Ideal para médicos e clínicas de todos os portes</p>
+                </div>
+                
+                <div class="pricing-values">
+                    <div class="price-item">
+                        <div class="price-value">
+                            <span class="currency">R$</span>
+                            <span class="amount">MEU_MED_PRECO_LAUDO</span>
+                        </div>
+                        <span class="price-label">por laudo gerado</span>
+                    </div>
+                    <div class="price-divider"></div>
+                    <div class="price-item">
+                        <div class="price-value">
+                            <span class="currency">R$</span>
+                            <span class="amount">MEU_MED_PRECO_ASSINATURA0</span>
+                        </div>
+                        <span class="price-label">por assinatura digital</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-features">
+                    <h4>Tudo incluído:</h4>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>7 índices de risco cirúrgico (EMAPO, Detsky, ACP, Goldman, Lee, ASA, Larsen)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Avaliação trombótica (Índices de Pádua e IMPROVE)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Assinatura digital com validade jurídica</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Laudos personalizáveis (anamnese, alergias, medicamentos)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Impressão, envio por e-mail e SMS</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Acesso a DEF, CID-10 e Bulário</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Vídeos de ajuda integrados</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Suporte técnico via WhatsApp e e-mail</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-cta" id="experimentar">
+                    <a href="#cadastro" class="btn btn-primary btn-large">
+                        Começar Agora com R$ 5,00 Grátis
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16663 10H15.8333M15.8333 10L9.99996 4.16669M15.8333 10L9.99996 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <p class="pricing-note">Oferecemos R$ 5,00 de crédito para você testar o sistema</p>
+                </div>
+            </div>
+            
+            <div class="enterprise-callout">
+                <div class="enterprise-content">
+                    <div class="enterprise-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 15H35M5 15V30C5 31.3261 5.52678 32.5979 6.46447 33.5355C7.40215 34.4732 8.67392 35 10 35H30C31.3261 35 32.5979 34.4732 33.5355 33.5355C34.4732 32.5979 35 31.3261 35 30V15M5 15L10 5H30L35 15M15 20H25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Planos para hospitais e grandes volumes</h3>
+                        <p>Oferecemos condições especiais para hospitais, prontos atendimentos e clínicas com alto volume de laudos. Entre em contato para conhecer nossas opções de parceria.</p>
+                    </div>
+                    <a href="https://wa.me/5537991216265?text=Olá, gostaria de informações sobre planos para grandes volumes." class="btn btn-outline">Falar com Especialista</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integração Section -->
+    <section class="integration-section" id="integracao">
+        <div class="container">
+            <div class="integration-content">
+                <div class="integration-visual">
+                    <div class="integration-diagram">
+                        <div class="diagram-node main-node">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="12" fill="currentColor" fill-opacity="0.1"/>
+                                <path d="M24 14V34M34 24H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Risco MED</span>
+                        </div>
+                        <div class="diagram-connections">
+                            <div class="connection-line"></div>
+                            <div class="connection-line"></div>
+                            <div class="connection-line"></div>
+                        </div>
+                        <div class="diagram-nodes">
+                            <div class="diagram-node">
+                                <span>Prontuário A</span>
+                            </div>
+                            <div class="diagram-node">
+                                <span>Prontuário B</span>
+                            </div>
+                            <div class="diagram-node">
+                                <span>Sistema C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="integration-text">
+                    <span class="section-tag">Integração</span>
+                    <h2>Integre com seu prontuário eletrônico</h2>
+                    <p>O Risco MED pode ser integrado gratuitamente com qualquer sistema de prontuário eletrônico através de nossa API.</p>
+                    
+                    <div class="integration-benefits">
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Integração totalmente gratuita</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>API REST simples e documentada</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Suporte técnico para desenvolvedores</span>
+                        </div>
+                    </div>
+                    
+                    <div class="integration-cta">
+                        <a href="https://wa.me/5537991216265?text=Olá, gostaria de informações sobre integração API." class="btn btn-primary">Solicitar Integração</a>
+                        <p class="integration-note">Se você é médico, fale com a equipe de TI do seu prontuário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YES Médicos CTA -->
+    <section class="yesmedicos-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <div class="cta-logo">
+                        <img src="assets/logo-yes.png" alt="YES Médicos" width="160" height="45">
+                    </div>
+                    <h3>Conheça o sistema de gestão completo</h3>
+                    <p>O Risco MED faz parte do ecossistema YES Médicos. Gerencie sua clínica com agenda digital, prontuário eletrônico, telemedicina, controle financeiro e muito mais.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://yesmedicos.com.br" class="btn btn-white">
+                        Conhecer YES Médicos
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16663 10H15.8333M15.8333 10L9.99996 4.16669M15.8333 10L9.99996 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://tv.yes.med.br" class="btn btn-outline-white">Painel de Espera</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Perguntas Frequentes</span>
+                <h2>Dúvidas comuns</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>O Risco MED possui mensalidade?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! O Risco MED não possui mensalidade, taxa de instalação ou fidelidade. Você paga apenas R$MEU_MED_PRECO_LAUDO por cada laudo gerado e R$MEU_MED_PRECO_ASSINATURA0 por cada assinatura digital realizada. Oferecemos R$5,00 de crédito inicial para você começar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quais índices de risco estão disponíveis?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O sistema oferece 7 índices principais: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen. Além disso, disponibilizamos a avaliação de risco trombótico através dos índices de Pádua e IMPROVE para TEV e EP. Você escolhe quais índices deseja incluir em cada laudo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>O laudo tem validade jurídica?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode assinar digitalmente os laudos usando certificado digital ICP-Brasil ou o sistema VIDaaS oferecido pelo CFM (Conselho Federal de Medicina). As assinaturas digitais garantem validade jurídica e médica aos documentos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quanto tempo leva para gerar um laudo?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Com o Risco MED, você gera um laudo completo de risco cirúrgico em apenas 3 minutos. O processo é totalmente automatizado, permitindo que você foque no atendimento ao paciente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Posso integrar com meu prontuário eletrônico?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! A integração é totalmente gratuita. Oferecemos uma API REST para que qualquer prontuário eletrônico possa consumir. Se você é médico, fale com a equipe de desenvolvedores do seu prontuário. Se você é desenvolvedor, entre em contato conosco para acesso à documentação.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como funciona o envio dos laudos?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Os laudos podem ser impressos, enviados por e-mail ou SMS diretamente pelo sistema. Você escolhe a forma mais conveniente para você e seu paciente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.jpg" alt="Risco MED" width="160" height="45">
+                    <p>Sistema digital para geração de laudos de risco cirúrgico pré-operatório</p>
+                    <div class="footer-social">
+                        <a href="https://yesmedicos.com.br" aria-label="YES Médicos">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#indices">Índices</a></li>
+                            <li><a href="#precos">Preços</a></li>
+                            <li><a href="#integracao">Integração</a></li>
+                            <li><a href="#exemplo">Exemplo de Laudo</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Ecossistema</h4>
+                        <ul>
+                            <li><a href="https://yesmedicos.com.br">YES Médicos</a></li>
+                            <li><a href="https://tv.yes.med.br">Painel de Espera</a></li> 
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5537991216265">WhatsApp</a></li>
+                            <li><a href="mailto:comercial@risco.med.br">E-mail Comercial</a></li>
+                            <li><a href="mailto:suporte@risco.med.br">E-mail Suporte</a></li>
+                            <li><a href="tel:+5537991216265">(37)99121-6265</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="/termos-de-uso">Termos de Uso</a></li>
+                            <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+                            <li><a href="/lgpd">LGPD</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Risco MED - Todos os direitos reservados</p>
+                <p>Desenvolvido por <a href="https://yesmedicos.com.br">YES Médicos</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/script.js"></script>
+</body>
+</html>

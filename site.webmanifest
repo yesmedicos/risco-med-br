@@ -1,0 +1,75 @@
+{
+  "name": "Risco MED - Laudo de Risco Cirúrgico Online",
+  "short_name": "Risco MED",
+  "description": "Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["medical", "health", "productivity"],
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fazer Login",
+      "short_name": "Login",
+      "description": "Acessar o sistema Risco MED",
+      "url": "https://app.risco.med.br/",
+      "icons": [
+        {
+          "src": "favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Ver Exemplo",
+      "short_name": "Exemplo",
+      "description": "Ver exemplo de laudo",
+      "url": "/#exemplo",
+      "icons": [
+        {
+          "src": "favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Preços",
+      "short_name": "Preços",
+      "description": "Ver preços e planos",
+      "url": "/#precos",
+      "icons": [
+        {
+          "src": "favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/laudo-exemplo-1.jpg",
+      "sizes": "1811x2560",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/laudo-exemplo-2.jpg",
+      "sizes": "1811x2560",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    }
+  ],
+  "prefer_related_applications": false
+}
