@@ -408,3 +408,74 @@ if ('serviceWorker' in navigator) {
         //     .catch(error => console.log('SW registration failed:', error));
     });
 }
+
+
+
+  // WhatsApp Button Functionality with Accessibility
+        const whatsappBtn = document.getElementById('whatsappBtn');
+        const whatsappOptions = document.getElementById('whatsappOptions');
+        const whatsappOverlay = document.getElementById('whatsappOverlay');
+
+        // Toggle options menu
+        whatsappBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isExpanded = whatsappOptions.classList.contains('active');
+            
+            whatsappOptions.classList.toggle('active');
+            whatsappOverlay.classList.toggle('active');
+            
+            // Update ARIA attributes for accessibility
+            whatsappBtn.setAttribute('aria-expanded', !isExpanded);
+            whatsappOverlay.setAttribute('aria-hidden', isExpanded);
+        });
+
+        // Close menu when clicking overlay
+        whatsappOverlay.addEventListener('click', function() {
+            closeMenu();
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.whatsapp-float')) {
+                closeMenu();
+            }
+        });
+
+        // Prevent menu from closing when clicking inside options
+        whatsappOptions.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // Close menu with Escape key for accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && whatsappOptions.classList.contains('active')) {
+                closeMenu();
+                whatsappBtn.focus(); // Return focus to button
+            }
+        });
+
+        // Helper function to close menu
+        function closeMenu() {
+            whatsappOptions.classList.remove('active');
+            whatsappOverlay.classList.remove('active');
+            whatsappBtn.setAttribute('aria-expanded', 'false');
+            whatsappOverlay.setAttribute('aria-hidden', 'true');
+        }
+
+        // Track clicks for analytics 
+        document.querySelectorAll('.whatsapp-option').forEach(link => {
+            link.addEventListener('click', function() {
+                const contactType = this.querySelector('.whatsapp-option-title').textContent;
+                
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'whatsapp_click', {
+                        'event_category': 'Contact',
+                        'event_label': contactType,
+                        'value': 1
+                    });
+                }
+                 
+            });
+        });
+        
