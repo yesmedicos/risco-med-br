@@ -12,6 +12,14 @@
     <priority>1.0</priority>
   </url>
 
+
+  <url>
+    <loc>https://risco.med.br/modelo-risco-cirurgico</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
   <!-- Main sections (anchors) -->
   <url>
     <loc>https://risco.med.br/#funcionalidades</loc>
