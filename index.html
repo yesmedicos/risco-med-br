@@ -81,7 +81,7 @@
       "url": "https://risco.med.br",
       "logo": "https://risco.med.br/assets/logo.jpg",
       "description": "Plataforma digital para geração de laudos de risco cirúrgico pré-operatório",
-      "telephone": "+55-(37)99121-62656265",
+      "telephone": "+55-(37)99121-6265",
       "email": "comercial@risco.med.br",
       "address": {
         "@type": "PostalAddress",
@@ -134,6 +134,84 @@
     }
     </script>
     
+     <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Risco MED",
+      "description": "App para gerar gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica em 3 min.",
+      "url": "https://yesmedicos.com.br",
+      "telephone": "+55-(37)99121-6265",
+      "email": "comercial@risco.med.br",
+      "priceRange": "R$ 1.00",
+      "image": "https://risco.med.br/assets/images/logo.png"
+    }
+    </script>
+
+     <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://risco.med.br"
+        } 
+      ]
+    }
+    </script>
+
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "App para gerar laudos de risco cirúrgico pré-operatório",
+      "name": "Risco MED",
+      "description": "Programa para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://risco.med.br"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Clínicas médicas, consultórios e hospitais"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "1.00",
+        "priceCurrency": "BRL"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "App para gerar laudos de risco cirúrgico",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "App para gerar laudos de risco cirúrgico",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Risco MED",
+                  "description": "Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/styles.css?v4">
     
