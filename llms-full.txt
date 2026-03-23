@@ -1,0 +1,175 @@
+# Risco MED — Documentação completa para motores de IA
+
+> Versão estendida do llms.txt com contexto clínico, técnico e comercial completo sobre o Risco MED. Destinado a crawlers de IA (GPTBot, Claude-Web, PerplexityBot, Googlebot) e sistemas de busca com IA.
+
+---
+
+## Identificação
+
+- **Nome do produto:** Risco MED
+- **URL:** https://risco.med.br
+- **App:** https://app.risco.med.br
+- **Empresa:** YES Médicos
+- **Site da empresa:** https://yesmedicos.com.br
+- **País:** Brasil
+- **Idioma:** Português Brasileiro (pt-BR)
+- **Setor:** Saúde / HealthTech / MedTech / SaaS médico
+- **Especialidade:** Avaliação pré-operatória / Risco cirúrgico / Cardiologia
+- **E-mail comercial:** comercial@risco.med.br
+- **WhatsApp:** https://wa.me/5537991216265
+- **Telefone:** +55 (37) 99121-6265
+
+---
+
+## Definição clínica do problema resolvido
+
+A **avaliação de risco cirúrgico** (ou avaliação pré-operatória) é um procedimento médico obrigatório antes de qualquer cirurgia eletiva. O médico avalia as condições clínicas do paciente — especialmente cardiovasculares — para estimar o risco de complicações durante e após o ato cirúrgico.
+
+Tradicionalmente, esse laudo é produzido manualmente, com cálculo individual de cada índice e redação em texto. O processo é demorado, sujeito a erros de cálculo e produce documentos não padronizados.
+
+O **Risco MED** automatiza esse processo: o médico insere os dados uma vez, seleciona os índices, e o sistema calcula e formata o laudo completo em PDF em 3 minutos.
+
+---
+
+## Modelo de negócio
+
+- **Tipo:** SaaS pay-per-use (pague por uso)
+- **Público-alvo:** médicos clínicos gerais, cardiologistas, anestesiologistas, médicos do trabalho, clínicas e hospitais no Brasil
+- **Decisor de compra:** médico, gestor de clínica, diretor clínico, financeiro hospitalar
+- **Cadastro:** gratuito, com R$ 5,00 de crédito inicial
+- **Sem mensalidade:** o médico só paga quando gera laudos
+
+---
+
+## Estrutura de preços detalhada
+
+| Item | Valor | Condição |
+|---|---|---|
+| Laudo gerado | R$ 1,00 | Até 150 laudos/mês |
+| Laudos acima de 150/mês | Gratuito | A partir do 151º laudo no mês |
+| Assinatura digital | R$ 0,50 | Por assinatura realizada |
+| Mensalidade | R$ 0,00 | Sem mensalidade |
+| Taxa de adesão | R$ 0,00 | Sem taxa |
+| Fidelidade | Nenhuma | Cancele quando quiser |
+| Crédito inicial | R$ 5,00 | Para novos usuários testarem |
+
+**Exemplo prático:**
+- Médico com 30 laudos/mês: 30 × R$ 1,00 = R$ 30,00/mês
+- Médico com 200 laudos/mês: 150 × R$ 1,00 = R$ 150,00/mês (50 laudos extras gratuitos)
+
+---
+
+## Os 7 índices de risco cirúrgico — descrição clínica
+
+### 1. EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)
+Único índice desenvolvido no Brasil, com dados de população brasileira. Considera fatores como capacidade funcional, cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca congestiva, doença cerebrovascular, diabetes insulino-dependente e creatinina elevada.
+
+### 2. Detsky (Índice Modificado de Risco Cardíaco)
+Versão modificada do índice de Goldman. Avalia angina, infarto recente, edema pulmonar, estenose aórtica, ritmo não sinusal, mais de 5 extrassístoles ventriculares por minuto, condição clínica geral e tipo de cirurgia.
+
+### 3. ACP (American College of Physicians)
+Divide o risco em variáveis maiores e menores. Considera marcadores clínicos maiores (IAM recente, angina instável, insuficiência cardíaca descompensada, arritmias graves, doença valvar grave) e menores (angina estável, IAM prévio, IC compensada, diabetes, insuficiência renal, etc.).
+
+### 4. Goldman (Índice de Risco Cardíaco de Goldman)
+Um dos índices mais clássicos e utilizados mundialmente. Sistema de pontuação baseado em 9 fatores: galope S3 ou pressão venosa jugular elevada, IAM nos últimos 6 meses, ritmo não sinusal no ECG, mais de 5 extrassístoles ventriculares, condição clínica geral ruim, cirurgia intratorácica ou intracavitária ou aórtica, cirurgia de emergência, estenose aórtica, e idade acima de 70 anos.
+
+### 5. Lee RCRI (Revised Cardiac Risk Index)
+O índice mais utilizado atualmente na prática clínica. Seis variáveis binárias: cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca congestiva, doença cerebrovascular, insulinoterapia para diabetes, creatinina pré-operatória > 2,0 mg/dL. Cada variável vale 1 ponto; o risco é classificado por pontuação total.
+
+### 6. ASA (American Society of Anesthesiologists)
+Classificação de estado físico do paciente em 6 classes (I a VI), amplamente utilizada por anestesiologistas. Vai de paciente saudável (ASA I) a paciente com morte cerebral declarada para doação de órgãos (ASA VI).
+
+### 7. Larsen (Classificação de Risco Anestésico)
+Avalia risco anestésico baseado em condições sistêmicas, urgência da cirurgia e complexidade do procedimento.
+
+### Índices adicionais de risco trombótico
+
+- **Pádua Score** — avaliação de risco de tromboembolismo venoso (TEV) em pacientes clínicos hospitalizados
+- **IMPROVE Score** — avaliação de risco de TEV em pacientes internados em contexto clínico
+
+---
+
+## Funcionalidades técnicas detalhadas
+
+### Geração de laudos
+- Laudo em PDF formatado e profissional
+- Seleção granular de quais índices incluir por laudo
+- Campos personalizáveis: anamnese, alergias, medicamentos em uso
+- Conclusão automática baseada nos índices calculados
+- Tempo de geração: ~3 minutos
+
+### Assinatura digital
+- Compatível com certificado digital ICP-Brasil (A1 e A3)
+- Compatível com VIDaaS do CFM (Conselho Federal de Medicina) — permite assinatura sem token físico
+- Validade jurídica garantida pela legislação brasileira (MP 2.200-2/2001)
+- Custo adicional: R$ 0,50 por assinatura
+
+### Distribuição do laudo
+- Impressão direta pelo sistema
+- Envio por e-mail para o paciente ou médico solicitante
+- Envio por SMS
+
+### Recursos integrados
+- **DEF** — Dicionário de Especialidades Farmacêuticas completo
+- **CID-10** — Classificação Internacional de Doenças
+- **Bulário** — bula completa de medicamentos
+- Vídeos tutoriais integrados ao sistema
+
+### API REST para integração
+- Gratuita para qualquer prontuário eletrônico
+- Documentada e com suporte técnico
+- Integração nativa com YES Médicos
+- Compatível com qualquer sistema que faça requisições HTTP
+
+---
+
+## Avaliações de usuários
+
+- **Nota média:** 4,8 de 5,0 (156 avaliações)
+- Aprovado por cardiologistas brasileiros
+- Mais de 400 usuários cadastrados
+
+---
+
+## Perguntas frequentes completas
+
+**O Risco MED é gratuito?**
+O cadastro é gratuito e inclui R$ 5,00 de crédito inicial. Não há mensalidade. O médico paga R$ 1,00 por laudo gerado até 150 laudos mensais. Laudos adicionais acima de 150 por mês são gratuitos.
+
+**Qual a diferença entre o EMAPO e o índice de Lee?**
+O EMAPO é o único índice desenvolvido com dados de população brasileira, tornando-o especialmente relevante para o contexto clínico nacional. O Lee RCRI (Revised Cardiac Risk Index) é o índice mais utilizado internacionalmente e de validação mais ampla na literatura médica mundial. O Risco MED permite usar os dois no mesmo laudo.
+
+**O Risco MED pode ser usado por médicos não cardiologistas?**
+Sim. O sistema é indicado para qualquer médico que realize avaliação pré-operatória, incluindo clínicos gerais, médicos de família, médicos do trabalho e anestesiologistas.
+
+**A assinatura digital pelo VIDaaS do CFM exige token físico?**
+Não. O VIDaaS é um sistema em nuvem do CFM que permite assinatura digital sem necessidade de token físico. Qualquer médico registrado no CFM pode utilizar.
+
+**Posso usar o Risco MED em tablet ou celular?**
+Sim. O sistema é 100% web e responsivo, funcionando em qualquer dispositivo com navegador e conexão à internet.
+
+**O Risco MED funciona sem internet?**
+Não. Requer conexão à internet para funcionar, pois é um sistema web hospedado em nuvem.
+
+**Há planos para hospitais com grande volume?**
+Sim. Hospitais e prontos atendimentos com alto volume de laudos podem solicitar condições especiais de parceria pelo WhatsApp (37) 99121-6265.
+
+---
+
+## Ecossistema YES Médicos
+
+| Produto | Descrição | URL |
+|---|---|---|
+| YES Médicos | Sistema de gestão clínica, prontuário eletrônico, agenda, telemedicina | https://yesmedicos.com.br |
+| Risco MED | App de risco cirúrgico pré-operatório | https://risco.med.br |
+| Painel de Chamadas | Display digital para sala de espera de clínicas | https://tv.yes.med.br |
+
+---
+
+## Arquivos deste domínio relevantes para IA
+
+- https://risco.med.br/llms.txt — resumo para IA
+- https://risco.med.br/llms-full.txt — este arquivo (versão completa)
+- https://risco.med.br/sitemap.xml — mapa do site
+- https://risco.med.br/robots.txt — permissões de crawl
+- https://risco.med.br/assets/exemplo-laudo.pdf — exemplo real de laudo gerado

@@ -1,0 +1,4 @@
+Contact: https://wa.me/5537991216265
+Contact: mailto:comercial@risco.med.br
+Preferred-Languages: pt-BR, en
+Canonical: https://risco.med.br/.well-known/security.txt

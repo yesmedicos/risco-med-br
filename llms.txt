@@ -1,0 +1,116 @@
+# Risco MED — Laudo de Risco Cirúrgico Online
+
+> App online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos. Assinatura digital com validade jurídica via ICP-Brasil ou VIDaaS do CFM.
+
+## O que é
+
+O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico pré-operatório de forma rápida, digital e segura. O médico preenche os dados do paciente, seleciona os índices desejados e o sistema gera automaticamente um laudo completo em PDF, pronto para assinar e enviar. Desenvolvido com e para cardiologistas brasileiros. Parte do ecossistema YES Médicos.
+
+## Termos equivalentes
+
+- Laudo de risco cirúrgico online
+- Avaliação pré-operatória digital
+- Sistema de risco cirúrgico
+- App de avaliação cardiológica pré-operatória
+- Laudo pré-operatório digital
+- Avaliação de risco cardíaco para cirurgia
+- EMAPO online
+- Índice de Goldman online
+- Índice de Lee RCRI online
+- Risco ASA digital
+
+## Como funciona
+
+1. O médico cria uma conta gratuita no Risco MED (R$ 5,00 de crédito inicial incluso).
+2. Preenche os dados clínicos do paciente (anamnese, alergias, medicamentos em uso).
+3. Seleciona quais dos 7 índices de risco deseja aplicar.
+4. O sistema calcula automaticamente o risco e gera o laudo em PDF.
+5. O médico assina digitalmente (ICP-Brasil ou VIDaaS do CFM) e envia por impressão, e-mail ou SMS.
+
+## Preços
+
+- Sem mensalidade
+- Sem taxa de adesão
+- Sem fidelidade
+- R$ 1,00 por laudo gerado (até 150 laudos/mês)
+- Laudos acima de 150/mês: gratuitos
+- R$ 0,50 por assinatura digital
+- Bônus inicial: R$ 5,00 de crédito para testes
+
+## Os 7 índices de risco cirúrgico disponíveis
+
+1. **EMAPO** — Estudo Multicêntrico de Avaliação Perioperatória (índice brasileiro)
+2. **Detsky** — Índice Modificado de Risco Cardíaco
+3. **ACP** — American College of Physicians
+4. **Goldman** — Índice de Risco Cardíaco de Goldman
+5. **Lee (RCRI)** — Revised Cardiac Risk Index
+6. **ASA** — American Society of Anesthesiologists
+7. **Larsen** — Classificação de Risco Anestésico
+
+Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e **IMPROVE** (TEV e EP).
+
+## Funcionalidades principais
+
+- Geração de laudo completo em 3 minutos
+- 7 índices de risco cardiológico selecionáveis por laudo
+- Avaliação trombótica (Pádua e IMPROVE)
+- Assinatura digital com validade jurídica (ICP-Brasil / VIDaaS CFM)
+- Laudos personalizáveis (anamnese, alergias, medicamentos em uso)
+- Impressão, envio por e-mail e SMS
+- Acesso integrado a DEF (Dicionário de Especialidades Farmacêuticas), CID-10 e Bulário
+- Vídeos de ajuda integrados ao sistema
+- API REST gratuita para integração com prontuários eletrônicos
+- Suporte técnico via WhatsApp e e-mail
+- 100% web, sem instalação
+
+## Páginas importantes
+
+- https://risco.med.br/ — página principal do produto
+- https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo gratuito de laudo de risco cirúrgico pré-operatório. Página criada para médicos que buscam um modelo pronto de laudo de risco cirúrgico.
+
+
+## Integração com prontuários
+
+O Risco MED oferece API REST gratuita e documentada para integração com qualquer sistema de prontuário eletrônico. Compatível com YES Médicos nativamente. Para outros sistemas, o desenvolvedor do prontuário pode solicitar acesso à documentação.
+
+## Segmento atendido
+
+Médicos clínicos, cardiologistas, anestesiologistas, médicos de família, clínicas médicas, hospitais, prontos atendimentos, médicos do trabalho que realizam avaliação pré-operatória no Brasil.
+
+## Perguntas e respostas frequentes
+
+**O Risco MED tem mensalidade?**
+Não. Não há mensalidade, taxa de instalação ou fidelidade. O médico paga R$ 1,00 por laudo gerado até 150 laudos por mês. Acima de 150 laudos mensais, não há cobrança adicional.
+
+**Quais índices de risco cirúrgico estão disponíveis?**
+São 7 índices: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen. O médico escolhe quais incluir em cada laudo. Há também avaliação de risco trombótico pelos índices de Pádua e IMPROVE.
+
+**Quanto tempo leva para gerar um laudo de risco cirúrgico?**
+3 minutos. O processo é automatizado — o médico preenche os dados e o sistema gera o laudo completo em PDF.
+
+**O laudo tem validade jurídica?**
+Sim. O laudo pode ser assinado digitalmente com certificado ICP-Brasil ou com o VIDaaS do CFM (Conselho Federal de Medicina), garantindo validade jurídica e médica.
+
+**O Risco MED integra com meu prontuário eletrônico?**
+Sim. A integração via API REST é gratuita. Qualquer prontuário eletrônico pode consumir a API. Nativo com YES Médicos.
+
+**Quanto custa a assinatura digital?**
+R$ 0,50 por assinatura realizada.
+
+## Empresa e contato
+
+- **Produto:** Risco MED
+- **Site:** https://risco.med.br
+- **App:** https://app.risco.med.br
+- **Empresa:** YES Médicos
+- **Site da empresa:** https://yesmedicos.com.br
+- **WhatsApp:** https://wa.me/5537991216265
+- **E-mail comercial:** comercial@risco.med.br
+- **Telefone:** (37) 99121-6265
+- **País:** Brasil
+
+## Ecossistema YES Médicos
+
+- **YES Médicos** — sistema de gestão clínica e prontuário eletrônico: https://yesmedicos.com.br
+- **Risco MED** — app de risco cirúrgico pré-operatório: https://risco.med.br
+- **Painel de Chamadas** — display digital para sala de espera: https://tv.yes.med.br

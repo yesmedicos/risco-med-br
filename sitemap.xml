@@ -6,15 +6,41 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://risco.med.br/</loc>
-    <lastmod>2026-01-19</lastmod>
-    <changefreq>weekly</changefreq>
+     <loc>https://risco.med.br/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://risco.med.br/"/>
+    <image:image>
+      <image:loc>https://risco.med.br/assets/laudo-mockup.jpg</image:loc>
+      <image:title>Exemplo de laudo de risco cirúrgico gerado pelo Risco MED</image:title>
+      <image:caption>Laudo de risco cirúrgico pré-operatório gerado em 3 minutos pelo sistema Risco MED</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://risco.med.br/assets/laudo-exemplo-1.jpg</image:loc>
+      <image:title>Laudo de risco cirúrgico — página 1</image:title>
+      <image:caption>Primeira página do laudo de risco cirúrgico pré-operatório com índices EMAPO, Goldman e Lee gerados pelo Risco MED</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://risco.med.br/assets/laudo-exemplo-2.jpg</image:loc>
+      <image:title>Laudo de risco cirúrgico — página 2</image:title>
+      <image:caption>Segunda página do laudo de risco cirúrgico com índices ASA, Larsen e Detsky</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://risco.med.br/assets/emapo.JPG</image:loc>
+      <image:title>Índice EMAPO de risco cirúrgico no sistema Risco MED</image:title>
+      <image:caption>Tela de preenchimento do índice EMAPO (Estudo Multicêntrico de Avaliação Perioperatória) no app Risco MED</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://risco.med.br/assets/og-image.jpg</image:loc>
+      <image:title>Risco MED — Laudo de Risco Cirúrgico Online</image:title>
+      <image:caption>Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica</image:caption>
+    </image:image>
   </url>
 
 
   <url>
-    <loc>https://risco.med.br/modelo-risco-cirurgico</loc>
+    <loc>https://risco.med.br/modelo-risco-cirurgico/index.html</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

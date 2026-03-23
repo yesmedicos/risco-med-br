@@ -1,0 +1,40 @@
+/* EQUIPE */
+Empresa: YES Médicos
+Site: https://yesmedicos.com.br
+Contato comercial: comercial@risco.med.br
+Telefone: (37) 99121-6265
+Localização: Brasil
+
+/* PRODUTO */
+Nome: Risco MED
+URL: https://risco.med.br
+App: https://app.risco.med.br
+Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade.
+Especialidade: Avaliação pré-operatória / Risco cirúrgico / Cardiologia
+Aprovado por: Cardiologistas brasileiros
+Usuários: 400+
+Avaliação: 4.8/5.0 (156 avaliações)
+Idioma: Português Brasileiro (pt-BR)
+Última atualização: 2025/01/01
+
+/* ÍNDICES DISPONÍVEIS */
+1. EMAPO — Estudo Multicêntrico de Avaliação Perioperatória
+2. Detsky — Índice Modificado de Risco Cardíaco
+3. ACP — American College of Physicians
+4. Goldman — Índice de Risco Cardíaco de Goldman
+5. Lee (RCRI) — Revised Cardiac Risk Index
+6. ASA — American Society of Anesthesiologists
+7. Larsen — Classificação de Risco Anestésico
++ Pádua e IMPROVE (risco trombótico)
+
+/* ECOSSISTEMA YES MÉDICOS */
+YES Médicos (gestão clínica): https://yesmedicos.com.br
+Risco MED (risco cirúrgico): https://risco.med.br
+Painel de Chamadas (sala de espera): https://tv.yes.med.br
+
+/* TECNOLOGIA */
+Plataforma: Web SaaS (100% online)
+Assinatura digital: ICP-Brasil e VIDaaS CFM
+Compatibilidade: Chrome, Firefox, Safari, Edge
+Dispositivos: Desktop, tablet, smartphone
+API: REST, gratuita para integração com prontuários

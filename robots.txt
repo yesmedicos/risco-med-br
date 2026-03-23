@@ -1,42 +1,41 @@
 User-agent: *
 Allow: /
+ 
+# Bloquear sistema e CDN
+Disallow: /cdn-cgi/
+Disallow: /admin/
+ 
+# Permitir acesso ao exemplo de laudo (importante para IA e SEO)
+Allow: /assets/exemplo-laudo.pdf
+Allow: /assets/laudo-exemplo-1.jpg
+Allow: /assets/laudo-exemplo-2.jpg
 
-# Sitemap location
+Allow: /modelo-risco-cirurgico/index.html
+ 
+# Sitemap
 Sitemap: https://risco.med.br/sitemap.xml
-
-
-# Allow access to CSS, JS and images for better indexing
-Allow: /assets/
-Allow: /styles.css
-Allow: /script.js
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-
-# Crawl delay (optional)
-# Crawl-delay: 1
-
-# Specific bot instructions
+ 
+# Crawlers de IA — permitir explicitamente
+User-agent: GPTBot
+Allow: /
+ 
+User-agent: ChatGPT-User
+Allow: /
+ 
+User-agent: Claude-Web
+Allow: /
+ 
+User-agent: anthropic-ai
+Allow: /
+ 
+User-agent: PerplexityBot
+Allow: /
+ 
+User-agent: cohere-ai
+Allow: /
+ 
 User-agent: Googlebot
 Allow: /
-
-User-agent: Googlebot-Image
-Allow: /assets/
-
+ 
 User-agent: Bingbot
 Allow: /
-
-# Block bad bots (optional)
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: DotBot
-Crawl-delay: 10
