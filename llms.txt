@@ -1,6 +1,6 @@
 # Risco MED — Laudo de Risco Cirúrgico Online
 
-> App online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos. Assinatura digital com validade jurídica via ICP-Brasil ou VIDaaS do CFM.
+> App online para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos, assinado com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
 ## O que é
 
@@ -25,7 +25,7 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 2. Preenche os dados clínicos do paciente (anamnese, alergias, medicamentos em uso).
 3. Seleciona quais dos 7 índices de risco deseja aplicar.
 4. O sistema calcula automaticamente o risco e gera o laudo em PDF.
-5. O médico assina digitalmente (ICP-Brasil ou VIDaaS do CFM) e envia por impressão, e-mail ou SMS.
+5. O laudo sai assinado digitalmente com certificado ICP-Brasil, compatível com o validador do ITI, e é enviado por impressão, e-mail ou SMS.
 
 ## Preços
 
@@ -45,7 +45,7 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 4. **Goldman** — Índice de Risco Cardíaco de Goldman
 5. **Lee (RCRI)** — Revised Cardiac Risk Index
 6. **ASA** — American Society of Anesthesiologists
-7. **Larsen** — Classificação de Risco Anestésico
+7. **Larsen** — Índice de Risco Cardíaco de Larsen
 
 Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e **IMPROVE** (TEV e EP).
 
@@ -54,7 +54,7 @@ Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e 
 - Geração de laudo completo em 3 minutos
 - 7 índices de risco cardiológico selecionáveis por laudo
 - Avaliação trombótica (Pádua e IMPROVE)
-- Assinatura digital com validade jurídica (ICP-Brasil / VIDaaS CFM)
+- Laudo assinado com certificado ICP-Brasil e compatível com o validador do ITI (Resolução CFM 2.299/2021)
 - Laudos personalizáveis (anamnese, alergias, medicamentos em uso)
 - Impressão, envio por e-mail e SMS
 - Acesso integrado a DEF (Dicionário de Especialidades Farmacêuticas), CID-10 e Bulário
@@ -98,7 +98,7 @@ São 7 índices: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen. O médic
 3 minutos. O processo é automatizado — o médico preenche os dados e o sistema gera o laudo completo em PDF.
 
 **O laudo tem validade jurídica?**
-Sim. O laudo pode ser assinado digitalmente com certificado ICP-Brasil ou com o VIDaaS do CFM (Conselho Federal de Medicina), garantindo validade jurídica e médica.
+Sim. O Risco MED gera o laudo assinado com certificado ICP-Brasil (incluindo certificado em nuvem, como o VIDaaS), conforme a Resolução CFM 2.299/2021, e a assinatura pode ser verificada no validador oficial do ITI (validar.iti.gov.br).
 
 **O Risco MED integra com meu prontuário eletrônico?**
 Sim. A integração via API REST é gratuita. Qualquer prontuário eletrônico pode consumir a API. Nativo com YES Médicos.

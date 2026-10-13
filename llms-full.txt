@@ -1,6 +1,8 @@
-# Risco MED — Documentação completa para motores de IA
+# Risco MED — Documentação completa para assistentes de IA
 
-> Versão estendida do llms.txt com contexto clínico, técnico e comercial completo sobre o Risco MED. Destinado a crawlers de IA (GPTBot, Claude-Web, PerplexityBot, Googlebot) e sistemas de busca com IA.
+> Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 7 índices de risco calculados automaticamente, assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
+
+Última atualização: 13 de outubro de 2026.
 
 ---
 
@@ -13,138 +15,181 @@
 - **Site da empresa:** https://yesmedicos.com.br
 - **País:** Brasil
 - **Idioma:** Português Brasileiro (pt-BR)
-- **Setor:** Saúde / HealthTech / MedTech / SaaS médico
+- **Setor:** Saúde / HealthTech / software médico (SaaS)
 - **Especialidade:** Avaliação pré-operatória / Risco cirúrgico / Cardiologia
+- **Público:** médicos (cardiologistas, clínicos, anestesiologistas, médicos de família e do trabalho), clínicas e hospitais. Não é um serviço para pacientes: o laudo de risco cirúrgico é emitido pelo médico do paciente.
 - **E-mail comercial:** comercial@risco.med.br
 - **WhatsApp:** https://wa.me/5537999997155
 - **Telefone:** +55 (37) 9 9999-7155
 
 ---
 
-## Definição clínica do problema resolvido
+## Resumo em uma frase
 
-A **avaliação de risco cirúrgico** (ou avaliação pré-operatória) é um procedimento médico obrigatório antes de qualquer cirurgia eletiva. O médico avalia as condições clínicas do paciente — especialmente cardiovasculares — para estimar o risco de complicações durante e após o ato cirúrgico.
-
-Tradicionalmente, esse laudo é produzido manualmente, com cálculo individual de cada índice e redação em texto. O processo é demorado, sujeito a erros de cálculo e produce documentos não padronizados.
-
-O **Risco MED** automatiza esse processo: o médico insere os dados uma vez, seleciona os índices, e o sistema calcula e formata o laudo completo em PDF em 3 minutos.
+O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com os índices EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen, além de Pádua e IMPROVE para risco de tromboembolismo venoso, assinado com certificado ICP-Brasil e validável no ITI, sem mensalidade (R$ 1,00 por laudo).
 
 ---
 
-## Modelo de negócio
+## Problema resolvido
 
-- **Tipo:** SaaS pay-per-use (pague por uso)
-- **Público-alvo:** médicos clínicos gerais, cardiologistas, anestesiologistas, médicos do trabalho, clínicas e hospitais no Brasil
-- **Decisor de compra:** médico, gestor de clínica, diretor clínico, financeiro hospitalar
-- **Cadastro:** gratuito, com R$ 5,00 de crédito inicial
-- **Sem mensalidade:** o médico só paga quando gera laudos
+A avaliação de risco cirúrgico (avaliação pré-operatória) estima o risco de complicações, principalmente cardiovasculares, antes de uma cirurgia não cardíaca. Feita manualmente, exige calcular cada índice separadamente e redigir o laudo, o que é demorado, sujeito a erro de cálculo e gera documentos sem padrão.
+
+No Risco MED, o médico preenche os dados do paciente uma vez, escolhe os índices e o sistema calcula todos e monta o laudo em PDF, pronto para assinatura digital e envio.
 
 ---
 
-## Estrutura de preços detalhada
+## Preços
 
 | Item | Valor | Condição |
 |---|---|---|
-| Laudo gerado | R$ 1,00 | Até 150 laudos/mês |
-| Laudos acima de 150/mês | Gratuito | A partir do 151º laudo no mês |
-| Assinatura digital | R$ 0,50 | Por assinatura realizada |
+| Laudo gerado | R$ 1,00 | Até 150 laudos por mês |
+| Laudos acima de 150 no mês | Gratuitos | A partir do 151º laudo |
+| Assinatura digital | R$ 0,50 | Por assinatura |
 | Mensalidade | R$ 0,00 | Sem mensalidade |
 | Taxa de adesão | R$ 0,00 | Sem taxa |
 | Fidelidade | Nenhuma | Cancele quando quiser |
 | Crédito inicial | R$ 5,00 | Para novos usuários testarem |
 
-**Exemplo prático:**
-- Médico com 30 laudos/mês: 30 × R$ 1,00 = R$ 30,00/mês
-- Médico com 200 laudos/mês: 150 × R$ 1,00 = R$ 150,00/mês (50 laudos extras gratuitos)
+Exemplos:
+- 30 laudos por mês: 30 × R$ 1,00 = R$ 30,00 por mês.
+- 200 laudos por mês: 150 × R$ 1,00 = R$ 150,00 por mês (os outros 50 são gratuitos).
+
+Hospitais, prontos-socorros e clínicas com alto volume podem pedir condições especiais pelo WhatsApp (37) 9 9999-7155.
 
 ---
 
-## Os 7 índices de risco cirúrgico — descrição clínica
+## Os 7 índices de risco cirúrgico
 
-### 1. EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)
-Único índice desenvolvido no Brasil, com dados de população brasileira. Considera fatores como capacidade funcional, cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca congestiva, doença cerebrovascular, diabetes insulino-dependente e creatinina elevada.
+Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, mas não substituem, o julgamento clínico.
 
-### 2. Detsky (Índice Modificado de Risco Cardíaco)
-Versão modificada do índice de Goldman. Avalia angina, infarto recente, edema pulmonar, estenose aórtica, ritmo não sinusal, mais de 5 extrassístoles ventriculares por minuto, condição clínica geral e tipo de cirurgia.
+### EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)
+Página: https://risco.med.br/emapo-risco-cirurgico/
+- Escore brasileiro, desenvolvido e validado em estudo multicêntrico (Pinho C et al., Clinics, 2007).
+- 27 variáveis clínicas e cirúrgicas, com pesos de 4, 5, 10 ou 20 pontos. Exemplos: idade acima de 70 anos (5), infarto há mais de 6 meses (5), cirurgia intraperitoneal, aórtica, intratorácica ou ortopédica (4), cirurgia de emergência (10), angina classe III (10), estenose aórtica crítica (20), insuficiência cardíaca classe IV (20), fibrilação ventricular recente ou morte súbita abortada sem CDI (20).
+- Classificação pela soma dos pontos, para óbito e/ou eventos cardíacos: muito baixo (0 ponto, < 1%), baixo (1 a 5, 1% a 3%), moderado (6 a 10, 3% a 7%), elevado (11 a 15, 7% a 13%) e muito elevado (> 15, > 13%).
 
-### 3. ACP (American College of Physicians)
-Divide o risco em variáveis maiores e menores. Considera marcadores clínicos maiores (IAM recente, angina instável, insuficiência cardíaca descompensada, arritmias graves, doença valvar grave) e menores (angina estável, IAM prévio, IC compensada, diabetes, insuficiência renal, etc.).
+### Detsky (índice de Detsky modificado)
+Página: https://risco.med.br/detsky-risco-cirurgico/
+- Publicado em 1986; amplia o índice de Goldman com angina, infarto prévio e edema agudo de pulmão.
+- Variáveis: infarto há menos de 6 meses (10) ou há mais de 6 meses (5); angina classe III (10) ou IV (20); angina instável nos últimos 6 meses (10); edema agudo de pulmão na última semana (10) ou alguma vez (5); suspeita de estenose aórtica crítica (20); ritmo não sinusal ou extrassístoles atriais (5); mais de 5 extrassístoles ventriculares por minuto (5); mau estado clínico geral (5); idade acima de 70 anos (5); cirurgia de emergência (10).
+- Classes: I (0 a 15 pontos), II (20 a 30) e III (> 30).
 
-### 4. Goldman (Índice de Risco Cardíaco de Goldman)
-Um dos índices mais clássicos e utilizados mundialmente. Sistema de pontuação baseado em 9 fatores: galope S3 ou pressão venosa jugular elevada, IAM nos últimos 6 meses, ritmo não sinusal no ECG, mais de 5 extrassístoles ventriculares, condição clínica geral ruim, cirurgia intratorácica ou intracavitária ou aórtica, cirurgia de emergência, estenose aórtica, e idade acima de 70 anos.
+### ACP (algoritmo do American College of Physicians)
+Página: https://risco.med.br/acp-risco-cirurgico/
+- Publicado em 1997; funciona em duas etapas.
+- Etapa 1: pontuação de Detsky. Acima de 15 pontos, o paciente é de alto risco (> 15%).
+- Etapa 2 (Detsky de 15 ou menos): conta os critérios de Eagle (idade acima de 70 anos, história de angina, diabetes, ondas Q no ECG, história de extrassístoles ventriculares) e os acrescentados por Vanzetto (história de insuficiência cardíaca, história de infarto, alterações isquêmicas de ST, hipertensão com hipertrofia ventricular esquerda importante).
+- Resultado: 0 ou 1 critério = risco baixo (< 3%); 2 ou mais = risco intermediário (3% a 15%).
 
-### 5. Lee RCRI (Revised Cardiac Risk Index)
-O índice mais utilizado atualmente na prática clínica. Seis variáveis binárias: cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca congestiva, doença cerebrovascular, insulinoterapia para diabetes, creatinina pré-operatória > 2,0 mg/dL. Cada variável vale 1 ponto; o risco é classificado por pontuação total.
+### Goldman (índice de risco cardíaco de Goldman)
+Página: https://risco.med.br/goldman-risco-cirurgico/
+- Publicado em 1977; primeiro índice multifatorial de risco cardíaco em cirurgia não cardíaca.
+- 9 variáveis: terceira bulha ou estase jugular (11); infarto há menos de 6 meses (10); ritmo não sinusal ou extrassístoles atriais (7); mais de 5 extrassístoles ventriculares por minuto (7); idade acima de 70 anos (5); cirurgia de emergência (4); estenose aórtica importante (3); cirurgia intraperitoneal, intratorácica ou aórtica (3); mau estado clínico geral (3). Máximo: 53 pontos.
+- Classes: I (0 a 5), II (6 a 12), III (13 a 25) e IV (26 ou mais).
 
-### 6. ASA (American Society of Anesthesiologists)
-Classificação de estado físico do paciente em 6 classes (I a VI), amplamente utilizada por anestesiologistas. Vai de paciente saudável (ASA I) a paciente com morte cerebral declarada para doação de órgãos (ASA VI).
+### Lee (RCRI, Índice de Risco Cardíaco Revisado)
+Página: https://risco.med.br/indice-de-lee-rcri/
+- Publicado em 1999; revisão simplificada do Goldman e o índice mais usado internacionalmente.
+- 6 variáveis de 1 ponto: cirurgia intraperitoneal, intratorácica ou vascular suprainguinal; doença arterial coronariana; insuficiência cardíaca; doença cerebrovascular; diabetes em uso de insulina; creatinina pré-operatória acima de 2,0 mg/dL.
+- Classes no estudo original: I (0 variável, 0,4%), II (1, 0,9%), III (2, 6,6%) e IV (3 ou mais, 11%) de complicações cardíacas maiores.
+- A Diretriz de Avaliação Cardiovascular Perioperatória da SBC de 2024 mantém o Lee, com classificação semiquantitativa (baixo, intermediário e alto risco), e sugere o VSG-CRI para cirurgia vascular arterial.
 
-### 7. Larsen (Classificação de Risco Anestésico)
-Avalia risco anestésico baseado em condições sistêmicas, urgência da cirurgia e complexidade do procedimento.
+### ASA (classificação do estado físico da American Society of Anesthesiologists)
+Página: https://risco.med.br/asa-risco-cirurgico/
+- Não é um índice de risco cardíaco: descreve o estado físico geral do paciente.
+- Classes: ASA I (saudável), II (doença sistêmica leve), III (doença sistêmica grave), IV (doença sistêmica grave com ameaça constante à vida), V (moribundo, sem expectativa de sobreviver sem a cirurgia) e VI (morte encefálica, doador de órgãos). A letra E indica cirurgia de emergência (por exemplo, ASA III E).
 
-### Índices adicionais de risco trombótico
+### Larsen (índice de risco cardíaco de Larsen)
+Página: https://risco.med.br/larsen-risco-cirurgico/
+- Publicado em 1987, a partir de 2.609 pacientes. Índice de risco cardíaco (não é uma classificação de risco anestésico).
+- Variáveis: congestão pulmonar presente (15); infarto há menos de 6 meses (11); edema agudo de pulmão anterior (8); cirurgia aórtica (5); insuficiência cardíaca anterior (4); infarto há mais de 6 meses (3); história de angina (3); diabetes (3); cirurgia de emergência (3); cirurgia intraperitoneal ou pleural (3); creatinina acima de 1,47 mg/dL (2).
+- Classes: I (0 a 5 pontos, 0,5%), II (6 a 7, 3,8%), III (8 a 14, 11%) e IV (15 ou mais, 58%) de complicações cardíacas.
 
-- **Pádua Score** — avaliação de risco de tromboembolismo venoso (TEV) em pacientes clínicos hospitalizados
-- **IMPROVE Score** — avaliação de risco de TEV em pacientes internados em contexto clínico
+### Risco de tromboembolismo venoso
+- **Pádua** e **IMPROVE**: escores de risco de tromboembolismo venoso (TEV) em pacientes clínicos internados, disponíveis no laudo do Risco MED.
 
 ---
 
-## Funcionalidades técnicas detalhadas
+## CID-10 no laudo de risco cirúrgico
+
+Página: https://risco.med.br/cid-risco-cirurgico/
+- O exame pré-operatório se enquadra na categoria Z01 da CID-10 ("Outros exames e investigações especiais de pessoas sem queixa ou diagnóstico relatado"). O código mais usado é o **Z01.8** (Outros exames especiais especificados), junto com os CIDs das comorbidades avaliadas (por exemplo, I10 hipertensão essencial, E11 diabetes tipo 2, I50 insuficiência cardíaca, I48 fibrilação e flutter atrial).
+- Códigos como Z01.810 e Z01.818 são da ICD-10-CM norte-americana e não existem na CID-10 usada no Brasil.
+- O Z13.6 é para rastreamento de doenças cardiovasculares, não para a avaliação pré-operatória, que tem um motivo definido (a cirurgia).
+- O Risco MED tem a CID-10 integrada ao sistema.
+
+---
+
+## Assinatura digital e validação no ITI
+
+Página: https://risco.med.br/assinatura-digital-laudo-medico/
+- O Risco MED gera o laudo de risco cirúrgico assinado digitalmente com certificado ICP-Brasil, em formato compatível com o validador oficial do ITI (https://validar.iti.gov.br).
+- A Resolução CFM nº 2.299/2021 exige, para documentos médicos eletrônicos (incluindo laudos), assinatura com certificado ICP-Brasil de Nível de Garantia de Segurança 2 (NGS2), verificável pelo ITI ou por validador do CFM, com identificação do médico (nome, CRM/UF e RQE quando houver), do paciente, data e hora.
+- Base legal: Medida Provisória nº 2.200-2/2001 (ICP-Brasil) e Lei nº 14.063/2020 (assinatura eletrônica qualificada).
+- Certificados aceitos: ICP-Brasil, incluindo certificado em nuvem como o VIDaaS, que dispensa token físico.
+- Custo: R$ 0,50 por assinatura.
+- Um PDF impresso e escaneado perde a assinatura digital; para manter a validade, compartilha-se o arquivo original.
+
+---
+
+## Funcionalidades
 
 ### Geração de laudos
-- Laudo em PDF formatado e profissional
-- Seleção granular de quais índices incluir por laudo
-- Campos personalizáveis: anamnese, alergias, medicamentos em uso
-- Conclusão automática baseada nos índices calculados
-- Tempo de geração: ~3 minutos
+- Laudo em PDF padronizado, gerado em cerca de 3 minutos.
+- Escolha de quais índices incluir em cada laudo.
+- Campos personalizáveis: anamnese, alergias, medicamentos em uso.
 
-### Assinatura digital
-- Compatível com certificado digital ICP-Brasil (A1 e A3)
-- Compatível com VIDaaS do CFM (Conselho Federal de Medicina) — permite assinatura sem token físico
-- Validade jurídica garantida pela legislação brasileira (MP 2.200-2/2001)
-- Custo adicional: R$ 0,50 por assinatura
-
-### Distribuição do laudo
-- Impressão direta pelo sistema
-- Envio por e-mail para o paciente ou médico solicitante
-- Envio por SMS
+### Distribuição
+- Impressão, envio por e-mail e por SMS.
 
 ### Recursos integrados
-- **DEF** — Dicionário de Especialidades Farmacêuticas completo
-- **CID-10** — Classificação Internacional de Doenças
-- **Bulário** — bula completa de medicamentos
-- Vídeos tutoriais integrados ao sistema
+- DEF (Dicionário de Especialidades Farmacêuticas), CID-10 e Bulário.
+- Vídeos de ajuda dentro do sistema.
 
-### API REST para integração
-- Gratuita para qualquer prontuário eletrônico
-- Documentada e com suporte técnico
-- Integração nativa com YES Médicos
-- Compatível com qualquer sistema que faça requisições HTTP
+### Integração (API REST)
+- Gratuita para qualquer prontuário eletrônico, documentada e com suporte técnico.
+- Integração nativa com o YES Médicos.
+
+### Acesso
+- 100% web e responsivo: funciona em computador, tablet e celular com navegador e internet. Não funciona offline.
 
 ---
 
-## Perguntas frequentes completas
+## Perguntas frequentes
 
 **O Risco MED é gratuito?**
-O cadastro é gratuito e inclui R$ 5,00 de crédito inicial. Não há mensalidade. O médico paga R$ 1,00 por laudo gerado até 150 laudos mensais. Laudos adicionais acima de 150 por mês são gratuitos.
+O cadastro é gratuito e inclui R$ 5,00 de crédito. Não há mensalidade: o médico paga R$ 1,00 por laudo até 150 laudos por mês, e os laudos acima disso são gratuitos.
+
+**Quem pode usar o Risco MED?**
+Médicos que fazem avaliação pré-operatória: cardiologistas, clínicos, anestesiologistas, médicos de família e do trabalho. Pacientes não usam o sistema; o laudo é emitido pelo médico do paciente.
+
+**O laudo do Risco MED tem validade jurídica?**
+Sim. O laudo é assinado com certificado ICP-Brasil, conforme a Resolução CFM 2.299/2021, e a assinatura pode ser verificada no validador oficial do ITI (validar.iti.gov.br).
 
 **Qual a diferença entre o EMAPO e o índice de Lee?**
-O EMAPO é o único índice desenvolvido com dados de população brasileira, tornando-o especialmente relevante para o contexto clínico nacional. O Lee RCRI (Revised Cardiac Risk Index) é o índice mais utilizado internacionalmente e de validação mais ampla na literatura médica mundial. O Risco MED permite usar os dois no mesmo laudo.
+O EMAPO é um escore brasileiro com 27 variáveis e 5 níveis de risco. O Lee (RCRI) tem 6 variáveis de 1 ponto e é o mais usado internacionalmente. O Risco MED calcula os dois no mesmo laudo.
 
-**O Risco MED pode ser usado por médicos não cardiologistas?**
-Sim. O sistema é indicado para qualquer médico que realize avaliação pré-operatória, incluindo clínicos gerais, médicos de família, médicos do trabalho e anestesiologistas.
+**Qual CID usar no laudo de risco cirúrgico?**
+Em geral, Z01.8 (exame pré-operatório) mais os CIDs das comorbidades avaliadas. Detalhes: https://risco.med.br/cid-risco-cirurgico/
 
-**A assinatura digital pelo VIDaaS do CFM exige token físico?**
-Não. O VIDaaS é um sistema em nuvem do CFM que permite assinatura digital sem necessidade de token físico. Qualquer médico registrado no CFM pode utilizar.
+**É preciso token físico para assinar?**
+Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que autoriza a assinatura pelo celular.
 
-**Posso usar o Risco MED em tablet ou celular?**
-Sim. O sistema é 100% web e responsivo, funcionando em qualquer dispositivo com navegador e conexão à internet.
+---
 
-**O Risco MED funciona sem internet?**
-Não. Requer conexão à internet para funcionar, pois é um sistema web hospedado em nuvem.
+## Páginas do site
 
-**Há planos para hospitais com grande volume?**
-Sim. Hospitais e prontos atendimentos com alto volume de laudos podem solicitar condições especiais de parceria pelo WhatsApp (37) 9 9999-7155.
+- https://risco.med.br/ — página principal do produto.
+- https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo de laudo de risco cirúrgico, com PDF de exemplo.
+- https://risco.med.br/cid-risco-cirurgico/ — qual CID usar no risco cirúrgico.
+- https://risco.med.br/emapo-risco-cirurgico/ — índice EMAPO.
+- https://risco.med.br/detsky-risco-cirurgico/ — índice de Detsky modificado.
+- https://risco.med.br/acp-risco-cirurgico/ — algoritmo do ACP.
+- https://risco.med.br/goldman-risco-cirurgico/ — índice de Goldman.
+- https://risco.med.br/indice-de-lee-rcri/ — índice de Lee (RCRI).
+- https://risco.med.br/asa-risco-cirurgico/ — classificação ASA.
+- https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen.
+- https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital ICP-Brasil e validação no ITI.
 
 ---
 
@@ -152,16 +197,30 @@ Sim. Hospitais e prontos atendimentos com alto volume de laudos podem solicitar 
 
 | Produto | Descrição | URL |
 |---|---|---|
-| YES Médicos | Sistema de gestão clínica, prontuário eletrônico, agenda, telemedicina | https://yesmedicos.com.br |
-| Risco MED | App de risco cirúrgico pré-operatório | https://risco.med.br |
-| Painel de Chamadas | Display digital para sala de espera de clínicas | https://tv.yes.med.br |
+| YES Médicos | Gestão clínica, prontuário eletrônico, agenda e telemedicina | https://yesmedicos.com.br |
+| Risco MED | Laudo de risco cirúrgico pré-operatório | https://risco.med.br |
+| Painel de Chamadas | Painel digital para sala de espera de clínicas | https://tv.yes.med.br |
+
+---
+
+## Referências usadas nas páginas
+
+- Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.
+- Pinho C, Grandini PC, Gualandro DM, et al. Multicenter study of perioperative evaluation for noncardiac surgeries in Brazil (EMAPO). Clinics. 2007;62(1):17-22.
+- Lee TH, Marcantonio ER, Mangione CM, et al. Circulation. 1999;100(10):1043-9.
+- Goldman L, Caldera DL, Nussbaum SR, et al. N Engl J Med. 1977;297(16):845-50.
+- Detsky AS, Abrams HB, McLaughlin JR, et al. J Gen Intern Med. 1986;1(4):211-9.
+- Larsen SF, Olesen KH, Jacobsen E, et al. Eur Heart J. 1987;8(2):179-85.
+- American College of Physicians. Ann Intern Med. 1997;127(4):309-12.
+- Loureiro BMC, Feitosa-Filho GS. Rev Soc Bras Clin Med. 2014;12(4):314-20.
+- Conselho Federal de Medicina. Resolução CFM nº 2.299/2021.
 
 ---
 
 ## Arquivos deste domínio relevantes para IA
 
 - https://risco.med.br/llms.txt — resumo para IA
-- https://risco.med.br/llms-full.txt — este arquivo (versão completa)
+- https://risco.med.br/llms-full.txt — este arquivo
 - https://risco.med.br/sitemap.xml — mapa do site
-- https://risco.med.br/robots.txt — permissões de crawl
-- https://risco.med.br/assets/exemplo-laudo.pdf — exemplo real de laudo gerado
+- https://risco.med.br/robots.txt — permissões de rastreamento (todos os robôs de busca e de IA são permitidos)
+- https://risco.med.br/assets/exemplo-laudo.pdf — exemplo de laudo gerado
