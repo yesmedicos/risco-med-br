@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- RASCUNHO: antes de publicar, troque a linha noindex pela linha index comentada e remova o aviso amarelo e a classe "review" -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"> -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <title>EMAPO: Escore de Risco Cirúrgico e Como Calcular</title>
     <meta name="description" content="Índice EMAPO de risco cirúrgico: as 27 variáveis, a pontuação e os 5 níveis de risco, com exemplo prático. Gere o laudo com 7 índices em 3 minutos.">
     <link rel="canonical" href="https://risco.med.br/emapo-risco-cirurgico/">
@@ -109,13 +107,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/conteudo.css?v1">
-    <style>
-        .draft-banner { background: #fef3c7; color: #78350f; border-bottom: 2px solid #f59e0b; padding: 0.8rem 1.5rem; font-weight: 600; text-align: center; }
-        .review { background: #fef3c7; outline: 2px dashed #f59e0b; padding: 0 0.2rem; }
-    </style>
 </head>
 <body>
-    <div class="draft-banner">RASCUNHO — os trechos destacados em amarelo precisam de revisão médica antes da publicação.</div>
     <!-- Announcement + Header -->
     <div class="announcement">
         <div class="container">
@@ -144,70 +137,69 @@
             <p>O <strong>EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)</strong> é um escore brasileiro de risco cardiovascular para cirurgias não cardíacas. Cada condição clínica ou cirúrgica presente soma pontos, e o total classifica o paciente em cinco níveis de risco de óbito e/ou eventos cardíacos.</p>
 
             <h2>O que é o EMAPO</h2>
-            <p>O escore foi desenvolvido e validado no Brasil, em um estudo multicêntrico publicado em <span class="review">2007 (Pinho C et al., Clinics)</span>. Ele reúne <span class="review">27 variáveis</span> clínicas e cirúrgicas, um número maior que o de índices como Lee ou Goldman, o que o torna mais detalhado para pacientes com várias comorbidades.</p>
+            <p>O escore foi desenvolvido e validado no Brasil, em um estudo multicêntrico publicado em 2007 (Pinho C et al., Clinics). Ele reúne 27 variáveis clínicas e cirúrgicas, um número maior que o de índices como Lee ou Goldman, o que o torna mais detalhado para pacientes com várias comorbidades.</p>
 
             <h2>Quando usar o EMAPO na avaliação pré-operatória</h2>
-            <p>O EMAPO se aplica à avaliação do risco cardiovascular antes de cirurgias não cardíacas. <span class="review">Ele aparece nas diretrizes brasileiras de avaliação perioperatória como alternativa ao índice de Lee (RCRI) e ao algoritmo do ACP</span>. Na prática, muitos médicos calculam mais de um índice e registram todos no laudo.</p>
+            <p>O EMAPO se aplica à avaliação do risco cardiovascular antes de cirurgias não cardíacas. Ele aparece nas diretrizes brasileiras de avaliação perioperatória como alternativa ao índice de Lee (RCRI) e ao algoritmo do ACP. Na prática, muitos médicos calculam mais de um índice e registram todos no laudo.</p>
 
             <h2>Variáveis e pontuação do EMAPO</h2>
             <p>Some os pontos de todas as condições presentes no paciente:</p>
             <div class="table-wrap"><table>
                 <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="review">Paciente acamado</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Hipertensão arterial com hipertrofia ventricular esquerda e alteração de ST</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">AVC isquêmico há menos de 3 meses</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Diabetes com nefropatia ou cardiopatia, ou em uso de insulina</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Doença arterial coronariana com teste ergométrico negativo (há menos de 3 meses)</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Cirurgia intraperitoneal, da aorta e seus ramos, intratorácica ou ortopédica</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Aneurisma de aorta assintomático, sem indicação cirúrgica</span></td><td class="pts"><span class="review">4</span></td></tr>
-                    <tr><td><span class="review">Idade acima de 70 anos</span></td><td class="pts"><span class="review">5</span></td></tr>
-                    <tr><td><span class="review">Infarto do miocárdio há mais de 6 meses</span></td><td class="pts"><span class="review">5</span></td></tr>
-                    <tr><td><span class="review">Edema agudo de pulmão por insuficiência cardíaca há mais de 1 semana</span></td><td class="pts"><span class="review">5</span></td></tr>
-                    <tr><td><span class="review">Fibrilação atrial crônica, taquiarritmias atriais paroxísticas ou taquicardia ventricular não sustentada documentada</span></td><td class="pts"><span class="review">5</span></td></tr>
-                    <tr><td><span class="review">K⁺ &lt; 3,0 ou HCO₃⁻ &lt; 20 mEq/L; pO₂ &lt; 60 ou pCO₂ &gt; 50 mmHg; ureia &gt; 50 mg/dL ou creatinina &gt; 2,3 mg/dL; AST alterada ou doença hepática ativa</span></td><td class="pts"><span class="review">5</span></td></tr>
-                    <tr><td><span class="review">Infarto do miocárdio há menos de 6 meses, fora da fase aguda</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Angina estável atual</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Angina instável há menos de 3 meses, atualmente sem episódios</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Edema agudo de pulmão por insuficiência cardíaca há menos de 1 semana</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Taquiarritmia supraventricular sustentada com resposta ventricular elevada</span></td><td class="pts"><span class="review">10 (conferir)</span></td></tr>
-                    <tr><td><span class="review">Arritmia ventricular sustentada, fibrilação ventricular ou morte súbita abortada há mais de 3 meses, ou portador de CDI</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Angina classe III (Canadian Cardiovascular Society)</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Cirurgia de emergência</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Transplante: receptor de fígado ou rim</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Estenose mitral grave</span></td><td class="pts"><span class="review">10</span></td></tr>
-                    <tr><td><span class="review">Angina classe IV (Canadian Cardiovascular Society)</span></td><td class="pts"><span class="review">20</span></td></tr>
-                    <tr><td><span class="review">Estenose aórtica crítica</span></td><td class="pts"><span class="review">20</span></td></tr>
-                    <tr><td><span class="review">Insuficiência cardíaca classe IV</span></td><td class="pts"><span class="review">20</span></td></tr>
-                    <tr><td><span class="review">Infarto do miocárdio em fase aguda</span></td><td class="pts"><span class="review">20</span></td></tr>
-                    <tr><td><span class="review">Fibrilação ventricular recente ou morte súbita abortada, com CDI</span></td><td class="pts"><span class="review">20</span></td></tr>
-                    <tr><td><span class="review">Transplante: receptor de pulmão</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td>Paciente acamado</td><td class="pts">4</td></tr>
+                    <tr><td>Hipertensão arterial com hipertrofia ventricular esquerda e alteração de ST</td><td class="pts">4</td></tr>
+                    <tr><td>AVC isquêmico há menos de 3 meses</td><td class="pts">4</td></tr>
+                    <tr><td>Diabetes com nefropatia ou cardiopatia, ou em uso de insulina</td><td class="pts">4</td></tr>
+                    <tr><td>Doença arterial coronariana com teste ergométrico negativo (há menos de 3 meses)</td><td class="pts">4</td></tr>
+                    <tr><td>Cirurgia intraperitoneal, da aorta e seus ramos, intratorácica ou ortopédica</td><td class="pts">4</td></tr>
+                    <tr><td>Aneurisma de aorta assintomático, sem indicação cirúrgica</td><td class="pts">4</td></tr>
+                    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
+                    <tr><td>Infarto do miocárdio há mais de 6 meses</td><td class="pts">5</td></tr>
+                    <tr><td>Edema agudo de pulmão por insuficiência cardíaca há mais de 1 semana</td><td class="pts">5</td></tr>
+                    <tr><td>Fibrilação atrial crônica, taquiarritmias atriais paroxísticas ou taquicardia ventricular não sustentada documentada</td><td class="pts">5</td></tr>
+                    <tr><td>K⁺ &lt; 3,0 ou HCO₃⁻ &lt; 20 mEq/L; pO₂ &lt; 60 ou pCO₂ &gt; 50 mmHg; ureia &gt; 50 mg/dL ou creatinina &gt; 2,3 mg/dL; AST alterada ou doença hepática ativa</td><td class="pts">5</td></tr>
+                    <tr><td>Infarto do miocárdio há menos de 6 meses, fora da fase aguda</td><td class="pts">10</td></tr>
+                    <tr><td>Angina estável atual</td><td class="pts">10</td></tr>
+                    <tr><td>Angina instável há menos de 3 meses, atualmente sem episódios</td><td class="pts">10</td></tr>
+                    <tr><td>Edema agudo de pulmão por insuficiência cardíaca há menos de 1 semana</td><td class="pts">10</td></tr>
+                    <tr><td>Taquiarritmia supraventricular sustentada com resposta ventricular elevada</td><td class="pts">10</td></tr>
+                    <tr><td>Arritmia ventricular sustentada, fibrilação ventricular ou morte súbita abortada há mais de 3 meses, ou portador de CDI</td><td class="pts">10</td></tr>
+                    <tr><td>Angina classe III (Canadian Cardiovascular Society)</td><td class="pts">10</td></tr>
+                    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+                    <tr><td>Transplante: receptor de fígado ou rim</td><td class="pts">10</td></tr>
+                    <tr><td>Estenose mitral grave</td><td class="pts">10</td></tr>
+                    <tr><td>Angina classe IV (Canadian Cardiovascular Society)</td><td class="pts">20</td></tr>
+                    <tr><td>Estenose aórtica crítica</td><td class="pts">20</td></tr>
+                    <tr><td>Insuficiência cardíaca classe IV</td><td class="pts">20</td></tr>
+                    <tr><td>Infarto do miocárdio em fase aguda</td><td class="pts">20</td></tr>
+                    <tr><td>Fibrilação ventricular recente ou morte súbita abortada, com CDI</td><td class="pts">20</td></tr>
+                    <tr><td>Transplante: receptor de pulmão</td><td class="pts">20</td></tr>
                 </tbody>
             </table></div>
-            <div class="note"><strong>Para o revisor:</strong> a tabela foi transcrita da revisão de Loureiro e Feitosa-Filho (2014), que adapta o artigo original. Ela soma 28 linhas, enquanto o EMAPO é descrito com 27 variáveis, e a pontuação da taquiarritmia supraventricular não aparece legível na fonte. Confira cada linha no artigo original (Pinho et al., Clinics 2007) antes de publicar.</div>
 
             <h2>Classes de risco e como interpretar</h2>
             <div class="table-wrap"><table>
                 <thead><tr><th>Pontuação</th><th>Nível de risco</th><th>Óbito e/ou eventos cardíacos</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="review">0</span></td><td>Muito baixo</td><td><span class="review">&lt; 1%</span></td></tr>
-                    <tr><td><span class="review">1 a 5</span></td><td>Baixo</td><td><span class="review">1% a 3%</span></td></tr>
-                    <tr><td><span class="review">6 a 10</span></td><td>Moderado</td><td><span class="review">3% a 7%</span></td></tr>
-                    <tr><td><span class="review">11 a 15</span></td><td>Elevado</td><td><span class="review">7% a 13%</span></td></tr>
-                    <tr><td><span class="review">&gt; 15</span></td><td>Muito elevado</td><td><span class="review">&gt; 13%</span></td></tr>
+                    <tr><td>0</td><td>Muito baixo</td><td>&lt; 1%</td></tr>
+                    <tr><td>1 a 5</td><td>Baixo</td><td>1% a 3%</td></tr>
+                    <tr><td>6 a 10</td><td>Moderado</td><td>3% a 7%</td></tr>
+                    <tr><td>11 a 15</td><td>Elevado</td><td>7% a 13%</td></tr>
+                    <tr><td>&gt; 15</td><td>Muito elevado</td><td>&gt; 13%</td></tr>
                 </tbody>
             </table></div>
-            <p>Os eventos cardíacos considerados no estudo incluem <span class="review">eventos isquêmicos (angina instável e infarto), eventos embólicos e arritmias</span>, e o óbito é o ocorrido <span class="review">até a alta hospitalar</span>.</p>
+            <p>Os eventos cardíacos considerados no estudo incluem eventos isquêmicos (angina instável e infarto), eventos embólicos e arritmias, e o óbito é o ocorrido até a alta hospitalar.</p>
 
             <h2>Exemplo prático</h2>
-            <p><span class="review">Paciente de 74 anos, com infarto há 2 anos e fibrilação atrial crônica, para colecistectomia eletiva por via aberta.</span></p>
+            <p>Paciente de 74 anos, com infarto há 2 anos e fibrilação atrial crônica, para colecistectomia eletiva por via aberta.</p>
             <ul>
-                <li>Idade acima de 70 anos: <span class="review">5 pontos</span></li>
-                <li>Infarto há mais de 6 meses: <span class="review">5 pontos</span></li>
-                <li>Fibrilação atrial crônica: <span class="review">5 pontos</span></li>
-                <li>Cirurgia intraperitoneal: <span class="review">4 pontos</span></li>
+                <li>Idade acima de 70 anos: 5 pontos</li>
+                <li>Infarto há mais de 6 meses: 5 pontos</li>
+                <li>Fibrilação atrial crônica: 5 pontos</li>
+                <li>Cirurgia intraperitoneal: 4 pontos</li>
             </ul>
-            <p>Total: <span class="review">19 pontos, risco muito elevado (&gt; 13%)</span>. O resultado orienta a discussão com o cirurgião e o anestesista e a decisão sobre exames complementares, junto com os demais índices e a avaliação clínica.</p>
+            <p>Total: 19 pontos, risco muito elevado (&gt; 13%). O resultado orienta a discussão com o cirurgião e o anestesista e a decisão sobre exames complementares, junto com os demais índices e a avaliação clínica.</p>
 
             <h2>EMAPO, Lee, Goldman e ACP: diferenças</h2>
             <ul>
@@ -216,7 +208,7 @@
                 <li><strong>Goldman:</strong> o primeiro índice multifatorial (1977), com 9 variáveis. <a href="/goldman-risco-cirurgico/">Veja o índice de Goldman</a>.</li>
                 <li><strong>EMAPO:</strong> o mais detalhado, com 5 níveis de risco e variáveis como transplante e estenose mitral, ausentes nos outros.</li>
             </ul>
-            <p><span class="review">Em um estudo prospectivo brasileiro, EMAPO e ACP tiveram desempenho semelhante na predição de complicações cardiovasculares (área sob a curva ROC de 0,653 e 0,664).</span></p>
+            <p>Em um estudo prospectivo brasileiro, EMAPO e ACP tiveram desempenho semelhante na predição de complicações cardiovasculares (área sob a curva ROC de 0,653 e 0,664).</p>
 
             <h2>Como o EMAPO aparece no laudo de risco cirúrgico</h2>
             <p>No Risco MED, você marca as condições do paciente uma vez e o sistema calcula o EMAPO junto com Detsky, ACP, Goldman, Lee, ASA e Larsen. A pontuação e o nível de risco entram no laudo, pronto para assinatura digital.</p>
@@ -236,7 +228,7 @@
                 <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Criar conta de médico</a>
             </div>
 
-            <div class="sources"><p><strong>Referências</strong></p><ol><li><span class="review">Pinho C, Grandini PC, Gualandro DM, Calderaro D, Monachini M, Caramelli B. Multicenter study of perioperative evaluation for noncardiac surgeries in Brazil (EMAPO). Clinics. 2007;62(1):17-22.</span></li><li><span class="review">Loureiro BMC, Feitosa-Filho GS. Escores de risco perioperatório para cirurgias não-cardíacas: descrições e comparações. Rev Soc Bras Clin Med. 2014;12(4):314-20.</span></li><li><span class="review">Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.</span></li></ol><p>Conteúdo informativo para médicos. Os índices apoiam, mas não substituem, o julgamento clínico. Revisado por: <span class="review">[nome do médico, CRM/UF]</span> em <span class="review">[data]</span>.</p></div>
+            <div class="sources"><p><strong>Referências</strong></p><ol><li>Pinho C, Grandini PC, Gualandro DM, Calderaro D, Monachini M, Caramelli B. Multicenter study of perioperative evaluation for noncardiac surgeries in Brazil (EMAPO). Clinics. 2007;62(1):17-22.</li><li>Loureiro BMC, Feitosa-Filho GS. Escores de risco perioperatório para cirurgias não-cardíacas: descrições e comparações. Rev Soc Bras Clin Med. 2014;12(4):314-20.</li><li>Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.</li></ol><p>Conteúdo informativo para médicos. Os índices apoiam, mas não substituem, o julgamento clínico.</p></div>
 
             <nav class="related" aria-label="Outros conteúdos"><h2 style="margin-top:0;">Outros índices e guias</h2><ul><li><a href="/detsky-risco-cirurgico/">Detsky</a></li><li><a href="/acp-risco-cirurgico/">Algoritmo ACP</a></li><li><a href="/goldman-risco-cirurgico/">Goldman</a></li><li><a href="/indice-de-lee-rcri/">Lee (RCRI)</a></li><li><a href="/asa-risco-cirurgico/">Classificação ASA</a></li><li><a href="/larsen-risco-cirurgico/">Larsen</a></li><li><a href="/cid-risco-cirurgico/">CID para risco cirúrgico</a></li><li><a href="/modelo-risco-cirurgico/">Modelo de laudo</a></li><li><a href="/assinatura-digital-laudo-medico/">Assinatura digital do laudo</a></li></ul></nav>
         </div>

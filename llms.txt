@@ -68,6 +68,14 @@ Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e 
 - https://risco.med.br/ — página principal do produto
 - https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo gratuito de laudo de risco cirúrgico pré-operatório. Página criada para médicos que buscam um modelo pronto de laudo de risco cirúrgico.
 - https://risco.med.br/cid-risco-cirurgico/ — qual CID-10 usar no laudo de risco cirúrgico e na avaliação pré-operatória (Z01.8 e CIDs das comorbidades mais comuns). Página para médicos.
+- https://risco.med.br/emapo-risco-cirurgico/ — índice EMAPO: variáveis, pontuação, 5 níveis de risco e exemplo.
+- https://risco.med.br/detsky-risco-cirurgico/ — índice de Detsky modificado: variáveis, pontos e classes.
+- https://risco.med.br/acp-risco-cirurgico/ — algoritmo do American College of Physicians (Detsky + Eagle/Vanzetto).
+- https://risco.med.br/goldman-risco-cirurgico/ — índice de risco cardíaco de Goldman: 9 variáveis e classes I a IV.
+- https://risco.med.br/indice-de-lee-rcri/ — índice de Lee (RCRI): 6 variáveis, classes e diretriz SBC 2024.
+- https://risco.med.br/asa-risco-cirurgico/ — classificação ASA do estado físico, com exemplos.
+- https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen: variáveis, pontuação e classes.
+- https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital do laudo com certificado ICP-Brasil (Resolução CFM 2.299/2021) e validação no ITI.
 
 
 ## Integração com prontuários

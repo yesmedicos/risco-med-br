@@ -762,6 +762,15 @@ p {
     margin-top: 4px;
 }
 
+.index-item strong a {
+    color: var(--primary);
+}
+
+.index-item strong a:hover,
+.index-item strong a:focus-visible {
+    text-decoration: underline;
+}
+
 .index-item strong {
     display: block;
     font-family: var(--font-display);
