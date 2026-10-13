@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- RASCUNHO: antes de publicar, troque a linha noindex pela linha index comentada e remova o aviso amarelo e a classe "review" -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"> -->
+    <title>EMAPO: Escore de Risco Cirúrgico e Como Calcular</title>
+    <meta name="description" content="Índice EMAPO de risco cirúrgico: as 27 variáveis, a pontuação e os 5 níveis de risco, com exemplo prático. Gere o laudo com 7 índices em 3 minutos.">
+    <link rel="canonical" href="https://risco.med.br/emapo-risco-cirurgico/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://risco.med.br/emapo-risco-cirurgico/">
+    <meta property="og:title" content="EMAPO: Escore de Risco Cirúrgico e Como Calcular">
+    <meta property="og:description" content="Índice EMAPO de risco cirúrgico: as 27 variáveis, a pontuação e os 5 níveis de risco, com exemplo prático. Gere o laudo com 7 índices em 3 minutos.">
+    <meta property="og:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Risco MED">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6VSKC6B75"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W6VSKC6B75');
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://risco.med.br/emapo-risco-cirurgico/",
+      "url": "https://risco.med.br/emapo-risco-cirurgico/",
+      "name": "EMAPO: Escore de Risco Cirúrgico e Como Calcular",
+      "description": "Índice EMAPO de risco cirúrgico: as 27 variáveis, a pontuação e os 5 níveis de risco, com exemplo prático. Gere o laudo com 7 índices em 3 minutos.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://risco.med.br/#website"
+      },
+      "audience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Clinician"
+      },
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Cardiologia"
+      },
+      "breadcrumb": {
+        "@id": "https://risco.med.br/emapo-risco-cirurgico/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://risco.med.br/emapo-risco-cirurgico/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://risco.med.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "EMAPO",
+          "item": "https://risco.med.br/emapo-risco-cirurgico/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que significa EMAPO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estudo Multicêntrico de Avaliação Perioperatória, um escore brasileiro de risco cardiovascular para cirurgias não cardíacas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos níveis de risco tem o EMAPO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cinco: muito baixo (0 ponto), baixo (1 a 5), moderado (6 a 10), elevado (11 a 15) e muito elevado (mais de 15 pontos)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O EMAPO substitui o índice de Lee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não necessariamente. Os índices são complementares e muitos médicos registram mais de um no laudo. A escolha segue a diretriz e o julgamento clínico."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/conteudo.css?v1">
+    <style>
+        .draft-banner { background: #fef3c7; color: #78350f; border-bottom: 2px solid #f59e0b; padding: 0.8rem 1.5rem; font-weight: 600; text-align: center; }
+        .review { background: #fef3c7; outline: 2px dashed #f59e0b; padding: 0 0.2rem; }
+    </style>
+</head>
+<body>
+    <div class="draft-banner">RASCUNHO — os trechos destacados em amarelo precisam de revisão médica antes da publicação.</div>
+    <!-- Announcement + Header -->
+    <div class="announcement">
+        <div class="container">
+            <div class="announcement-row">
+                <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+                    <span class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        R$ 5,00 de crédito para começar
+                    </span>
+                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                </div>
+                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Testar agora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <main class="article">
+        <div class="container">
+            <h1>Índice EMAPO: como calcular o risco cirúrgico</h1>
+            <p>O <strong>EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)</strong> é um escore brasileiro de risco cardiovascular para cirurgias não cardíacas. Cada condição clínica ou cirúrgica presente soma pontos, e o total classifica o paciente em cinco níveis de risco de óbito e/ou eventos cardíacos.</p>
+
+            <h2>O que é o EMAPO</h2>
+            <p>O escore foi desenvolvido e validado no Brasil, em um estudo multicêntrico publicado em <span class="review">2007 (Pinho C et al., Clinics)</span>. Ele reúne <span class="review">27 variáveis</span> clínicas e cirúrgicas, um número maior que o de índices como Lee ou Goldman, o que o torna mais detalhado para pacientes com várias comorbidades.</p>
+
+            <h2>Quando usar o EMAPO na avaliação pré-operatória</h2>
+            <p>O EMAPO se aplica à avaliação do risco cardiovascular antes de cirurgias não cardíacas. <span class="review">Ele aparece nas diretrizes brasileiras de avaliação perioperatória como alternativa ao índice de Lee (RCRI) e ao algoritmo do ACP</span>. Na prática, muitos médicos calculam mais de um índice e registram todos no laudo.</p>
+
+            <h2>Variáveis e pontuação do EMAPO</h2>
+            <p>Some os pontos de todas as condições presentes no paciente:</p>
+            <div class="table-wrap"><table>
+                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="review">Paciente acamado</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Hipertensão arterial com hipertrofia ventricular esquerda e alteração de ST</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">AVC isquêmico há menos de 3 meses</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Diabetes com nefropatia ou cardiopatia, ou em uso de insulina</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Doença arterial coronariana com teste ergométrico negativo (há menos de 3 meses)</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Cirurgia intraperitoneal, da aorta e seus ramos, intratorácica ou ortopédica</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Aneurisma de aorta assintomático, sem indicação cirúrgica</span></td><td class="pts"><span class="review">4</span></td></tr>
+                    <tr><td><span class="review">Idade acima de 70 anos</span></td><td class="pts"><span class="review">5</span></td></tr>
+                    <tr><td><span class="review">Infarto do miocárdio há mais de 6 meses</span></td><td class="pts"><span class="review">5</span></td></tr>
+                    <tr><td><span class="review">Edema agudo de pulmão por insuficiência cardíaca há mais de 1 semana</span></td><td class="pts"><span class="review">5</span></td></tr>
+                    <tr><td><span class="review">Fibrilação atrial crônica, taquiarritmias atriais paroxísticas ou taquicardia ventricular não sustentada documentada</span></td><td class="pts"><span class="review">5</span></td></tr>
+                    <tr><td><span class="review">K⁺ &lt; 3,0 ou HCO₃⁻ &lt; 20 mEq/L; pO₂ &lt; 60 ou pCO₂ &gt; 50 mmHg; ureia &gt; 50 mg/dL ou creatinina &gt; 2,3 mg/dL; AST alterada ou doença hepática ativa</span></td><td class="pts"><span class="review">5</span></td></tr>
+                    <tr><td><span class="review">Infarto do miocárdio há menos de 6 meses, fora da fase aguda</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Angina estável atual</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Angina instável há menos de 3 meses, atualmente sem episódios</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Edema agudo de pulmão por insuficiência cardíaca há menos de 1 semana</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Taquiarritmia supraventricular sustentada com resposta ventricular elevada</span></td><td class="pts"><span class="review">10 (conferir)</span></td></tr>
+                    <tr><td><span class="review">Arritmia ventricular sustentada, fibrilação ventricular ou morte súbita abortada há mais de 3 meses, ou portador de CDI</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Angina classe III (Canadian Cardiovascular Society)</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Cirurgia de emergência</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Transplante: receptor de fígado ou rim</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Estenose mitral grave</span></td><td class="pts"><span class="review">10</span></td></tr>
+                    <tr><td><span class="review">Angina classe IV (Canadian Cardiovascular Society)</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td><span class="review">Estenose aórtica crítica</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td><span class="review">Insuficiência cardíaca classe IV</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td><span class="review">Infarto do miocárdio em fase aguda</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td><span class="review">Fibrilação ventricular recente ou morte súbita abortada, com CDI</span></td><td class="pts"><span class="review">20</span></td></tr>
+                    <tr><td><span class="review">Transplante: receptor de pulmão</span></td><td class="pts"><span class="review">20</span></td></tr>
+                </tbody>
+            </table></div>
+            <div class="note"><strong>Para o revisor:</strong> a tabela foi transcrita da revisão de Loureiro e Feitosa-Filho (2014), que adapta o artigo original. Ela soma 28 linhas, enquanto o EMAPO é descrito com 27 variáveis, e a pontuação da taquiarritmia supraventricular não aparece legível na fonte. Confira cada linha no artigo original (Pinho et al., Clinics 2007) antes de publicar.</div>
+
+            <h2>Classes de risco e como interpretar</h2>
+            <div class="table-wrap"><table>
+                <thead><tr><th>Pontuação</th><th>Nível de risco</th><th>Óbito e/ou eventos cardíacos</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="review">0</span></td><td>Muito baixo</td><td><span class="review">&lt; 1%</span></td></tr>
+                    <tr><td><span class="review">1 a 5</span></td><td>Baixo</td><td><span class="review">1% a 3%</span></td></tr>
+                    <tr><td><span class="review">6 a 10</span></td><td>Moderado</td><td><span class="review">3% a 7%</span></td></tr>
+                    <tr><td><span class="review">11 a 15</span></td><td>Elevado</td><td><span class="review">7% a 13%</span></td></tr>
+                    <tr><td><span class="review">&gt; 15</span></td><td>Muito elevado</td><td><span class="review">&gt; 13%</span></td></tr>
+                </tbody>
+            </table></div>
+            <p>Os eventos cardíacos considerados no estudo incluem <span class="review">eventos isquêmicos (angina instável e infarto), eventos embólicos e arritmias</span>, e o óbito é o ocorrido <span class="review">até a alta hospitalar</span>.</p>
+
+            <h2>Exemplo prático</h2>
+            <p><span class="review">Paciente de 74 anos, com infarto há 2 anos e fibrilação atrial crônica, para colecistectomia eletiva por via aberta.</span></p>
+            <ul>
+                <li>Idade acima de 70 anos: <span class="review">5 pontos</span></li>
+                <li>Infarto há mais de 6 meses: <span class="review">5 pontos</span></li>
+                <li>Fibrilação atrial crônica: <span class="review">5 pontos</span></li>
+                <li>Cirurgia intraperitoneal: <span class="review">4 pontos</span></li>
+            </ul>
+            <p>Total: <span class="review">19 pontos, risco muito elevado (&gt; 13%)</span>. O resultado orienta a discussão com o cirurgião e o anestesista e a decisão sobre exames complementares, junto com os demais índices e a avaliação clínica.</p>
+
+            <h2>EMAPO, Lee, Goldman e ACP: diferenças</h2>
+            <ul>
+                <li><strong>Lee (RCRI):</strong> 6 variáveis, cada uma vale 1 ponto. É o mais simples e o mais usado internacionalmente. <a href="/indice-de-lee-rcri/">Veja o índice de Lee</a>.</li>
+                <li><strong>ACP:</strong> parte das variáveis de Detsky e, nos pacientes de menor pontuação, usa as variáveis de Eagle e Vanzetto. <a href="/acp-risco-cirurgico/">Veja o algoritmo do ACP</a>.</li>
+                <li><strong>Goldman:</strong> o primeiro índice multifatorial (1977), com 9 variáveis. <a href="/goldman-risco-cirurgico/">Veja o índice de Goldman</a>.</li>
+                <li><strong>EMAPO:</strong> o mais detalhado, com 5 níveis de risco e variáveis como transplante e estenose mitral, ausentes nos outros.</li>
+            </ul>
+            <p><span class="review">Em um estudo prospectivo brasileiro, EMAPO e ACP tiveram desempenho semelhante na predição de complicações cardiovasculares (área sob a curva ROC de 0,653 e 0,664).</span></p>
+
+            <h2>Como o EMAPO aparece no laudo de risco cirúrgico</h2>
+            <p>No Risco MED, você marca as condições do paciente uma vez e o sistema calcula o EMAPO junto com Detsky, ACP, Goldman, Lee, ASA e Larsen. A pontuação e o nível de risco entram no laudo, pronto para assinatura digital.</p>
+            <p><img src="/assets/emapo.JPG" alt="Tela de preenchimento do índice EMAPO no Risco MED" loading="lazy"></p>
+
+            <h2>Perguntas frequentes</h2>
+            <h3>O que significa EMAPO?</h3>
+            <p>Estudo Multicêntrico de Avaliação Perioperatória, um escore brasileiro de risco cardiovascular para cirurgias não cardíacas.</p>
+            <h3>Quantos níveis de risco tem o EMAPO?</h3>
+            <p>Cinco: muito baixo (0 ponto), baixo (1 a 5), moderado (6 a 10), elevado (11 a 15) e muito elevado (mais de 15 pontos).</p>
+            <h3>O EMAPO substitui o índice de Lee?</h3>
+            <p>Não necessariamente. Os índices são complementares e muitos médicos registram mais de um no laudo. A escolha segue a diretriz e o julgamento clínico.</p>
+
+            <div class="cta-box">
+                <h2>Gere o laudo completo com 7 índices em cerca de 3 minutos</h2>
+                <p>Marque as condições do paciente uma vez e receba EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen calculados no mesmo laudo.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Criar conta de médico</a>
+            </div>
+
+            <div class="sources"><p><strong>Referências</strong></p><ol><li><span class="review">Pinho C, Grandini PC, Gualandro DM, Calderaro D, Monachini M, Caramelli B. Multicenter study of perioperative evaluation for noncardiac surgeries in Brazil (EMAPO). Clinics. 2007;62(1):17-22.</span></li><li><span class="review">Loureiro BMC, Feitosa-Filho GS. Escores de risco perioperatório para cirurgias não-cardíacas: descrições e comparações. Rev Soc Bras Clin Med. 2014;12(4):314-20.</span></li><li><span class="review">Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.</span></li></ol><p>Conteúdo informativo para médicos. Os índices apoiam, mas não substituem, o julgamento clínico. Revisado por: <span class="review">[nome do médico, CRM/UF]</span> em <span class="review">[data]</span>.</p></div>
+
+            <nav class="related" aria-label="Outros conteúdos"><h2 style="margin-top:0;">Outros índices e guias</h2><ul><li><a href="/detsky-risco-cirurgico/">Detsky</a></li><li><a href="/acp-risco-cirurgico/">Algoritmo ACP</a></li><li><a href="/goldman-risco-cirurgico/">Goldman</a></li><li><a href="/indice-de-lee-rcri/">Lee (RCRI)</a></li><li><a href="/asa-risco-cirurgico/">Classificação ASA</a></li><li><a href="/larsen-risco-cirurgico/">Larsen</a></li><li><a href="/cid-risco-cirurgico/">CID para risco cirúrgico</a></li><li><a href="/modelo-risco-cirurgico/">Modelo de laudo</a></li><li><a href="/assinatura-digital-laudo-medico/">Assinatura digital do laudo</a></li></ul></nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          
+            <p style="margin-top: 1rem;">
+                <a href="https://risco.med.br" target="_blank">Início</a> • 
+                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
+                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
+                © Risco MED - Todos os direitos reservados • Desenvolvido por <a href="https://yesmedicos.com.br" target="_blank">YES Médicos</a>
+            </p>
+        </div>
+    </footer>
+	
+	
+</body>
+</html>
