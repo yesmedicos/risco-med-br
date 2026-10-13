@@ -67,6 +67,7 @@ Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e 
 
 - https://risco.med.br/ — página principal do produto
 - https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo gratuito de laudo de risco cirúrgico pré-operatório. Página criada para médicos que buscam um modelo pronto de laudo de risco cirúrgico.
+- https://risco.med.br/cid-risco-cirurgico/ — qual CID-10 usar no laudo de risco cirúrgico e na avaliação pré-operatória (Z01.8 e CIDs das comorbidades mais comuns). Página para médicos.
 
 
 ## Integração com prontuários

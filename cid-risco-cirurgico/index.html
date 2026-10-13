@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- RASCUNHO: antes de publicar, troque a linha noindex pela linha index comentada e remova o aviso amarelo e a classe "review" -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"> -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <title>CID para Risco Cirúrgico e Avaliação Pré-Operatória</title>
     <meta name="description" content="Qual CID usar no risco cirúrgico e na avaliação pré-operatória? Veja os códigos mais usados e gere o laudo completo com 7 índices em cerca de 3 minutos.">
     <link rel="canonical" href="https://risco.med.br/cid-risco-cirurgico/">
@@ -695,8 +693,6 @@
         .article .cta-box .btn { margin-top: 1rem; }
         .article img { width: 100%; max-width: 480px; height: auto; border-radius: 12px; border: 1px solid var(--gray-200); }
         .article .sources { margin-top: 2rem; font-size: 0.9rem; color: var(--gray-600); }
-        .draft-banner { background: #fef3c7; color: #78350f; border-bottom: 2px solid #f59e0b; padding: 0.8rem 1.5rem; font-weight: 600; text-align: center; }
-        .review { background: #fef3c7; outline: 2px dashed #f59e0b; padding: 0 0.2rem; }
         @media (max-width: 768px) {
             .article { padding: 2.5rem 0; }
             .article h2 { font-size: 1.35rem; }
@@ -705,7 +701,6 @@
     </style>
 </head>
 <body>
-    <div class="draft-banner">RASCUNHO — os trechos destacados em amarelo precisam de revisão médica antes da publicação.</div>
     <!-- Announcement + Header -->
     <div class="announcement">
         <div class="container">
@@ -738,8 +733,8 @@
             <div class="table-wrap"><table>
                 <thead><tr><th>Código</th><th>Descrição (CID-10)</th><th>Quando usar</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="review">Z01.8</span></td><td><span class="review">Outros exames especiais especificados</span></td><td><span class="review">Avaliação pré-operatória / risco cirúrgico de paciente sem queixa específica</span></td></tr>
-                    <tr><td><span class="review">Z01.9</span></td><td><span class="review">Exame especial não especificado</span></td><td><span class="review">Evitar; prefira o código especificado</span></td></tr>
+                    <tr><td>Z01.8</td><td>Outros exames especiais especificados</td><td>Avaliação pré-operatória / risco cirúrgico de paciente sem queixa específica</td></tr>
+                    <tr><td>Z01.9</td><td>Exame especial não especificado</td><td>Evitar; prefira o código especificado</td></tr>
                 </tbody>
             </table></div>
             <div class="note"><strong>Atenção:</strong> códigos como <strong>Z01.810</strong> ou <strong>Z01.818</strong> aparecem em sites estrangeiros, mas pertencem à ICD-10-CM (modificação norte-americana) e <strong>não existem na CID-10 usada no Brasil</strong>, que vai apenas até o quarto caractere.</div>
@@ -749,20 +744,20 @@
             <div class="table-wrap"><table>
                 <thead><tr><th>Condição</th><th>CID-10</th></tr></thead>
                 <tbody>
-                    <tr><td>Hipertensão essencial (primária)</td><td><span class="review">I10</span></td></tr>
-                    <tr><td>Doença isquêmica crônica do coração</td><td><span class="review">I25 (subcategoria conforme o caso)</span></td></tr>
-                    <tr><td>Insuficiência cardíaca</td><td><span class="review">I50</span></td></tr>
-                    <tr><td>Fibrilação e flutter atrial</td><td><span class="review">I48</span></td></tr>
-                    <tr><td>Diabetes mellitus não-insulino-dependente (tipo 2)</td><td><span class="review">E11</span></td></tr>
-                    <tr><td>Doença renal crônica</td><td><span class="review">N18</span></td></tr>
+                    <tr><td>Hipertensão essencial (primária)</td><td>I10</td></tr>
+                    <tr><td>Doença isquêmica crônica do coração</td><td>I25 (subcategoria conforme o caso)</td></tr>
+                    <tr><td>Insuficiência cardíaca</td><td>I50</td></tr>
+                    <tr><td>Fibrilação e flutter atrial</td><td>I48</td></tr>
+                    <tr><td>Diabetes mellitus não-insulino-dependente (tipo 2)</td><td>E11</td></tr>
+                    <tr><td>Doença renal crônica</td><td>N18</td></tr>
                 </tbody>
             </table></div>
 
             <h2>Exemplos de registro</h2>
             <ul>
-                <li><strong>Cirurgia eletiva, paciente sem comorbidades:</strong> <span class="review">Z01.8</span>.</li>
-                <li><strong>Paciente hipertenso e diabético antes de colecistectomia:</strong> <span class="review">Z01.8 + I10 + E11</span>.</li>
-                <li><strong>Idoso com insuficiência cardíaca antes de artroplastia:</strong> <span class="review">Z01.8 + I50</span>, com os índices de risco (Lee, Goldman, Detsky, ACP, EMAPO) descritos no laudo.</li>
+                <li><strong>Cirurgia eletiva, paciente sem comorbidades:</strong> Z01.8.</li>
+                <li><strong>Paciente hipertenso e diabético antes de colecistectomia:</strong> Z01.8 + I10 + E11.</li>
+                <li><strong>Idoso com insuficiência cardíaca antes de artroplastia:</strong> Z01.8 + I50, com os índices de risco (Lee, Goldman, Detsky, ACP, EMAPO) descritos no laudo.</li>
             </ul>
 
             <h2>Como o CID aparece no laudo de risco cirúrgico</h2>
@@ -786,7 +781,7 @@
                 <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Criar conta de médico</a>
             </div>
 
-            <p class="sources">Fontes: <span class="review">Classificação Estatística Internacional de Doenças, CID-10 (OMS/DATASUS); Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia</span>. Conteúdo informativo para médicos; a codificação final é responsabilidade do médico assistente. Revisado por: <span class="review">[nome do médico, CRM/UF]</span> em <span class="review">[data]</span>.</p>
+            <p class="sources">Fontes: Classificação Estatística Internacional de Doenças, CID-10 (OMS/DATASUS); Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia. Conteúdo informativo para médicos; a codificação final é responsabilidade do médico assistente.</p>
         </div>
     </main>
 
