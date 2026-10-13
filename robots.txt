@@ -10,7 +10,7 @@ Allow: /assets/exemplo-laudo.pdf
 Allow: /assets/laudo-exemplo-1.jpg
 Allow: /assets/laudo-exemplo-2.jpg
 
-Allow: /modelo-risco-cirurgico/index.html
+Allow: /modelo-risco-cirurgico/
  
 # Sitemap
 Sitemap: https://risco.med.br/sitemap.xml
