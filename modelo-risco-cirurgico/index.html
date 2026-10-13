@@ -779,6 +779,16 @@
                 gap: 1rem;
             }
         }
+        /* Exemplo de laudo */
+        .exemplo-section { padding: 4rem 0; background: var(--gray-50); }
+        .laudo-preview { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 900px; margin: 0 auto 2rem; }
+        .laudo-preview img { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-md); }
+        .exemplo-indices { text-align: center; color: var(--gray-700); margin-bottom: 1.5rem; }
+        .exemplo-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        @media (max-width: 768px) {
+            .exemplo-section { padding: 3rem 0; }
+            .laudo-preview { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -817,8 +827,8 @@
                     Procurando um modelo de risco cirúrgico?
                 </div>
                 <h1>
-                    Esqueça <span class="strike">Formulários Manuais</span><br>
-                    Gere Laudos em <span class="highlight">3 Minutos</span>
+                    Modelo de Laudo de Risco Cirúrgico<br>
+                    Gere o seu em <span class="highlight">3 Minutos</span>
                 </h1>
                 <p>
                     Por que perder tempo preenchendo formulários quando você pode ter laudos completos e profissionais gerados automaticamente?
@@ -827,7 +837,7 @@
                     <a href="https://risco.med.br" class="btn btn-primary">
                         Testar app Risco MED agora
                     </a>
-                    <a href="https://risco.med.br#exemplo" class="btn btn-secondary">
+                    <a href="#exemplo" class="btn btn-secondary">
                         Ver Exemplo de Laudo
                     </a>
                 </div>
@@ -838,6 +848,25 @@
         </div>
     </section>
  
+
+    <!-- Exemplo de laudo -->
+    <section class="exemplo-section" id="exemplo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exemplo de laudo de risco cirúrgico</h2>
+                <p>Modelo de laudo pré-operatório gerado pelo Risco MED, pronto para assinatura digital</p>
+            </div>
+            <div class="laudo-preview">
+                <img src="/assets/laudo-exemplo-1.jpg" alt="Modelo de laudo de risco cirúrgico - página 1 com índices EMAPO, Goldman e Lee" width="1811" height="2560" loading="lazy">
+                <img src="/assets/laudo-exemplo-2.jpg" alt="Modelo de laudo de risco cirúrgico - página 2 com índices ASA, Larsen e Detsky" width="1811" height="2560" loading="lazy">
+            </div>
+            <p class="exemplo-indices">Inclui os índices EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen, além de Pádua e IMPROVE para risco de TEV.</p>
+            <div class="exemplo-cta">
+                <a href="/assets/exemplo-laudo.pdf" class="btn btn-secondary" download>Baixar exemplo em PDF</a>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Gerar meu laudo (R$ 5,00 de crédito)</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Comparison Section -->
     <section class="comparison-section" id="comparacao">

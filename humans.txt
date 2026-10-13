@@ -11,11 +11,9 @@ URL: https://risco.med.br
 App: https://app.risco.med.br
 Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade.
 Especialidade: Avaliação pré-operatória / Risco cirúrgico / Cardiologia
-Aprovado por: Cardiologistas brasileiros
-Usuários: 400+
-Avaliação: 4.8/5.0 (156 avaliações)
+Público: Médicos (cardiologistas, clínicos e anestesistas)
 Idioma: Português Brasileiro (pt-BR)
-Última atualização: 2025/01/01
+Última atualização: 2026/10/13
 
 /* ÍNDICES DISPONÍVEIS */
 1. EMAPO — Estudo Multicêntrico de Avaliação Perioperatória
