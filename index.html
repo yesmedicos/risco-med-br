@@ -20,6 +20,9 @@
     <meta property="og:title" content="Risco MED - Laudo de Risco Cirúrgico para Médicos">
     <meta property="og:description" content="Gere laudos de risco cirúrgico em 3 minutos com 7 índices de avaliação. Sem mensalidade. Sistema digital completo para avaliação pré-operatória.">
     <meta property="og:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Risco MED: laudo de risco cirúrgico em 3 minutos, com 7 índices e assinatura digital ICP-Brasil">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Risco MED">
     
@@ -28,7 +31,8 @@
     <meta name="twitter:url" content="https://risco.med.br/">
     <meta name="twitter:title" content="Risco MED - Laudo de Risco Cirúrgico para Médicos">
     <meta name="twitter:description" content="Gere laudos de risco cirúrgico em 3 minutos com 7 índices de avaliação. Sem mensalidade.">
-    <meta name="twitter:image" content="https://risco.med.br/assets/twitter-card.jpg">
+    <meta name="twitter:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Risco MED: laudo de risco cirúrgico em 3 minutos, com 7 índices e assinatura digital ICP-Brasil">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://risco.med.br/favicon-96x96.png">
@@ -36,6 +40,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://risco.med.br/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
+    <meta name="theme-color" content="#2563eb">
 
     <!-- Preconnect para performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,44 +51,58 @@
     
         <!-- WebSite Schema (IMPORTANT FOR SITE NAME) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "App de laudos de risco cirúrgico - Risco MED",
-      "alternateName": ["Risco MED", "Risco Cirúrgico MED", "App de Risco Cirúrgico"],
-      "url": "https://risco.med.br/",
-      "@id": "https://risco.med.br/#website",
-      "description": "App para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica"
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "App de laudos de risco cirúrgico - Risco MED",
+  "alternateName": [
+    "Risco MED",
+    "Risco Cirúrgico MED",
+    "App de Risco Cirúrgico"
+  ],
+  "url": "https://risco.med.br/",
+  "@id": "https://risco.med.br/#website",
+  "description": "App para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+  "publisher": {
+    "@id": "https://risco.med.br/#organization"
+  }
+}
     </script>
 
     <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Risco MED",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "Web",
-      "screenshot": ["https://risco.med.br/assets/laudo-exemplo-1.jpg","https://risco.med.br/assets/emapo.JPG",  "https://risco.med.br/assets/laudo-exemplo-2.jpg"],
-      "offers": {
-        "@type": "Offer",
-        "price": "1.00",
-        "priceCurrency": "BRL",
-        "description": "R$1.00 por laudo gerado"
-      },
-      "description": "Sistema online para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
-      "applicationSubCategory": "Laudo de risco cirúrgico para médicos",
-      "audience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Clinician"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "YES Médicos",
-        "url": "https://yesmedicos.com.br"
-      }
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Risco MED",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "screenshot": [
+    "https://risco.med.br/assets/laudo-exemplo-1.jpg",
+    "https://risco.med.br/assets/emapo.JPG",
+    "https://risco.med.br/assets/laudo-exemplo-2.jpg"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "1.00",
+    "priceCurrency": "BRL",
+    "description": "R$1.00 por laudo gerado"
+  },
+  "description": "Sistema online para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+  "applicationSubCategory": "Laudo de risco cirúrgico para médicos",
+  "audience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Clinician"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "YES Médicos",
+    "url": "https://yesmedicos.com.br"
+  },
+  "publisher": {
+    "@id": "https://risco.med.br/#organization"
+  }
+}
     </script>
     
     <script type="application/ld+json">
@@ -136,54 +155,87 @@
     </script>
     
      <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "App para gerar laudos de risco cirúrgico pré-operatório",
-      "name": "Risco MED",
-      "description": "Programa para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://risco.med.br"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Brasil"
-      },
-      "audience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Clinician"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "1.00",
-        "priceCurrency": "BRL"
-      },
-      "hasOfferCatalog": {
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "App para gerar laudos de risco cirúrgico pré-operatório",
+  "name": "Risco MED",
+  "description": "Programa para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica",
+  "provider": {
+    "@id": "https://risco.med.br/#organization"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "audience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Clinician"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "1.00",
+    "priceCurrency": "BRL"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "App para gerar laudos de risco cirúrgico",
+    "itemListElement": [
+      {
         "@type": "OfferCatalog",
         "name": "App para gerar laudos de risco cirúrgico",
         "itemListElement": [
           {
-            "@type": "OfferCatalog",
-            "name": "App para gerar laudos de risco cirúrgico",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Risco MED",
-                  "description": "Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica"
-                }
-              }
-            ]
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Risco MED",
+              "description": "Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica"
+            }
           }
         ]
       }
-    }
+    ]
+  }
+}
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://risco.med.br/#organization",
+  "name": "Risco MED",
+  "url": "https://risco.med.br/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://risco.med.br/assets/logo.jpg",
+    "width": 300,
+    "height": 114
+  },
+  "email": "comercial@risco.med.br",
+  "telephone": "+55-37-99999-7155",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-37-99999-7155",
+    "email": "comercial@risco.med.br",
+    "contactType": "customer support",
+    "areaServed": "BR",
+    "availableLanguage": [
+      "Portuguese"
+    ]
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "YES Médicos",
+    "url": "https://yesmedicos.com.br"
+  }
+}
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/styles.css?v5">
+    <link rel="stylesheet" href="/assets/styles.css?v6">
     
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6VSKC6B75"></script>
@@ -268,7 +320,7 @@
             
             <div class="hero-visual">
                 <div class="mockup-container">
-                    <img src="assets/laudo-mockup.jpg" alt="Exemplo de laudo de risco cirúrgico gerado pelo Risco MED" class="mockup-image" loading="eager">
+                    <img src="/assets/laudo-mockup.webp" width="1080" height="838" alt="Exemplo de laudo de risco cirúrgico gerado pelo Risco MED" class="mockup-image" loading="eager">
                     <div class="mockup-badge badge-1">
                         <span class="badge-number">7</span>
                         <span class="badge-text">Índices</span>
@@ -333,7 +385,7 @@
                         </svg>
                     </div>
                     <h3>7 Índices de Avaliação</h3>
-                    <p>Escolha entre EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen. Avaliação completa com análise de risco trombótico (Pádua e IMPROVE).</p>
+                    <p>Escolha entre <a href="/emapo-risco-cirurgico/">EMAPO</a>, <a href="/detsky-risco-cirurgico/">Detsky</a>, <a href="/acp-risco-cirurgico/">ACP</a>, <a href="/goldman-risco-cirurgico/">Goldman</a>, <a href="/indice-de-lee-rcri/">Lee</a>, <a href="/asa-risco-cirurgico/">ASA</a> e <a href="/larsen-risco-cirurgico/">Larsen</a>. Avaliação completa com análise de risco trombótico (Pádua e IMPROVE).</p>
                 </div>
                 
                 <div class="feature-card">
@@ -530,8 +582,8 @@
             
             <div class="exemplo-container">
                 <div class="laudo-preview">
-                    <img src="assets/laudo-exemplo-1.jpg" alt="Exemplo de laudo de risco cirúrgico - página 1" loading="lazy">
-                    <img src="assets/laudo-exemplo-2.jpg" alt="Exemplo de laudo de risco cirúrgico - página 2" loading="lazy">
+                    <img src="/assets/laudo-exemplo-1.webp" alt="Exemplo de laudo de risco cirúrgico - página 1" width="900" height="1272" loading="lazy">
+                    <img src="/assets/laudo-exemplo-2.webp" alt="Exemplo de laudo de risco cirúrgico - página 2" width="900" height="1272" loading="lazy">
                 </div>
                 <div class="exemplo-cta">
                     <a href="/assets/exemplo-laudo.pdf" class="btn btn-primary" download>

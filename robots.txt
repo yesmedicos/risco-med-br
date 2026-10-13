@@ -1,41 +1,10 @@
+# Todos os buscadores e assistentes de IA (Googlebot, Bingbot, GPTBot, OAI-SearchBot,
+# ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, PerplexityBot, Google-Extended etc.)
+# seguem esta regra geral. Não crie grupos com nome de robô: um grupo próprio substitui
+# esta regra inteira para aquele robô, inclusive os bloqueios abaixo.
 User-agent: *
 Allow: /
- 
-# Bloquear sistema e CDN
 Disallow: /cdn-cgi/
 Disallow: /admin/
- 
-# Permitir acesso ao exemplo de laudo (importante para IA e SEO)
-Allow: /assets/exemplo-laudo.pdf
-Allow: /assets/laudo-exemplo-1.jpg
-Allow: /assets/laudo-exemplo-2.jpg
 
-Allow: /modelo-risco-cirurgico/
- 
-# Sitemap
 Sitemap: https://risco.med.br/sitemap.xml
- 
-# Crawlers de IA — permitir explicitamente
-User-agent: GPTBot
-Allow: /
- 
-User-agent: ChatGPT-User
-Allow: /
- 
-User-agent: Claude-Web
-Allow: /
- 
-User-agent: anthropic-ai
-Allow: /
- 
-User-agent: PerplexityBot
-Allow: /
- 
-User-agent: cohere-ai
-Allow: /
- 
-User-agent: Googlebot
-Allow: /
- 
-User-agent: Bingbot
-Allow: /

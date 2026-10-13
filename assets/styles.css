@@ -713,6 +713,16 @@ p {
     line-height: 1.6;
 }
 
+.feature-card p a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.feature-card p a:hover,
+.feature-card p a:focus-visible {
+    text-decoration: underline;
+}
+
 /* ====================================
    Índices Section
    ==================================== */
