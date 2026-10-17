@@ -9,7 +9,7 @@ Localização: Brasil
 Nome: Risco MED
 URL: https://risco.med.br
 App: https://app.risco.med.br
-Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade.
+Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica. Sem mensalidade.
 Especialidade: Avaliação pré-operatória / Risco cirúrgico / Cardiologia
 Público: Médicos (cardiologistas, clínicos e anestesistas)
 Idioma: Português Brasileiro (pt-BR)

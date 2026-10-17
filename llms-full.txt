@@ -1,6 +1,6 @@
 # Risco MED — Documentação completa para assistentes de IA
 
-> Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 7 índices de risco calculados automaticamente, assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
+> Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 8 índices de risco calculados automaticamente, assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
 Última atualização: 13 de outubro de 2026.
 
@@ -26,7 +26,7 @@
 
 ## Resumo em uma frase
 
-O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com os índices EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen, além de Pádua e IMPROVE para risco de tromboembolismo venoso, assinado com certificado ICP-Brasil e validável no ITI, sem mensalidade (R$ 1,00 por laudo).
+O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com os índices EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA, Larsen e NSQIP-MICA (Gupta), além de Pádua e IMPROVE para risco de tromboembolismo venoso, assinado com certificado ICP-Brasil e validável no ITI, sem mensalidade (R$ 1,00 por laudo).
 
 ---
 
@@ -58,7 +58,7 @@ Hospitais, prontos-socorros e clínicas com alto volume podem pedir condições 
 
 ---
 
-## Os 7 índices de risco cirúrgico
+## Os 8 índices de risco cirúrgico
 
 Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, mas não substituem, o julgamento clínico.
 
@@ -104,6 +104,13 @@ Página: https://risco.med.br/larsen-risco-cirurgico/
 - Publicado em 1987, a partir de 2.609 pacientes. Índice de risco cardíaco (não é uma classificação de risco anestésico).
 - Variáveis: congestão pulmonar presente (15); infarto há menos de 6 meses (11); edema agudo de pulmão anterior (8); cirurgia aórtica (5); insuficiência cardíaca anterior (4); infarto há mais de 6 meses (3); história de angina (3); diabetes (3); cirurgia de emergência (3); cirurgia intraperitoneal ou pleural (3); creatinina acima de 1,47 mg/dL (2).
 - Classes: I (0 a 5 pontos, 0,5%), II (6 a 7, 3,8%), III (8 a 14, 11%) e IV (15 ou mais, 58%) de complicações cardíacas.
+
+### NSQIP-MICA (Gupta)
+Página com calculadora: https://risco.med.br/nsqip-mica-risco-cirurgico/
+- Publicado por Gupta PK et al. (Circulation, 2011) a partir da base do ACS NSQIP: derivação com 211.410 pacientes de 2007 (incidência de 0,65%) e validação com mais de 200 mil pacientes de 2008. Estatística C de 0,874, contra 0,747 do índice de Lee.
+- Desfecho: infarto do miocárdio ou parada cardíaca no intraoperatório ou até 30 dias após a cirurgia.
+- Fórmula: x = −5,25 + 0,02 × idade + estado funcional (independente 0; parcialmente dependente 0,65; totalmente dependente 1,03) + classe ASA (1: −5,17; 2: −3,29; 3: −1,92; 4: −0,95; 5: 0) + creatinina (normal 0; > 1,5 mg/dL 0,61; desconhecida −0,10) + tipo de cirurgia (21 categorias, de −1,61 para mama a 1,60 para aórtica; hérnia = 0). Risco (%) = 100 × eˣ / (1 + eˣ).
+- Risco de 1% ou mais é considerado elevado pelo critério do ACC/AHA.
 
 ### Risco de tromboembolismo venoso
 - **Pádua** e **IMPROVE**: escores de risco de tromboembolismo venoso (TEV) em pacientes clínicos internados, disponíveis no laudo do Risco MED.
@@ -189,6 +196,7 @@ Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que a
 - https://risco.med.br/indice-de-lee-rcri/ — índice de Lee (RCRI).
 - https://risco.med.br/asa-risco-cirurgico/ — classificação ASA.
 - https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen.
+- https://risco.med.br/nsqip-mica-risco-cirurgico/ — NSQIP-MICA (Gupta), com calculadora.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital ICP-Brasil e validação no ITI.
 
 ---
@@ -211,6 +219,7 @@ Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que a
 - Goldman L, Caldera DL, Nussbaum SR, et al. N Engl J Med. 1977;297(16):845-50.
 - Detsky AS, Abrams HB, McLaughlin JR, et al. J Gen Intern Med. 1986;1(4):211-9.
 - Larsen SF, Olesen KH, Jacobsen E, et al. Eur Heart J. 1987;8(2):179-85.
+- Gupta PK, Gupta H, Sundaram A, et al. Circulation. 2011;124(4):381-7.
 - American College of Physicians. Ann Intern Med. 1997;127(4):309-12.
 - Loureiro BMC, Feitosa-Filho GS. Rev Soc Bras Clin Med. 2014;12(4):314-20.
 - Conselho Federal de Medicina. Resolução CFM nº 2.299/2021.

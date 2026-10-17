@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <title>NSQIP-MICA (Gupta): Calculadora de Risco Cardíaco Cirúrgico</title>
+    <meta name="description" content="Calculadora NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca até 30 dias após a cirurgia, com variáveis, fórmula e exemplo. Para médicos.">
+    <link rel="canonical" href="https://risco.med.br/nsqip-mica-risco-cirurgico/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://risco.med.br/nsqip-mica-risco-cirurgico/">
+    <meta property="og:title" content="NSQIP-MICA (Gupta): Calculadora de Risco Cardíaco Cirúrgico">
+    <meta property="og:description" content="Calculadora NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca até 30 dias após a cirurgia, com variáveis, fórmula e exemplo. Para médicos.">
+    <meta property="og:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Risco MED: laudo de risco cirúrgico em 3 minutos, com 8 índices e assinatura digital ICP-Brasil">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Risco MED">
+    <meta property="article:published_time" content="2026-10-17">
+    <meta property="article:modified_time" content="2026-10-17">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://risco.med.br/nsqip-mica-risco-cirurgico/">
+    <meta name="twitter:title" content="NSQIP-MICA (Gupta): Calculadora de Risco Cardíaco Cirúrgico">
+    <meta name="twitter:description" content="Calculadora NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca até 30 dias após a cirurgia, com variáveis, fórmula e exemplo. Para médicos.">
+    <meta name="twitter:image" content="https://risco.med.br/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Risco MED: laudo de risco cirúrgico em 3 minutos, com 8 índices e assinatura digital ICP-Brasil">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6VSKC6B75"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W6VSKC6B75');
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://risco.med.br/nsqip-mica-risco-cirurgico/",
+      "url": "https://risco.med.br/nsqip-mica-risco-cirurgico/",
+      "name": "NSQIP-MICA (Gupta): Calculadora de Risco Cardíaco Cirúrgico",
+      "description": "Calculadora NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca até 30 dias após a cirurgia, com variáveis, fórmula e exemplo. Para médicos.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://risco.med.br/#website"
+      },
+      "audience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Clinician"
+      },
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Cardiologia"
+      },
+      "breadcrumb": {
+        "@id": "https://risco.med.br/nsqip-mica-risco-cirurgico/#breadcrumb"
+      },
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17",
+      "author": {
+        "@id": "https://risco.med.br/#organization"
+      },
+      "publisher": {
+        "@id": "https://risco.med.br/#organization"
+      },
+      "image": "https://risco.med.br/assets/og-image.jpg"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://risco.med.br/nsqip-mica-risco-cirurgico/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://risco.med.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "NSQIP-MICA (Gupta)",
+          "item": "https://risco.med.br/nsqip-mica-risco-cirurgico/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O Risco MED calcula o NSQIP-MICA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O NSQIP-MICA já está incluído no Risco MED: ele é calculado automaticamente a partir dos dados do paciente e registrado no laudo de risco cirúrgico, junto com EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é o NSQIP-MICA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É um modelo de risco publicado por Gupta e colaboradores em 2011, a partir da base do ACS NSQIP, que estima a probabilidade de infarto do miocárdio ou parada cardíaca no intraoperatório ou até 30 dias após a cirurgia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais variáveis o NSQIP-MICA usa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cinco: idade, estado funcional (independente, parcialmente ou totalmente dependente), classe ASA, creatinina acima de 1,5 mg/dL e tipo de cirurgia, entre 21 categorias."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre o NSQIP-MICA e o índice de Lee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O índice de Lee (RCRI) soma 6 variáveis de 1 ponto cada. O NSQIP-MICA usa uma fórmula logística com o tipo específico de cirurgia e a classe ASA e devolve um percentual de risco. No estudo original, a estatística C foi de 0,874 para o NSQIP-MICA e 0,747 para o RCRI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A partir de quanto o risco é considerado elevado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As diretrizes do ACC/AHA consideram elevado um risco de eventos cardíacos maiores de 1% ou mais."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://risco.med.br/#organization",
+      "name": "Risco MED",
+      "url": "https://risco.med.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://risco.med.br/assets/logo.jpg",
+        "width": 300,
+        "height": 114
+      },
+      "email": "comercial@risco.med.br",
+      "telephone": "+55-37-99999-7155",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-37-99999-7155",
+        "email": "comercial@risco.med.br",
+        "contactType": "customer support",
+        "areaServed": "BR",
+        "availableLanguage": [
+          "Portuguese"
+        ]
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "YES Médicos",
+        "url": "https://yesmedicos.com.br"
+      }
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="icon" href="https://risco.med.br/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
+    <link rel="manifest" href="https://risco.med.br/site.webmanifest">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="/assets/conteudo.css?v4">
+</head>
+<body>
+    <!-- Announcement + Header -->
+    <div class="announcement">
+        <div class="container">
+            <div class="announcement-row">
+                <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+                    <span class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        R$ 5,00 de crédito para começar
+                    </span>
+                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                </div>
+                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Testar agora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <main class="article">
+        <div class="container">
+            <h1>NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca após a cirurgia</h1>
+            <p class="updated">Atualizado em <time datetime="2026-10-17">17 de outubro de 2026</time></p>
+            <p>O <strong>NSQIP-MICA</strong>, também chamado de <strong>escore de Gupta</strong>, estima a probabilidade de <strong>infarto do miocárdio ou parada cardíaca</strong> (MICA, do inglês <em>myocardial infarction or cardiac arrest</em>) no intraoperatório ou até 30 dias após a cirurgia. Diferente dos índices de pontos, ele usa uma fórmula logística e devolve o risco em percentual.</p>
+
+            <aside class="cta-inline" aria-label="NSQIP-MICA no Risco MED">
+                <p><span class="pill-new">Novo</span> <strong>O NSQIP-MICA já está incluído no Risco MED.</strong> Preencha os dados do paciente uma vez e o laudo de risco cirúrgico sai com o NSQIP-MICA calculado automaticamente, junto com EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen, assinado com certificado ICP-Brasil.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Gerar laudo com NSQIP-MICA</a>
+            </aside>
+
+            <h2>Calculadora NSQIP-MICA</h2>
+            <p>Preencha os dados do paciente. O resultado é atualizado na hora.</p>
+            <form class="mica-calc" id="mica-calc" novalidate>
+                <div class="mica-grid">
+                    <label for="mica-age">Idade (anos)
+                        <input id="mica-age" type="number" min="18" max="110" step="1" value="70" inputmode="numeric">
+                    </label>
+                    <label for="mica-func">Estado funcional
+                        <select id="mica-func">
+                        <option value="0.0" selected>Independente</option>
+                        <option value="0.65">Parcialmente dependente</option>
+                        <option value="1.03">Totalmente dependente</option>
+                        </select>
+                    </label>
+                    <label for="mica-asa">Classe ASA
+                        <select id="mica-asa">
+                        <option value="-5.17">ASA 1: paciente saudável</option>
+                        <option value="-3.29">ASA 2: doença sistêmica leve</option>
+                        <option value="-1.92" selected>ASA 3: doença sistêmica grave</option>
+                        <option value="-0.95">ASA 4: doença sistêmica grave com ameaça constante à vida</option>
+                        <option value="0.0">ASA 5: moribundo, sem expectativa de sobreviver sem a cirurgia</option>
+                        </select>
+                    </label>
+                    <label for="mica-creat">Creatinina
+                        <select id="mica-creat">
+                        <option value="0.0" selected>Normal (≤ 1,5 mg/dL)</option>
+                        <option value="0.61">Elevada (&gt; 1,5 mg/dL)</option>
+                        <option value="-0.1">Desconhecida</option>
+                        </select>
+                    </label>
+                    <label for="mica-proc" class="mica-wide">Tipo de cirurgia
+                        <select id="mica-proc">
+                        <option value="-0.16">Anorretal</option>
+                        <option value="1.6">Aórtica</option>
+                        <option value="-0.25">Bariátrica</option>
+                        <option value="1.01">Cardíaca</option>
+                        <option value="1.4">Cerebral (intracraniana)</option>
+                        <option value="0.21">Coluna</option>
+                        <option value="1.39">Esôfago, estômago, duodeno ou hepatopancreatobiliar</option>
+                        <option value="0.0">Hérnia (ventral, inguinal, femoral)</option>
+                        <option value="1.14" selected>Intestinal</option>
+                        <option value="-1.61">Mama</option>
+                        <option value="0.76">Obstétrica ou ginecológica</option>
+                        <option value="0.8">Ortopédica e de extremidades (não vascular)</option>
+                        <option value="0.71">Otorrinolaringológica (exceto tireoide e paratireoide)</option>
+                        <option value="1.13">Outra cirurgia abdominal</option>
+                        <option value="0.54">Pele</option>
+                        <option value="0.18">Pescoço (tireoide e paratireoide)</option>
+                        <option value="0.4">Torácica (não esofágica)</option>
+                        <option value="-0.26">Urológica</option>
+                        <option value="0.86">Vascular periférica (não aórtica, não venosa)</option>
+                        <option value="-1.09">Venosa</option>
+                        <option value="0.59">Vesícula biliar, apêndice, adrenais ou baço</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="mica-result" aria-live="polite">
+                    <span class="mica-label">Risco de infarto ou parada cardíaca em 30 dias</span>
+                    <strong id="mica-pct">0,97%</strong>
+                    <span id="mica-note">Abaixo de 1%: risco baixo pelo critério do ACC/AHA.</span>
+                </div>
+                <p class="mica-disclaimer">Ferramenta de apoio para médicos. O resultado não substitui o julgamento clínico.</p>
+                <p class="mica-cta">Quer este resultado no laudo? No Risco MED, o NSQIP-MICA já vem calculado e registrado no laudo, sem precisar de calculadora à parte. <a href="https://risco.med.br/#cadastro">Criar conta com R$ 5,00 de crédito</a></p>
+            </form>
+            <script>
+            (function () {
+                var f = document.getElementById('mica-calc');
+                if (!f) return;
+                function v(id) { return parseFloat(document.getElementById(id).value) || 0; }
+                function update() {
+                    var age = Math.min(Math.max(v('mica-age'), 0), 120);
+                    var x = -5.25 + 0.02 * age + v('mica-func') + v('mica-asa') + v('mica-creat') + v('mica-proc');
+                    var pct = 100 * Math.exp(x) / (1 + Math.exp(x));
+                    var txt = pct < 0.01 ? '< 0,01' : pct.toFixed(pct < 10 ? 2 : 1).replace('.', ',');
+                    document.getElementById('mica-pct').textContent = txt + '%';
+                    document.getElementById('mica-note').textContent = pct >= 1
+                        ? '1% ou mais: risco elevado pelo critério do ACC/AHA.'
+                        : 'Abaixo de 1%: risco baixo pelo critério do ACC/AHA.';
+                }
+                f.addEventListener('input', update);
+                f.addEventListener('change', update);
+                f.addEventListener('submit', function (e) { e.preventDefault(); });
+                update();
+            })();
+            </script>
+
+            <h2>De onde vem o NSQIP-MICA</h2>
+            <p>O modelo foi publicado por Gupta e colaboradores na revista <em>Circulation</em>, em 2011, a partir da base do <strong>ACS NSQIP</strong> (American College of Surgeons National Surgical Quality Improvement Program). Ele foi derivado com dados de 2007, com 211.410 pacientes e incidência de MICA de 0,65%, e validado com mais de 200 mil pacientes operados em 2008. A estatística C foi de 0,874, contra 0,747 do índice de Lee (RCRI) na mesma população.</p>
+            <p>O desfecho é infarto do miocárdio (alterações eletrocardiográficas de infarto agudo ou elevação nova de troponina acima de 3 vezes o limite superior com suspeita de isquemia) ou parada cardíaca pelos critérios do NSQIP, do intraoperatório até 30 dias.</p>
+
+            <h2>As 5 variáveis e seus coeficientes</h2>
+            <p>O cálculo começa em −5,25 e soma o coeficiente de cada variável:</p>
+            <div class="table-wrap"><table>
+                <thead><tr><th>Variável</th><th>Coeficiente</th></tr></thead>
+                <tbody>
+                    <tr><td>Idade</td><td class="pts">0,02 por ano</td></tr>
+                    <tr><td>Estado funcional: independente</td><td class="pts">0,00</td></tr>
+                    <tr><td>Estado funcional: parcialmente dependente</td><td class="pts">0,65</td></tr>
+                    <tr><td>Estado funcional: totalmente dependente</td><td class="pts">1,03</td></tr>
+                    <tr><td>Creatinina normal (≤ 1,5 mg/dL)</td><td class="pts">0,00</td></tr>
+                    <tr><td>Creatinina elevada (&gt; 1,5 mg/dL)</td><td class="pts">0,61</td></tr>
+                    <tr><td>Creatinina desconhecida</td><td class="pts">−0,10</td></tr>
+                </tbody>
+            </table></div>
+            <div class="table-wrap"><table>
+                <thead><tr><th>Classe ASA</th><th>Coeficiente</th></tr></thead>
+                <tbody>
+                    <tr><td>ASA 1: paciente saudável</td><td class="pts">−5,17</td></tr>
+                    <tr><td>ASA 2: doença sistêmica leve</td><td class="pts">−3,29</td></tr>
+                    <tr><td>ASA 3: doença sistêmica grave</td><td class="pts">−1,92</td></tr>
+                    <tr><td>ASA 4: doença sistêmica grave com ameaça constante à vida</td><td class="pts">−0,95</td></tr>
+                    <tr><td>ASA 5: moribundo, sem expectativa de sobreviver sem a cirurgia</td><td class="pts">0,00</td></tr>
+                </tbody>
+            </table></div>
+            <h3>Tipo de cirurgia</h3>
+            <div class="table-wrap"><table>
+                <thead><tr><th>Cirurgia</th><th>Coeficiente</th></tr></thead>
+                <tbody>
+                    <tr><td>Anorretal</td><td class="pts">−0,16</td></tr>
+                    <tr><td>Aórtica</td><td class="pts">1,60</td></tr>
+                    <tr><td>Bariátrica</td><td class="pts">−0,25</td></tr>
+                    <tr><td>Cerebral (intracraniana)</td><td class="pts">1,40</td></tr>
+                    <tr><td>Mama</td><td class="pts">−1,61</td></tr>
+                    <tr><td>Cardíaca</td><td class="pts">1,01</td></tr>
+                    <tr><td>Otorrinolaringológica (exceto tireoide e paratireoide)</td><td class="pts">0,71</td></tr>
+                    <tr><td>Esôfago, estômago, duodeno ou hepatopancreatobiliar</td><td class="pts">1,39</td></tr>
+                    <tr><td>Vesícula biliar, apêndice, adrenais ou baço</td><td class="pts">0,59</td></tr>
+                    <tr><td>Hérnia (ventral, inguinal, femoral)</td><td class="pts">0,00</td></tr>
+                    <tr><td>Intestinal</td><td class="pts">1,14</td></tr>
+                    <tr><td>Pescoço (tireoide e paratireoide)</td><td class="pts">0,18</td></tr>
+                    <tr><td>Obstétrica ou ginecológica</td><td class="pts">0,76</td></tr>
+                    <tr><td>Ortopédica e de extremidades (não vascular)</td><td class="pts">0,80</td></tr>
+                    <tr><td>Outra cirurgia abdominal</td><td class="pts">1,13</td></tr>
+                    <tr><td>Vascular periférica (não aórtica, não venosa)</td><td class="pts">0,86</td></tr>
+                    <tr><td>Pele</td><td class="pts">0,54</td></tr>
+                    <tr><td>Coluna</td><td class="pts">0,21</td></tr>
+                    <tr><td>Torácica (não esofágica)</td><td class="pts">0,40</td></tr>
+                    <tr><td>Venosa</td><td class="pts">−1,09</td></tr>
+                    <tr><td>Urológica</td><td class="pts">−0,26</td></tr>
+                </tbody>
+            </table></div>
+            <p>As categorias de referência (coeficiente zero) são: estado funcional independente, ASA 5, creatinina normal e cirurgia de hérnia. Por isso os coeficientes das classes ASA mais baixas são negativos.</p>
+
+            <h2>Fórmula</h2>
+            <div class="note"><p style="margin:0;"><strong>x</strong> = −5,25 + (0,02 × idade) + estado funcional + classe ASA + creatinina + tipo de cirurgia<br><strong>Risco (%)</strong> = 100 × e<sup>x</sup> / (1 + e<sup>x</sup>)</p></div>
+
+            <h2>Como interpretar</h2>
+            <p>As diretrizes do ACC/AHA consideram <strong>elevado</strong> um risco de eventos cardíacos maiores de <strong>1% ou mais</strong>. Abaixo disso, o risco é considerado baixo e, em geral, não há indicação de exames cardiológicos adicionais apenas por causa da cirurgia. Em pacientes de risco elevado, a avaliação segue para a capacidade funcional e para a necessidade de exames complementares, conforme a diretriz.</p>
+
+            <h2>Exemplos práticos</h2>
+            <p><strong>Paciente de 70 anos, independente, ASA 3, creatinina normal, para cirurgia intestinal:</strong></p>
+            <p>x = −5,25 + (0,02 × 70) + 0 − 1,92 + 0 + 1,14 = −4,63. Risco = <strong>0,97%</strong> (abaixo de 1%).</p>
+            <p><strong>Paciente de 78 anos, parcialmente dependente, ASA 3, creatinina de 1,8 mg/dL, para cirurgia aórtica:</strong></p>
+            <p>x = −5,25 + (0,02 × 78) + 0,65 − 1,92 + 0,61 + 1,60 = −2,75. Risco = <strong>6,0%</strong> (risco elevado).</p>
+            <p>No Risco MED você não precisa fazer essa conta: o NSQIP-MICA é calculado a partir dos dados do paciente e entra no laudo com o percentual de risco. <a href="https://risco.med.br/#cadastro">Experimente com R$ 5,00 de crédito</a>.</p>
+
+            <h2>NSQIP-MICA e índice de Lee</h2>
+            <ul>
+                <li><strong>Lee (RCRI):</strong> 6 variáveis de 1 ponto, simples de calcular de cabeça, e o índice mais usado no mundo. <a href="/indice-de-lee-rcri/">Veja o índice de Lee</a>.</li>
+                <li><strong>NSQIP-MICA:</strong> considera o tipo específico de cirurgia (21 categorias), a classe ASA e o estado funcional, e devolve um percentual. Precisa de calculadora.</li>
+            </ul>
+            <p>Os dois são complementares, e muitos médicos registram ambos no laudo.</p>
+
+            <h2>Limitações</h2>
+            <ul>
+                <li>Foi derivado em hospitais dos Estados Unidos, e a validação foi retrospectiva, na mesma base de dados.</li>
+                <li>Depende da classe ASA, que tem certo grau de subjetividade entre avaliadores.</li>
+                <li>Pode subestimar o risco de isquemia em pacientes de maior risco e não inclui biomarcadores como troponina ou BNP.</li>
+            </ul>
+
+            <h2>Como o NSQIP-MICA aparece no laudo</h2>
+            <p>No Risco MED, o NSQIP-MICA é calculado automaticamente com os dados já preenchidos e entra no laudo ao lado de EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen, pronto para assinatura digital ICP-Brasil.</p>
+            <p><img src="/assets/laudo-exemplo-1.webp" alt="Exemplo de laudo de risco cirúrgico gerado pelo Risco MED com os índices calculados" width="900" height="1272" loading="lazy"></p>
+
+            <h2>Perguntas frequentes</h2>
+            <h3>O Risco MED calcula o NSQIP-MICA?</h3>
+            <p>Sim. O NSQIP-MICA já está incluído no Risco MED: ele é calculado automaticamente a partir dos dados do paciente e registrado no laudo de risco cirúrgico, junto com EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen.</p>
+            <h3>O que é o NSQIP-MICA?</h3>
+            <p>É um modelo de risco publicado por Gupta e colaboradores em 2011, a partir da base do ACS NSQIP, que estima a probabilidade de infarto do miocárdio ou parada cardíaca no intraoperatório ou até 30 dias após a cirurgia.</p>
+            <h3>Quais variáveis o NSQIP-MICA usa?</h3>
+            <p>Cinco: idade, estado funcional (independente, parcialmente ou totalmente dependente), classe ASA, creatinina acima de 1,5 mg/dL e tipo de cirurgia, entre 21 categorias.</p>
+            <h3>Qual a diferença entre o NSQIP-MICA e o índice de Lee?</h3>
+            <p>O índice de Lee (RCRI) soma 6 variáveis de 1 ponto cada. O NSQIP-MICA usa uma fórmula logística com o tipo específico de cirurgia e a classe ASA e devolve um percentual de risco. No estudo original, a estatística C foi de 0,874 para o NSQIP-MICA e 0,747 para o RCRI.</p>
+            <h3>A partir de quanto o risco é considerado elevado?</h3>
+            <p>As diretrizes do ACC/AHA consideram elevado um risco de eventos cardíacos maiores de 1% ou mais.</p>
+
+            <div class="cta-box">
+                <h2>O NSQIP-MICA já está no seu laudo de risco cirúrgico</h2>
+                <p>NSQIP-MICA, EMAPO, Detsky, ACP, Goldman, Lee, ASA e Larsen calculados a partir de um único preenchimento, em cerca de 3 minutos. Sem mensalidade, R$ 5,00 de crédito para testar.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Criar conta de médico</a>
+            </div>
+
+            <div class="sources"><p><strong>Referências</strong></p><ol><li>Gupta PK, Gupta H, Sundaram A, et al. Development and validation of a risk calculator for prediction of cardiac risk after surgery. Circulation. 2011;124(4):381-7.</li><li>Fleisher LA, Fleischmann KE, Auerbach AD, et al. 2014 ACC/AHA guideline on perioperative cardiovascular evaluation and management of patients undergoing noncardiac surgery. Circulation. 2014;130(24):e278-333.</li><li>Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.</li></ol><p>Conteúdo informativo para médicos. Os índices apoiam, mas não substituem, o julgamento clínico.</p></div>
+
+            <nav class="related" aria-label="Outros conteúdos"><h2 style="margin-top:0;">Outros índices e guias</h2><ul><li><a href="/emapo-risco-cirurgico/">EMAPO</a></li><li><a href="/detsky-risco-cirurgico/">Detsky</a></li><li><a href="/acp-risco-cirurgico/">Algoritmo ACP</a></li><li><a href="/goldman-risco-cirurgico/">Goldman</a></li><li><a href="/indice-de-lee-rcri/">Lee (RCRI)</a></li><li><a href="/asa-risco-cirurgico/">Classificação ASA</a></li><li><a href="/larsen-risco-cirurgico/">Larsen</a></li><li><a href="/cid-risco-cirurgico/">CID para risco cirúrgico</a></li><li><a href="/modelo-risco-cirurgico/">Modelo de laudo</a></li><li><a href="/assinatura-digital-laudo-medico/">Assinatura digital do laudo</a></li></ul></nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          
+            <p style="margin-top: 1rem;">
+                <a href="https://risco.med.br" target="_blank">Início</a> • 
+                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
+                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
+                © Risco MED - Todos os direitos reservados • Desenvolvido por <a href="https://yesmedicos.com.br" target="_blank">YES Médicos</a>
+            </p>
+        </div>
+    </footer>
+	
+	
+</body>
+</html>

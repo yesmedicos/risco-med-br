@@ -1,6 +1,6 @@
 # Risco MED — Laudo de Risco Cirúrgico Online
 
-> App online para médicos gerarem laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos, assinado com certificado ICP-Brasil e compatível com o validador oficial do ITI.
+> App online para médicos gerarem laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos, assinado com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
 ## O que é
 
@@ -23,7 +23,7 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 
 1. O médico cria uma conta gratuita no Risco MED (R$ 5,00 de crédito inicial incluso).
 2. Preenche os dados clínicos do paciente (anamnese, alergias, medicamentos em uso).
-3. Seleciona quais dos 7 índices de risco deseja aplicar.
+3. Seleciona quais dos 8 índices de risco deseja aplicar.
 4. O sistema calcula automaticamente o risco e gera o laudo em PDF.
 5. O laudo sai assinado digitalmente com certificado ICP-Brasil, compatível com o validador do ITI, e é enviado por impressão, e-mail ou SMS.
 
@@ -37,7 +37,7 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 - R$ 0,50 por assinatura digital
 - Bônus inicial: R$ 5,00 de crédito para testes
 
-## Os 7 índices de risco cirúrgico disponíveis
+## Os 8 índices de risco cirúrgico disponíveis
 
 1. **EMAPO** — Estudo Multicêntrico de Avaliação Perioperatória (índice brasileiro)
 2. **Detsky** — Índice Modificado de Risco Cardíaco
@@ -46,13 +46,14 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 5. **Lee (RCRI)** — Revised Cardiac Risk Index
 6. **ASA** — American Society of Anesthesiologists
 7. **Larsen** — Índice de Risco Cardíaco de Larsen
+8. **NSQIP-MICA (Gupta)** — risco de infarto ou parada cardíaca até 30 dias após a cirurgia (ACS NSQIP)
 
 Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e **IMPROVE** (TEV e EP).
 
 ## Funcionalidades principais
 
 - Geração de laudo completo em 3 minutos
-- 7 índices de risco cardiológico selecionáveis por laudo
+- 8 índices de risco cardiológico selecionáveis por laudo
 - Avaliação trombótica (Pádua e IMPROVE)
 - Laudo assinado com certificado ICP-Brasil e compatível com o validador do ITI (Resolução CFM 2.299/2021)
 - Laudos personalizáveis (anamnese, alergias, medicamentos em uso)
@@ -75,6 +76,7 @@ Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e 
 - https://risco.med.br/indice-de-lee-rcri/ — índice de Lee (RCRI): 6 variáveis, classes e diretriz SBC 2024.
 - https://risco.med.br/asa-risco-cirurgico/ — classificação ASA do estado físico, com exemplos.
 - https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen: variáveis, pontuação e classes.
+- https://risco.med.br/nsqip-mica-risco-cirurgico/ — NSQIP-MICA (Gupta): calculadora, variáveis, fórmula e exemplos de risco de infarto ou parada cardíaca em 30 dias.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital do laudo com certificado ICP-Brasil (Resolução CFM 2.299/2021) e validação no ITI.
 
 
@@ -92,7 +94,7 @@ Médicos clínicos, cardiologistas, anestesiologistas, médicos de família, cl�
 Não. Não há mensalidade, taxa de instalação ou fidelidade. O médico paga R$ 1,00 por laudo gerado até 150 laudos por mês. Acima de 150 laudos mensais, não há cobrança adicional.
 
 **Quais índices de risco cirúrgico estão disponíveis?**
-São 7 índices: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA e Larsen. O médico escolhe quais incluir em cada laudo. Há também avaliação de risco trombótico pelos índices de Pádua e IMPROVE.
+São 8 índices: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA, Larsen e NSQIP-MICA (Gupta). O médico escolhe quais incluir em cada laudo. Há também avaliação de risco trombótico pelos índices de Pádua e IMPROVE.
 
 **Quanto tempo leva para gerar um laudo de risco cirúrgico?**
 3 minutos. O processo é automatizado — o médico preenche os dados e o sistema gera o laudo completo em PDF.

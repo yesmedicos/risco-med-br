@@ -36,7 +36,7 @@
     <image:image>
       <image:loc>https://risco.med.br/assets/og-image.jpg</image:loc>
       <image:title>Risco MED — Laudo de Risco Cirúrgico Online</image:title>
-      <image:caption>Sistema online para gerar laudos de risco cirúrgico pré-operatório com 7 índices de avaliação cardiológica</image:caption>
+      <image:caption>Sistema online para gerar laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica</image:caption>
     </image:image>
   </url>
 
@@ -117,5 +117,12 @@
   
 
 
+
+  <url>
+    <loc>https://risco.med.br/nsqip-mica-risco-cirurgico/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

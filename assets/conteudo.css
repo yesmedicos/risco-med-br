@@ -606,3 +606,22 @@ td.pts { white-space: nowrap; font-weight: 700; color: var(--gray-900); }
 
 /* Data de atualização abaixo do H1 */
 .article .updated { margin-top: -0.25rem; font-size: 0.9rem; color: var(--gray-600); }
+
+/* Calculadora NSQIP-MICA */
+.mica-calc { border: 1px solid var(--gray-200); border-radius: 16px; padding: 1.5rem; background: var(--gray-50); margin: 1rem 0 1.5rem; }
+.mica-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.mica-grid label { display: grid; gap: 0.35rem; font-weight: 600; color: var(--gray-800); font-size: 0.95rem; min-width: 0; }
+.mica-grid .mica-wide { grid-column: 1 / -1; }
+.mica-grid input, .mica-grid select { width: 100%; font: inherit; font-weight: 400; padding: 0.6rem 0.7rem; border: 1px solid var(--gray-300); border-radius: 10px; background: #fff; color: var(--gray-900); }
+.mica-grid input:focus-visible, .mica-grid select:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.mica-result { margin-top: 1.25rem; padding: 1rem 1.25rem; border-radius: 12px; background: #fff; border: 2px solid var(--primary); display: grid; gap: 0.2rem; }
+.mica-result .mica-label { font-size: 0.85rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.04em; }
+.mica-result strong { font-size: 2.2rem; color: var(--primary-dark); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.mica-disclaimer { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--gray-600); }
+
+/* Chamadas para o Risco MED dentro do artigo */
+.article .cta-inline { display: grid; gap: 0.9rem; justify-items: start; border: 1px solid var(--gray-200); border-left: 4px solid var(--primary); border-radius: 12px; background: var(--gray-50); padding: 1.1rem 1.25rem; margin: 1.25rem 0 0.5rem; }
+.article .cta-inline p { margin: 0; }
+.pill-new { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; background: var(--primary); border-radius: 999px; padding: 0.15rem 0.55rem; vertical-align: 0.1em; }
+.mica-cta { margin: 0.75rem 0 0; font-size: 0.95rem; }
+.mica-cta a { color: var(--primary); font-weight: 700; }
