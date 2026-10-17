@@ -125,14 +125,6 @@
             "@type": "Answer",
             "text": "O índice de Lee (RCRI) soma 6 variáveis de 1 ponto cada. O NSQIP-MICA usa uma fórmula logística com o tipo específico de cirurgia e a classe ASA e devolve um percentual de risco. No estudo original, a estatística C foi de 0,874 para o NSQIP-MICA e 0,747 para o RCRI."
           }
-        },
-        {
-          "@type": "Question",
-          "name": "A partir de quanto o risco é considerado elevado?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "As diretrizes do ACC/AHA consideram elevado um risco de eventos cardíacos maiores de 1% ou mais."
-          }
         }
       ]
     },
@@ -213,8 +205,8 @@
                 <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Gerar laudo com NSQIP-MICA</a>
             </aside>
 
-            <h2>Calculadora NSQIP-MICA</h2>
-            <p>Preencha os dados do paciente. O resultado é atualizado na hora.</p>
+            <h2>Como usar a calculadora</h2>
+            <p>Informe a idade, o estado funcional, a classe ASA, a creatinina e o tipo de cirurgia. O risco de infarto ou parada cardíaca em 30 dias aparece na hora.</p>
             <form class="mica-calc" id="mica-calc" novalidate>
                 <div class="mica-grid">
                     <label for="mica-age">Idade (anos)
@@ -303,72 +295,6 @@
             <p>O modelo foi publicado por Gupta e colaboradores na revista <em>Circulation</em>, em 2011, a partir da base do <strong>ACS NSQIP</strong> (American College of Surgeons National Surgical Quality Improvement Program). Ele foi derivado com dados de 2007, com 211.410 pacientes e incidência de MICA de 0,65%, e validado com mais de 200 mil pacientes operados em 2008. A estatística C foi de 0,874, contra 0,747 do índice de Lee (RCRI) na mesma população.</p>
             <p>O desfecho é infarto do miocárdio (alterações eletrocardiográficas de infarto agudo ou elevação nova de troponina acima de 3 vezes o limite superior com suspeita de isquemia) ou parada cardíaca pelos critérios do NSQIP, do intraoperatório até 30 dias.</p>
 
-            <h2>As 5 variáveis e seus coeficientes</h2>
-            <p>O cálculo começa em −5,25 e soma o coeficiente de cada variável:</p>
-            <div class="table-wrap"><table>
-                <thead><tr><th>Variável</th><th>Coeficiente</th></tr></thead>
-                <tbody>
-                    <tr><td>Idade</td><td class="pts">0,02 por ano</td></tr>
-                    <tr><td>Estado funcional: independente</td><td class="pts">0,00</td></tr>
-                    <tr><td>Estado funcional: parcialmente dependente</td><td class="pts">0,65</td></tr>
-                    <tr><td>Estado funcional: totalmente dependente</td><td class="pts">1,03</td></tr>
-                    <tr><td>Creatinina normal (≤ 1,5 mg/dL)</td><td class="pts">0,00</td></tr>
-                    <tr><td>Creatinina elevada (&gt; 1,5 mg/dL)</td><td class="pts">0,61</td></tr>
-                    <tr><td>Creatinina desconhecida</td><td class="pts">−0,10</td></tr>
-                </tbody>
-            </table></div>
-            <div class="table-wrap"><table>
-                <thead><tr><th>Classe ASA</th><th>Coeficiente</th></tr></thead>
-                <tbody>
-                    <tr><td>ASA 1: paciente saudável</td><td class="pts">−5,17</td></tr>
-                    <tr><td>ASA 2: doença sistêmica leve</td><td class="pts">−3,29</td></tr>
-                    <tr><td>ASA 3: doença sistêmica grave</td><td class="pts">−1,92</td></tr>
-                    <tr><td>ASA 4: doença sistêmica grave com ameaça constante à vida</td><td class="pts">−0,95</td></tr>
-                    <tr><td>ASA 5: moribundo, sem expectativa de sobreviver sem a cirurgia</td><td class="pts">0,00</td></tr>
-                </tbody>
-            </table></div>
-            <h3>Tipo de cirurgia</h3>
-            <div class="table-wrap"><table>
-                <thead><tr><th>Cirurgia</th><th>Coeficiente</th></tr></thead>
-                <tbody>
-                    <tr><td>Anorretal</td><td class="pts">−0,16</td></tr>
-                    <tr><td>Aórtica</td><td class="pts">1,60</td></tr>
-                    <tr><td>Bariátrica</td><td class="pts">−0,25</td></tr>
-                    <tr><td>Cerebral (intracraniana)</td><td class="pts">1,40</td></tr>
-                    <tr><td>Mama</td><td class="pts">−1,61</td></tr>
-                    <tr><td>Cardíaca</td><td class="pts">1,01</td></tr>
-                    <tr><td>Otorrinolaringológica (exceto tireoide e paratireoide)</td><td class="pts">0,71</td></tr>
-                    <tr><td>Esôfago, estômago, duodeno ou hepatopancreatobiliar</td><td class="pts">1,39</td></tr>
-                    <tr><td>Vesícula biliar, apêndice, adrenais ou baço</td><td class="pts">0,59</td></tr>
-                    <tr><td>Hérnia (ventral, inguinal, femoral)</td><td class="pts">0,00</td></tr>
-                    <tr><td>Intestinal</td><td class="pts">1,14</td></tr>
-                    <tr><td>Pescoço (tireoide e paratireoide)</td><td class="pts">0,18</td></tr>
-                    <tr><td>Obstétrica ou ginecológica</td><td class="pts">0,76</td></tr>
-                    <tr><td>Ortopédica e de extremidades (não vascular)</td><td class="pts">0,80</td></tr>
-                    <tr><td>Outra cirurgia abdominal</td><td class="pts">1,13</td></tr>
-                    <tr><td>Vascular periférica (não aórtica, não venosa)</td><td class="pts">0,86</td></tr>
-                    <tr><td>Pele</td><td class="pts">0,54</td></tr>
-                    <tr><td>Coluna</td><td class="pts">0,21</td></tr>
-                    <tr><td>Torácica (não esofágica)</td><td class="pts">0,40</td></tr>
-                    <tr><td>Venosa</td><td class="pts">−1,09</td></tr>
-                    <tr><td>Urológica</td><td class="pts">−0,26</td></tr>
-                </tbody>
-            </table></div>
-            <p>As categorias de referência (coeficiente zero) são: estado funcional independente, ASA 5, creatinina normal e cirurgia de hérnia. Por isso os coeficientes das classes ASA mais baixas são negativos.</p>
-
-            <h2>Fórmula</h2>
-            <div class="note"><p style="margin:0;"><strong>x</strong> = −5,25 + (0,02 × idade) + estado funcional + classe ASA + creatinina + tipo de cirurgia<br><strong>Risco (%)</strong> = 100 × e<sup>x</sup> / (1 + e<sup>x</sup>)</p></div>
-
-            <h2>Como interpretar</h2>
-            <p>As diretrizes do ACC/AHA consideram <strong>elevado</strong> um risco de eventos cardíacos maiores de <strong>1% ou mais</strong>. Abaixo disso, o risco é considerado baixo e, em geral, não há indicação de exames cardiológicos adicionais apenas por causa da cirurgia. Em pacientes de risco elevado, a avaliação segue para a capacidade funcional e para a necessidade de exames complementares, conforme a diretriz.</p>
-
-            <h2>Exemplos práticos</h2>
-            <p><strong>Paciente de 70 anos, independente, ASA 3, creatinina normal, para cirurgia intestinal:</strong></p>
-            <p>x = −5,25 + (0,02 × 70) + 0 − 1,92 + 0 + 1,14 = −4,63. Risco = <strong>0,97%</strong> (abaixo de 1%).</p>
-            <p><strong>Paciente de 78 anos, parcialmente dependente, ASA 3, creatinina de 1,8 mg/dL, para cirurgia aórtica:</strong></p>
-            <p>x = −5,25 + (0,02 × 78) + 0,65 − 1,92 + 0,61 + 1,60 = −2,75. Risco = <strong>6,0%</strong> (risco elevado).</p>
-            <p>No Risco MED você não precisa fazer essa conta: o NSQIP-MICA é calculado a partir dos dados do paciente e entra no laudo com o percentual de risco. <a href="https://risco.med.br/#cadastro">Experimente com R$ 5,00 de crédito</a>.</p>
-
             <h2>NSQIP-MICA e índice de Lee</h2>
             <ul>
                 <li><strong>Lee (RCRI):</strong> 6 variáveis de 1 ponto, simples de calcular de cabeça, e o índice mais usado no mundo. <a href="/indice-de-lee-rcri/">Veja o índice de Lee</a>.</li>
@@ -396,8 +322,6 @@
             <p>Cinco: idade, estado funcional (independente, parcialmente ou totalmente dependente), classe ASA, creatinina acima de 1,5 mg/dL e tipo de cirurgia, entre 21 categorias.</p>
             <h3>Qual a diferença entre o NSQIP-MICA e o índice de Lee?</h3>
             <p>O índice de Lee (RCRI) soma 6 variáveis de 1 ponto cada. O NSQIP-MICA usa uma fórmula logística com o tipo específico de cirurgia e a classe ASA e devolve um percentual de risco. No estudo original, a estatística C foi de 0,874 para o NSQIP-MICA e 0,747 para o RCRI.</p>
-            <h3>A partir de quanto o risco é considerado elevado?</h3>
-            <p>As diretrizes do ACC/AHA consideram elevado um risco de eventos cardíacos maiores de 1% ou mais.</p>
 
             <div class="cta-box">
                 <h2>O NSQIP-MICA já está no seu laudo de risco cirúrgico</h2>

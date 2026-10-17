@@ -106,10 +106,11 @@ Página: https://risco.med.br/larsen-risco-cirurgico/
 - Classes: I (0 a 5 pontos, 0,5%), II (6 a 7, 3,8%), III (8 a 14, 11%) e IV (15 ou mais, 58%) de complicações cardíacas.
 
 ### NSQIP-MICA (Gupta)
-Página com calculadora: https://risco.med.br/nsqip-mica-risco-cirurgico/
+Página: https://risco.med.br/nsqip-mica-risco-cirurgico/
 - Publicado por Gupta PK et al. (Circulation, 2011) a partir da base do ACS NSQIP: derivação com 211.410 pacientes de 2007 (incidência de 0,65%) e validação com mais de 200 mil pacientes de 2008. Estatística C de 0,874, contra 0,747 do índice de Lee.
 - Desfecho: infarto do miocárdio ou parada cardíaca no intraoperatório ou até 30 dias após a cirurgia.
-- Fórmula: x = −5,25 + 0,02 × idade + estado funcional (independente 0; parcialmente dependente 0,65; totalmente dependente 1,03) + classe ASA (1: −5,17; 2: −3,29; 3: −1,92; 4: −0,95; 5: 0) + creatinina (normal 0; > 1,5 mg/dL 0,61; desconhecida −0,10) + tipo de cirurgia (21 categorias, de −1,61 para mama a 1,60 para aórtica; hérnia = 0). Risco (%) = 100 × eˣ / (1 + eˣ).
+- Variáveis: idade, estado funcional, classe ASA, creatinina acima de 1,5 mg/dL e tipo de cirurgia. O resultado é um percentual de risco.
+- No Risco MED, o NSQIP-MICA é calculado automaticamente e registrado no laudo.
 - Risco de 1% ou mais é considerado elevado pelo critério do ACC/AHA.
 
 ### Risco de tromboembolismo venoso
