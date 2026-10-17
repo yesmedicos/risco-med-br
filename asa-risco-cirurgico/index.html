@@ -161,7 +161,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="/assets/conteudo.css?v5">
+    <link rel="stylesheet" href="/assets/conteudo.css?v7">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -198,17 +198,22 @@
             </aside>
 
             <h2>As classes ASA</h2>
-            <div class="table-wrap"><table>
+            <div class="locked">
+                <div class="table-wrap locked-preview"><table>
                 <thead><tr><th>Classe</th><th>Definição</th><th>Exemplos em adultos</th></tr></thead>
                 <tbody>
                     <tr><td>ASA I</td><td>Paciente saudável</td><td>Sem doença, não fumante, uso mínimo ou nenhum de álcool</td></tr>
                     <tr><td>ASA II</td><td>Doença sistêmica leve</td><td>Tabagismo atual, gestação, obesidade (IMC 30–40), diabetes ou hipertensão bem controlados, doença pulmonar leve</td></tr>
-                    <tr><td>ASA III</td><td>Doença sistêmica grave</td><td>Diabetes ou hipertensão mal controlados, DPOC, IMC ≥ 40, hepatite ativa, marca-passo, fração de ejeção moderadamente reduzida, diálise regular, infarto, AVC ou stent há mais de 3 meses</td></tr>
-                    <tr><td>ASA IV</td><td>Doença sistêmica grave, com ameaça constante à vida</td><td>Infarto, AVC ou stent há menos de 3 meses, isquemia cardíaca em curso, disfunção valvar grave, fração de ejeção muito reduzida, sepse, choque</td></tr>
-                    <tr><td>ASA V</td><td>Paciente moribundo, sem expectativa de sobreviver sem a cirurgia</td><td>Ruptura de aneurisma abdominal ou torácico, trauma grave, hemorragia intracraniana com efeito de massa</td></tr>
-                    <tr><td>ASA VI</td><td>Morte encefálica declarada, doador de órgãos</td><td>—</td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
                 </tbody>
             </table></div>
+                <div class="locked-cta">
+                    <p><strong>Veja todas as classes da classificação ASA, com exemplos, no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
+                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
+                </div>
+            </div>
             <p>Acrescente a letra <strong>E</strong> à classe quando a cirurgia é de emergência (por exemplo, ASA III E).</p>
 
             <h2>ASA não é um índice de risco cardíaco</h2>

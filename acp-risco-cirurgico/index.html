@@ -153,7 +153,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="/assets/conteudo.css?v5">
+    <link rel="stylesheet" href="/assets/conteudo.css?v7">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -191,42 +191,42 @@
 
             <h2>Etapa 1: variáveis de Detsky</h2>
             <p>Calcule a pontuação do <a href="/detsky-risco-cirurgico/">índice de Detsky modificado</a>:</p>
-            <div class="table-wrap"><table>
+            <div class="locked">
+                <div class="table-wrap locked-preview"><table>
                 <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
                 <tbody>
-                    <tr><td>Infarto há menos de 6 meses</td><td class="pts">10</td></tr>
                     <tr><td>Infarto há mais de 6 meses</td><td class="pts">5</td></tr>
                     <tr><td>Angina classe III</td><td class="pts">10</td></tr>
-                    <tr><td>Angina classe IV</td><td class="pts">20</td></tr>
-                    <tr><td>Angina instável nos últimos 6 meses</td><td class="pts">10</td></tr>
-                    <tr><td>Edema agudo de pulmão na última semana</td><td class="pts">10</td></tr>
-                    <tr><td>Edema agudo de pulmão alguma vez</td><td class="pts">5</td></tr>
-                    <tr><td>Suspeita de estenose aórtica crítica</td><td class="pts">20</td></tr>
-                    <tr><td>Ritmo não sinusal, sinusal com extrassístoles supraventriculares, ou mais de 5 extrassístoles ventriculares</td><td class="pts">5</td></tr>
-                    <tr><td>PO₂ &lt; 60, PCO₂ &gt; 50, K &lt; 3, ureia &gt; 50, creatinina &gt; 3,0 ou restrito ao leito</td><td class="pts">5</td></tr>
                     <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
-                    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
                 </tbody>
             </table></div>
+                <div class="locked-cta">
+                    <p><strong>Veja todas as variáveis e a pontuação completa do algoritmo do ACP no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
+                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
+                </div>
+            </div>
             <p>Com <strong>mais de 15 pontos</strong>, o paciente é de <strong>alto risco</strong> e a avaliação termina aqui. Com 15 pontos ou menos, siga para a etapa 2.</p>
 
             <h2>Etapa 2: variáveis de Eagle e Vanzetto</h2>
             <p>Conte quantas destas condições o paciente tem.</p>
-            <h3>Critérios de Eagle</h3>
-            <ul>
-                <li>Idade acima de 70 anos</li>
-                <li>História de angina</li>
-                <li>Diabetes melito</li>
-                <li>Ondas Q no eletrocardiograma</li>
-                <li>História de extrassístoles ventriculares</li>
-            </ul>
-            <h3>Critérios acrescentados por Vanzetto</h3>
-            <ul>
-                <li>História de insuficiência cardíaca</li>
-                <li>História de infarto</li>
-                <li>Alterações isquêmicas de ST</li>
-                <li>Hipertensão com hipertrofia ventricular esquerda importante</li>
-            </ul>
+            <div class="locked">
+                <div class="locked-preview is-list">
+                    <ul>
+                        <li>Diabetes melito (critério de Eagle)</li>
+                        <li>História de infarto (critério de Vanzetto)</li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                    </ul>
+                </div>
+                <div class="locked-cta">
+                    <p><strong>Veja todos os critérios de Eagle e Vanzetto no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
+                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
+                </div>
+            </div>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>

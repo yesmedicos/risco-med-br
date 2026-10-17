@@ -161,7 +161,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="/assets/conteudo.css?v5">
+    <link rel="stylesheet" href="/assets/conteudo.css?v7">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -199,14 +199,22 @@
 
             <h2>As 6 variáveis do índice de Lee</h2>
             <p>Cada variável presente vale 1 ponto:</p>
-            <ul>
-                <li>Cirurgia intraperitoneal, intratorácica ou vascular suprainguinal</li>
-                <li>História de doença arterial coronariana</li>
-                <li>História de insuficiência cardíaca</li>
-                <li>História de doença cerebrovascular</li>
-                <li>Diabetes em uso de insulina</li>
-                <li>Creatinina pré-operatória acima de 2,0 mg/dL</li>
-            </ul>
+            <div class="locked">
+                <div class="locked-preview is-list">
+                    <ul>
+                        <li>Cirurgia intraperitoneal, intratorácica ou vascular suprainguinal</li>
+                        <li>História de doença cerebrovascular</li>
+                        <li>Diabetes em uso de insulina</li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
+                    </ul>
+                </div>
+                <div class="locked-cta">
+                    <p><strong>Veja todas as variáveis e a pontuação completa do índice de Lee no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
+                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
+                </div>
+            </div>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>

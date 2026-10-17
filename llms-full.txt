@@ -65,44 +65,44 @@ Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, ma
 ### EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)
 Página: https://risco.med.br/emapo-risco-cirurgico/
 - Escore brasileiro, desenvolvido e validado em estudo multicêntrico (Pinho C et al., Clinics, 2007).
-- 27 variáveis clínicas e cirúrgicas, com pesos de 4, 5, 10 ou 20 pontos. Exemplos: idade acima de 70 anos (5), infarto há mais de 6 meses (5), cirurgia intraperitoneal, aórtica, intratorácica ou ortopédica (4), cirurgia de emergência (10), angina classe III (10), estenose aórtica crítica (20), insuficiência cardíaca classe IV (20), fibrilação ventricular recente ou morte súbita abortada sem CDI (20).
+- 27 variáveis clínicas e cirúrgicas, como idade acima de 70 anos, infarto prévio e tipo de cirurgia. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Classificação pela soma dos pontos, para óbito e/ou eventos cardíacos: muito baixo (0 ponto, < 1%), baixo (1 a 5, 1% a 3%), moderado (6 a 10, 3% a 7%), elevado (11 a 15, 7% a 13%) e muito elevado (> 15, > 13%).
 
 ### Detsky (índice de Detsky modificado)
 Página: https://risco.med.br/detsky-risco-cirurgico/
 - Publicado em 1986; amplia o índice de Goldman com angina, infarto prévio e edema agudo de pulmão.
-- Variáveis: infarto há menos de 6 meses (10) ou há mais de 6 meses (5); angina classe III (10) ou IV (20); angina instável nos últimos 6 meses (10); edema agudo de pulmão na última semana (10) ou alguma vez (5); suspeita de estenose aórtica crítica (20); ritmo não sinusal ou extrassístoles atriais (5); mais de 5 extrassístoles ventriculares por minuto (5); mau estado clínico geral (5); idade acima de 70 anos (5); cirurgia de emergência (10).
+- Variáveis como infarto prévio, angina, edema agudo de pulmão e idade acima de 70 anos. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Classes: I (0 a 15 pontos), II (20 a 30) e III (> 30).
 
 ### ACP (algoritmo do American College of Physicians)
 Página: https://risco.med.br/acp-risco-cirurgico/
 - Publicado em 1997; funciona em duas etapas.
 - Etapa 1: pontuação de Detsky. Acima de 15 pontos, o paciente é de alto risco (> 15%).
-- Etapa 2 (Detsky de 15 ou menos): conta os critérios de Eagle (idade acima de 70 anos, história de angina, diabetes, ondas Q no ECG, história de extrassístoles ventriculares) e os acrescentados por Vanzetto (história de insuficiência cardíaca, história de infarto, alterações isquêmicas de ST, hipertensão com hipertrofia ventricular esquerda importante).
+- Etapa 2 (Detsky de 15 ou menos): conta critérios clínicos de Eagle e Vanzetto, como diabetes e história de infarto. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Resultado: 0 ou 1 critério = risco baixo (< 3%); 2 ou mais = risco intermediário (3% a 15%).
 
 ### Goldman (índice de risco cardíaco de Goldman)
 Página: https://risco.med.br/goldman-risco-cirurgico/
 - Publicado em 1977; primeiro índice multifatorial de risco cardíaco em cirurgia não cardíaca.
-- 9 variáveis: terceira bulha ou estase jugular (11); infarto há menos de 6 meses (10); ritmo não sinusal ou extrassístoles atriais (7); mais de 5 extrassístoles ventriculares por minuto (7); idade acima de 70 anos (5); cirurgia de emergência (4); estenose aórtica importante (3); cirurgia intraperitoneal, intratorácica ou aórtica (3); mau estado clínico geral (3). Máximo: 53 pontos.
+- 9 variáveis, como idade acima de 70 anos, ritmo não sinusal e estenose aórtica importante. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Classes: I (0 a 5), II (6 a 12), III (13 a 25) e IV (26 ou mais).
 
 ### Lee (RCRI, Índice de Risco Cardíaco Revisado)
 Página: https://risco.med.br/indice-de-lee-rcri/
 - Publicado em 1999; revisão simplificada do Goldman e o índice mais usado internacionalmente.
-- 6 variáveis de 1 ponto: cirurgia intraperitoneal, intratorácica ou vascular suprainguinal; doença arterial coronariana; insuficiência cardíaca; doença cerebrovascular; diabetes em uso de insulina; creatinina pré-operatória acima de 2,0 mg/dL.
+- 6 variáveis de 1 ponto, como cirurgia intraperitoneal, intratorácica ou vascular suprainguinal e diabetes em uso de insulina. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Classes no estudo original: I (0 variável, 0,4%), II (1, 0,9%), III (2, 6,6%) e IV (3 ou mais, 11%) de complicações cardíacas maiores.
 - A Diretriz de Avaliação Cardiovascular Perioperatória da SBC de 2024 mantém o Lee, com classificação semiquantitativa (baixo, intermediário e alto risco), e sugere o VSG-CRI para cirurgia vascular arterial.
 
 ### ASA (classificação do estado físico da American Society of Anesthesiologists)
 Página: https://risco.med.br/asa-risco-cirurgico/
 - Não é um índice de risco cardíaco: descreve o estado físico geral do paciente.
-- Classes: ASA I (saudável), II (doença sistêmica leve), III (doença sistêmica grave), IV (doença sistêmica grave com ameaça constante à vida), V (moribundo, sem expectativa de sobreviver sem a cirurgia) e VI (morte encefálica, doador de órgãos). A letra E indica cirurgia de emergência (por exemplo, ASA III E).
+- Classes de ASA I (paciente saudável) a ASA VI (morte encefálica, doador de órgãos), com o sufixo E para cirurgia de emergência. A descrição completa de cada classe, com exemplos, fica disponível no Risco MED.
 
 ### Larsen (índice de risco cardíaco de Larsen)
 Página: https://risco.med.br/larsen-risco-cirurgico/
 - Publicado em 1987, a partir de 2.609 pacientes. Índice de risco cardíaco (não é uma classificação de risco anestésico).
-- Variáveis: congestão pulmonar presente (15); infarto há menos de 6 meses (11); edema agudo de pulmão anterior (8); cirurgia aórtica (5); insuficiência cardíaca anterior (4); infarto há mais de 6 meses (3); história de angina (3); diabetes (3); cirurgia de emergência (3); cirurgia intraperitoneal ou pleural (3); creatinina acima de 1,47 mg/dL (2).
+- Variáveis como infarto prévio, angina, diabetes e tipo de cirurgia. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
 - Classes: I (0 a 5 pontos, 0,5%), II (6 a 7, 3,8%), III (8 a 14, 11%) e IV (15 ou mais, 58%) de complicações cardíacas.
 
 ### NSQIP-MICA (Gupta)

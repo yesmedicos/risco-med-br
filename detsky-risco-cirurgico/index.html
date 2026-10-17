@@ -153,7 +153,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/favicon-96x96.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="/assets/conteudo.css?v5">
+    <link rel="stylesheet" href="/assets/conteudo.css?v7">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -190,25 +190,23 @@
             </aside>
 
             <h2>Variáveis e pontuação</h2>
-            <div class="table-wrap"><table>
+            <div class="locked">
+                <div class="table-wrap locked-preview"><table>
                 <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
                 <tbody>
                     <tr><td>Infarto do miocárdio há menos de 6 meses</td><td class="pts">10</td></tr>
-                    <tr><td>Infarto do miocárdio há mais de 6 meses</td><td class="pts">5</td></tr>
                     <tr><td>Angina classe III (Canadian Cardiovascular Society)</td><td class="pts">10</td></tr>
-                    <tr><td>Angina classe IV (Canadian Cardiovascular Society)</td><td class="pts">20</td></tr>
-                    <tr><td>Angina instável nos últimos 6 meses</td><td class="pts">10</td></tr>
-                    <tr><td>Edema agudo de pulmão na última semana</td><td class="pts">10</td></tr>
-                    <tr><td>Edema agudo de pulmão alguma vez</td><td class="pts">5</td></tr>
-                    <tr><td>Suspeita de estenose aórtica crítica</td><td class="pts">20</td></tr>
-                    <tr><td>Ritmo não sinusal, ou sinusal com extrassístoles atriais no último ECG</td><td class="pts">5</td></tr>
-                    <tr><td>Mais de 5 extrassístoles ventriculares por minuto em qualquer momento antes da cirurgia</td><td class="pts">5</td></tr>
-                    <tr><td>Mau estado clínico geral*</td><td class="pts">5</td></tr>
                     <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
-                    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
                 </tbody>
             </table></div>
-            <p style="font-size:0.92rem;">* PaO₂ &lt; 60 ou PaCO₂ &gt; 50 mmHg; K⁺ &lt; 3 ou HCO₃⁻ &lt; 20 mEq/L; ureia &gt; 107,5 mg/dL (BUN &gt; 50) ou creatinina &gt; 3 mg/dL; AST anormal; paciente acamado por causa não cardíaca.</p>
+                <div class="locked-cta">
+                    <p><strong>Veja todas as variáveis e a pontuação completa do índice de Detsky no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
+                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
+                </div>
+            </div>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>
