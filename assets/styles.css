@@ -3,13 +3,20 @@
    ==================================== */
 
 :root {
-    /* Colors - Medical Blue Theme */
-    --primary: #2563eb;
-    --primary-dark: #1e40af;
-    --primary-light: #3b82f6;
-    --secondary: #0ea5e9;
-    --accent: #8b5cf6;
-    
+    /* Colors - RiscoMED brand (navy + teal + green), aligned with app.risco.med.br */
+    --primary: #0e7490;
+    --primary-dark: #0b5f76;
+    --primary-light: #0891b2;
+    --primary-soft: #e0f2f7;
+    --navy: #032450;
+    --teal: #0db4ac;
+    --green: #16a34a;
+    --secondary: #16a34a;
+    --accent: #0db4ac;
+    --gradient-brand: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --gradient-text: linear-gradient(135deg, var(--navy) 0%, var(--primary) 55%, var(--accent) 100%);
+    --gradient-dark: linear-gradient(135deg, var(--navy) 0%, var(--primary) 100%);
+
     /* Neutrals */
     --white: #ffffff;
     --gray-50: #f9fafb;
@@ -25,10 +32,10 @@
     --black: #000000;
     
     /* Status Colors */
-    --success: #10b981;
-    --warning: #f59e0b;
+    --success: #16a34a;
+    --warning: #d97706;
     --error: #ef4444;
-    --info: #3b82f6;
+    --info: #0e7490;
     
     /* Typography */
     --font-display: 'Sora', sans-serif;
@@ -205,14 +212,14 @@ p {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: var(--gradient-dark);
     color: var(--white);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(14, 116, 144, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 8px 20px rgba(14, 116, 144, 0.4);
 }
 
 .btn-secondary {
@@ -378,8 +385,8 @@ p {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.1) 0%, rgba(13, 180, 172, 0.1) 100%);
+    border: 1px solid rgba(14, 116, 144, 0.2);
     border-radius: 100px;
     font-size: 14px;
     font-weight: 600;
@@ -404,7 +411,7 @@ p {
 }
 
 .highlight {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -537,7 +544,7 @@ p {
     left: 10%;
     width: 500px;
     height: 500px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-brand);
 }
 
 .orb-2 {
@@ -602,7 +609,7 @@ p {
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -635,8 +642,8 @@ p {
 .section-tag {
     display: inline-block;
     padding: 6px 16px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.1) 0%, rgba(13, 180, 172, 0.1) 100%);
+    border: 1px solid rgba(14, 116, 144, 0.2);
     border-radius: 100px;
     font-size: 14px;
     font-weight: 700;
@@ -678,7 +685,7 @@ p {
 
 .feature-card:hover .feature-icon {
     transform: scale(1.1);
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-dark);
 }
 
 .feature-icon {
@@ -767,7 +774,7 @@ p {
     width: 12px;
     height: 12px;
     min-width: 12px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-brand);
     border-radius: 50%;
     margin-top: 4px;
 }
@@ -881,15 +888,53 @@ p {
 }
 
 .exemplo-container {
-    max-width: 900px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .laudo-preview {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+}
+
+.laudo-layout {
+    margin: 0;
+}
+
+.laudo-layout figcaption,
+.sistema-preview figcaption {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+.laudo-layout figcaption strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 2px;
+}
+
+.sistema-preview {
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+.sistema-preview img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-lg);
+}
+
+.sistema-preview figcaption {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .laudo-preview img {
@@ -942,7 +987,7 @@ p {
 .pricing-badge {
     display: inline-block;
     padding: 6px 16px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-dark);
     color: var(--white);
     font-size: 12px;
     font-weight: 700;
@@ -993,7 +1038,7 @@ p {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1055,7 +1100,7 @@ p {
     max-width: 1000px;
     margin: 0 auto;
     padding: 48px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-dark);
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-2xl);
 }
@@ -1140,7 +1185,7 @@ p {
     align-items: center;
     gap: 12px;
     padding: 32px 48px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-dark);
     color: var(--white);
     border: none;
     box-shadow: var(--shadow-xl);
@@ -1212,7 +1257,7 @@ p {
 
 .yesmedicos-cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--gradient-dark);
     position: relative;
     overflow: hidden;
 }
@@ -1355,6 +1400,8 @@ p {
 }
 
 .footer-brand img {
+    height: 36px;
+    width: auto;
     margin-bottom: 16px;
 }
 
@@ -1597,6 +1644,9 @@ p {
     
     .laudo-preview {
         grid-template-columns: 1fr;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .pricing-card {

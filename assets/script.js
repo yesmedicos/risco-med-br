@@ -391,10 +391,10 @@ downloadLinks.forEach(link => {
 // Console Message
 // ====================================
 
-console.log('%c🏥 Risco Med', 'font-size: 24px; font-weight: bold; color: #2563eb;');
+console.log('%c🏥 Risco MED', 'font-size: 24px; font-weight: bold; color: #0e7490;');
 console.log('%cSistema de Laudos de Risco Cirúrgico', 'font-size: 14px; color: #6b7280;');
 console.log('%cDesenvolvido por YES Médicos', 'font-size: 12px; color: #9ca3af;');
-console.log('%chttps://yesmedicos.com.br', 'font-size: 12px; color: #2563eb;');
+console.log('%chttps://yesmedicos.com.br', 'font-size: 12px; color: #0e7490;');
 
 // ====================================
 // Service Worker Registration (Optional PWA)

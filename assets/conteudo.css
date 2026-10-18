@@ -8,11 +8,11 @@
 }
 
 :root {
-    /* Risco MED / YES Médicos-like palette */
-    --primary: #2563eb;      /* blue-600 */
-    --primary-dark: #1e40af; /* blue-800 */
-    --secondary: #0ea5e9;    /* sky-500 */
-    --accent: #8b5cf6;       /* violet-500 */
+    /* RiscoMED brand palette (navy + teal + green), aligned with app.risco.med.br */
+    --primary: #0e7490;      /* teal/petrol, app primary */
+    --primary-dark: #032450; /* navy, logo "Risco" */
+    --secondary: #16a34a;    /* green, app accent */
+    --accent: #0db4ac;       /* teal, logo "MED" */
     --red: #ef4444;
     --gray-50: #f8fafc;
     --gray-100: #f1f5f9;
@@ -47,7 +47,7 @@ body {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: white;
     padding: 0.8rem 0;
-    box-shadow: 0 2px 12px rgba(37, 99, 235, 0.22);
+    box-shadow: 0 2px 12px rgba(14, 116, 144, 0.22);
 }
 
 .announcement-row {
@@ -111,7 +111,7 @@ body {
     height: 36px;
     border-radius: 12px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    box-shadow: 0 12px 20px rgba(37, 99, 235, 0.22);
+    box-shadow: 0 12px 20px rgba(14, 116, 144, 0.22);
 }
 
 .nav-links {
@@ -133,14 +133,14 @@ body {
 
 .nav-links a:hover {
     color: var(--gray-900);
-    background: rgba(37, 99, 235, 0.08);
+    background: rgba(14, 116, 144, 0.08);
 }
 
 /* Hero Section */
 .hero {
     background:
-        radial-gradient(900px 260px at 30% -20%, rgba(37, 99, 235, 0.18), transparent 60%),
-        radial-gradient(820px 260px at 80% 0%, rgba(139, 92, 246, 0.14), transparent 60%),
+        radial-gradient(900px 260px at 30% -20%, rgba(14, 116, 144, 0.18), transparent 60%),
+        radial-gradient(820px 260px at 80% 0%, rgba(13, 180, 172, 0.14), transparent 60%),
         linear-gradient(180deg, #ffffff 0%, var(--gray-50) 100%);
     padding: 3.5rem 0 4rem;
     position: relative;
@@ -154,7 +154,7 @@ body {
     right: -25%;
     width: 560px;
     height: 560px;
-    background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(14, 116, 144, 0.14) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -232,12 +232,12 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: white;
-    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+    box-shadow: 0 10px 22px rgba(14, 116, 144, 0.22);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.26);
+    box-shadow: 0 16px 32px rgba(14, 116, 144, 0.26);
 }
 
 .btn-secondary {
@@ -306,8 +306,8 @@ body {
 .problem-icon {
     width: 56px;
     height: 56px;
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.16);
+    background: rgba(14, 116, 144, 0.08);
+    border: 1px solid rgba(14, 116, 144, 0.16);
     color: var(--primary);
     border-radius: 18px;
     display: flex;
