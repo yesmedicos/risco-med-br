@@ -34,11 +34,6 @@
       <image:caption>Exemplo de laudo de risco cirúrgico pré-operatório no layout Clássico</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://risco.med.br/assets/modelo-laudo-risco-cirurgico-basico.webp</image:loc>
-      <image:title>Laudo de risco cirúrgico — layout Básico</image:title>
-      <image:caption>Exemplo de laudo de risco cirúrgico pré-operatório no layout Básico</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://risco.med.br/assets/og-riscomed.jpg</image:loc>
       <image:title>Risco MED — Laudo de Risco Cirúrgico Online</image:title>
       <image:caption>Sistema online para gerar laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica</image:caption>

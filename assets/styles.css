@@ -369,8 +369,8 @@ p {
     margin: 0 auto;
     padding: 0 var(--container-padding);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: 40px;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -428,7 +428,7 @@ p {
 .hero-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 12px 20px;
     margin-bottom: 40px;
 }
 
@@ -883,24 +883,30 @@ p {
    ==================================== */
 
 .exemplo-section {
-    padding: var(--section-padding) 0;
+    padding: var(--section-padding) 0 40px;
     background: var(--white);
 }
 
 .exemplo-container {
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .laudo-preview {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
     margin-bottom: 48px;
 }
 
 .laudo-layout {
     margin: 0;
+}
+
+.laudo-layout a,
+.sistema-preview a {
+    display: block;
+    cursor: zoom-in;
 }
 
 .laudo-layout figcaption,
@@ -954,8 +960,14 @@ p {
     text-align: center;
 }
 
+/* Preços vem logo após o exemplo: evita somar dois paddings de seção */
+.exemplo-section + .pricing-section {
+    padding-top: 56px;
+}
+
 .exemplo-note {
-    margin-top: 16px;
+    max-width: 640px;
+    margin: 16px auto 0;
     font-size: 0.875rem;
     color: var(--gray-500);
 }
@@ -1252,61 +1264,6 @@ p {
 }
 
 /* ====================================
-   YES Médicos CTA
-   ==================================== */
-
-.yesmedicos-cta {
-    padding: 80px 0;
-    background: var(--gradient-dark);
-    position: relative;
-    overflow: hidden;
-}
-
-.yesmedicos-cta::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.cta-content {
-    position: relative;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 48px;
-    align-items: center;
-}
-
-.cta-logo {
-    margin-bottom: 16px;
-}
-
-.cta-text h3 {
-    color: var(--white);
-    margin-bottom: 12px;
-}
-
-.cta-text p {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.cta-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* ====================================
    FAQ Section
    ==================================== */
 
@@ -1435,7 +1392,7 @@ p {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px;
 }
 
@@ -1535,15 +1492,6 @@ p {
     .enterprise-content {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-    
-    .cta-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .cta-actions {
-        align-items: center;
     }
 }
 

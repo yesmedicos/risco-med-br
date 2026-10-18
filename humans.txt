@@ -25,9 +25,6 @@ Idioma: Português Brasileiro (pt-BR)
 7. Larsen — Classificação de Risco Anestésico
 + Pádua e IMPROVE (risco trombótico)
 
-/* PARCEIROS */
-YES Médicos (prontuário eletrônico e gestão clínica, parceiro comercial): https://yesmedicos.com.br
-
 /* TECNOLOGIA */
 Plataforma: Web SaaS (100% online)
 Assinatura digital: ICP-Brasil e VIDaaS CFM

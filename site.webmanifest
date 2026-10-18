@@ -31,13 +31,13 @@
   "screenshots": [
     {
       "src": "/assets/laudo-risco-cirurgico-riscomed.webp",
-      "sizes": "1080x838",
+      "sizes": "1200x700",
       "type": "image/webp",
       "label": "Tela de conclusão do Risco MED e o laudo de risco cirúrgico gerado"
     },
     {
       "src": "/assets/modelo-laudo-risco-cirurgico-moderno.webp",
-      "sizes": "900x1273",
+      "sizes": "1240x1754",
       "type": "image/webp",
       "label": "Exemplo de laudo de risco cirúrgico pré-operatório no layout Moderno"
     }

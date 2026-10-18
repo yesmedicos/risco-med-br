@@ -201,12 +201,6 @@ Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que a
 
 ---
 
-## Parceiros
-
-O Risco MED é uma empresa independente. O YES Médicos (gestão clínica, prontuário eletrônico, agenda e telemedicina, https://yesmedicos.com.br) é parceiro comercial, com integração nativa ao Risco MED.
-
----
-
 ## Referências usadas nas páginas
 
 - Gualandro DM, Fornari LS, Caramelli B, et al. Diretriz de Avaliação Cardiovascular Perioperatória da Sociedade Brasileira de Cardiologia – 2024. Arq Bras Cardiol. 2024;121(9):e20240590.
