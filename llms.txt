@@ -4,7 +4,7 @@
 
 ## O que é
 
-O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico pré-operatório de forma rápida, digital e segura. O médico preenche os dados do paciente, seleciona os índices desejados e o sistema gera automaticamente um laudo completo em PDF, pronto para assinar e enviar. Desenvolvido com e para cardiologistas brasileiros. Parte do ecossistema YES Médicos.
+O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico pré-operatório de forma rápida, digital e segura. O médico preenche os dados do paciente, seleciona os índices desejados e o sistema gera automaticamente um laudo completo em PDF, pronto para assinar e enviar. Desenvolvido com e para cardiologistas brasileiros.
 
 ## Termos equivalentes
 
@@ -113,15 +113,12 @@ R$ 0,50 por assinatura realizada.
 - **Produto:** Risco MED
 - **Site:** https://risco.med.br
 - **App:** https://app.risco.med.br
-- **Empresa:** YES Médicos
-- **Site da empresa:** https://yesmedicos.com.br
+- **Empresa:** Risco MED (empresa independente)
 - **WhatsApp:** https://wa.me/5537999997155
 - **E-mail comercial:** comercial@risco.med.br
 - **Telefone:** (37) 9 9999-7155
 - **País:** Brasil
 
-## Ecossistema YES Médicos
+## Parceiros
 
-- **YES Médicos** — sistema de gestão clínica e prontuário eletrônico: https://yesmedicos.com.br
-- **Risco MED** — app de risco cirúrgico pré-operatório: https://risco.med.br
-- **Painel de Chamadas** — display digital para sala de espera: https://tv.yes.med.br
+- **YES Médicos** — sistema de prontuário eletrônico e gestão clínica, parceiro comercial do Risco MED (empresas independentes): https://yesmedicos.com.br

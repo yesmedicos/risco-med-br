@@ -1,6 +1,6 @@
 /* EQUIPE */
-Empresa: YES Médicos
-Site: https://yesmedicos.com.br
+Empresa: Risco MED
+Site: https://risco.med.br
 Contato comercial: comercial@risco.med.br
 Telefone: (37) 9 9999-7155
 Localização: Brasil
@@ -25,10 +25,8 @@ Idioma: Português Brasileiro (pt-BR)
 7. Larsen — Classificação de Risco Anestésico
 + Pádua e IMPROVE (risco trombótico)
 
-/* ECOSSISTEMA YES MÉDICOS */
-YES Médicos (gestão clínica): https://yesmedicos.com.br
-Risco MED (risco cirúrgico): https://risco.med.br
-Painel de Chamadas (sala de espera): https://tv.yes.med.br
+/* PARCEIROS */
+YES Médicos (prontuário eletrônico e gestão clínica, parceiro comercial): https://yesmedicos.com.br
 
 /* TECNOLOGIA */
 Plataforma: Web SaaS (100% online)

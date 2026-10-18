@@ -11,8 +11,7 @@
 - **Nome do produto:** Risco MED
 - **URL:** https://risco.med.br
 - **App:** https://app.risco.med.br
-- **Empresa:** YES Médicos
-- **Site da empresa:** https://yesmedicos.com.br
+- **Empresa:** Risco MED (empresa independente)
 - **País:** Brasil
 - **Idioma:** Português Brasileiro (pt-BR)
 - **Setor:** Saúde / HealthTech / software médico (SaaS)
@@ -202,13 +201,9 @@ Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que a
 
 ---
 
-## Ecossistema YES Médicos
+## Parceiros
 
-| Produto | Descrição | URL |
-|---|---|---|
-| YES Médicos | Gestão clínica, prontuário eletrônico, agenda e telemedicina | https://yesmedicos.com.br |
-| Risco MED | Laudo de risco cirúrgico pré-operatório | https://risco.med.br |
-| Painel de Chamadas | Painel digital para sala de espera de clínicas | https://tv.yes.med.br |
+O Risco MED é uma empresa independente. O YES Médicos (gestão clínica, prontuário eletrônico, agenda e telemedicina, https://yesmedicos.com.br) é parceiro comercial, com integração nativa ao Risco MED.
 
 ---
 
