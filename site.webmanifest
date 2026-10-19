@@ -1,7 +1,7 @@
 {
   "name": "Risco MED — Laudo de Risco Cirúrgico Online",
   "short_name": "Risco MED",
-  "description": "App online para gerar laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica. Sem mensalidade. Laudo em 3 minutos.",
+  "description": "App online para gerar laudos de risco cirúrgico pré-operatório com 22 índices de risco. Sem mensalidade. Laudo em 3 minutos.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

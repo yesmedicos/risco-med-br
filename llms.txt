@@ -1,6 +1,6 @@
 # Risco MED — Laudo de Risco Cirúrgico Online
 
-> App online para médicos gerarem laudos de risco cirúrgico pré-operatório com 8 índices de avaliação cardiológica. Sem mensalidade. Laudo gerado em 3 minutos, assinado com certificado ICP-Brasil e compatível com o validador oficial do ITI.
+> App online para médicos gerarem laudos de risco cirúrgico pré-operatório com 22 índices de risco (cardíaco, trombótico e de sangramento, pulmonar, fragilidade, hepático e desfecho cirúrgico). Sem mensalidade. Laudo gerado em 3 minutos, assinado com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
 ## O que é
 
@@ -23,7 +23,7 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 
 1. O médico cria uma conta gratuita no Risco MED (R$ 5,00 de crédito inicial incluso).
 2. Preenche os dados clínicos do paciente (anamnese, alergias, medicamentos em uso).
-3. Seleciona quais dos 8 índices de risco deseja aplicar.
+3. Seleciona quais dos 22 índices de risco deseja aplicar.
 4. O sistema calcula automaticamente o risco e gera o laudo em PDF.
 5. O laudo sai assinado digitalmente com certificado ICP-Brasil, compatível com o validador do ITI, e é enviado por impressão, e-mail ou SMS.
 
@@ -37,24 +37,49 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 - R$ 0,50 por assinatura digital
 - Bônus inicial: R$ 5,00 de crédito para testes
 
-## Os 8 índices de risco cirúrgico disponíveis
+## Os 22 índices de risco cirúrgico disponíveis
 
-1. **EMAPO** — Estudo Multicêntrico de Avaliação Perioperatória (índice brasileiro)
-2. **Detsky** — Índice Modificado de Risco Cardíaco
-3. **ACP** — American College of Physicians
-4. **Goldman** — Índice de Risco Cardíaco de Goldman
-5. **Lee (RCRI)** — Revised Cardiac Risk Index
-6. **ASA** — American Society of Anesthesiologists
-7. **Larsen** — Índice de Risco Cardíaco de Larsen
-8. **NSQIP-MICA (Gupta)** — risco de infarto ou parada cardíaca até 30 dias após a cirurgia (ACS NSQIP)
+Organizados em seis grupos. Lista completa: https://risco.med.br/indices-de-risco-cirurgico/
 
-Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e **IMPROVE** (TEV e EP).
+**Risco cardíaco** — Complicações cardiovasculares, estado físico e capacidade funcional.
+- **EMAPO** — Escore brasileiro de complicações cardíacas perioperatórias: https://risco.med.br/emapo-risco-cirurgico/
+- **Lee (RCRI)** — Seis variáveis para complicações cardíacas maiores: https://risco.med.br/indice-de-lee-rcri/
+- **ASA** — Classificação do estado físico do paciente: https://risco.med.br/asa-risco-cirurgico/
+- **ACP** — Algoritmo em duas etapas: Detsky, Eagle e Vanzetto: https://risco.med.br/acp-risco-cirurgico/
+- **Goldman** — Índice multifatorial de risco cardíaco: https://risco.med.br/goldman-risco-cirurgico/
+- **Detsky** — Índice de Goldman modificado: https://risco.med.br/detsky-risco-cirurgico/
+- **Larsen** — Índice de risco cardíaco de Larsen: https://risco.med.br/larsen-risco-cirurgico/
+- **NSQIP-MICA (Gupta)** — Infarto ou parada cardíaca em 30 dias: https://risco.med.br/nsqip-mica-risco-cirurgico/
+- **AUB-HAS2** — Óbito, infarto ou AVC em 30 dias na cirurgia não cardíaca: https://risco.med.br/aub-has2-risco-cirurgico/
+- **DASI** — Capacidade funcional autorrelatada e METs estimados: https://risco.med.br/dasi-capacidade-funcional/
+
+**Trombótico e sangramento** — Risco de TEV e de sangramento para decidir a profilaxia.
+- **Caprini** — Risco de tromboembolismo venoso em pacientes cirúrgicos: https://risco.med.br/escore-de-caprini/
+- **Pádua** — Risco de TEV no paciente clínico internado (corte ≥ 4): https://risco.med.br/escore-de-padua/
+- **IMPROVE-VTE** — Risco de TEV em 3 meses no paciente clínico internado: https://risco.med.br/improve-vte/
+- **IMPROVE-Bleeding** — Risco de sangramento intra-hospitalar no paciente clínico: https://risco.med.br/improve-bleeding/
+
+**Pulmonar e anestésico** — Complicações pulmonares, apneia do sono, náuseas e vômitos.
+- **ARISCAT** — Complicações pulmonares pós-operatórias: https://risco.med.br/ariscat-risco-pulmonar/
+- **STOP-Bang** — Rastreamento de apneia obstrutiva do sono no pré-operatório: https://risco.med.br/stop-bang/
+- **Apfel** — Risco de náuseas e vômitos no pós-operatório (NVPO): https://risco.med.br/escore-de-apfel/
+
+**Fragilidade e comorbidades** — Fragilidade clínica e carga de comorbidades.
+- **Escala Clínica de Fragilidade (CFS)** — Grau de fragilidade do idoso, níveis 1 a 9 (Rockwood): https://risco.med.br/escala-clinica-de-fragilidade/
+- **Charlson** — Carga de comorbidades e mortalidade em 1 ano: https://risco.med.br/indice-de-charlson/
+
+**Hepático** — Gravidade da doença hepática e risco cirúrgico na cirrose.
+- **Child-Pugh** — Reserva hepática na cirrose e mortalidade cirúrgica: https://risco.med.br/child-pugh-risco-cirurgico/
+- **MELD** — Gravidade da cirrose e mortalidade pós-operatória: https://risco.med.br/meld-risco-cirurgico/
+
+**Desfecho cirúrgico** — Morbidade e mortalidade cirúrgica estimadas.
+- **P-POSSUM** — Mortalidade e morbidade pós-operatórias em cirurgia geral: https://risco.med.br/p-possum/
 
 ## Funcionalidades principais
 
 - Geração de laudo completo em 3 minutos
-- 8 índices de risco cardiológico selecionáveis por laudo
-- Avaliação trombótica (Pádua e IMPROVE)
+- 22 índices de risco selecionáveis por laudo, em seis grupos
+- Avaliação trombótica e de sangramento (Caprini, Pádua, IMPROVE-VTE e IMPROVE-Bleeding)
 - Laudo assinado com certificado ICP-Brasil e compatível com o validador do ITI (Resolução CFM 2.299/2021)
 - Laudos personalizáveis (anamnese, alergias, medicamentos em uso)
 - Impressão, envio por e-mail e SMS
@@ -77,6 +102,21 @@ Adicionalmente: avaliação de risco trombótico pelos índices de **Pádua** e 
 - https://risco.med.br/asa-risco-cirurgico/ — classificação ASA do estado físico, com exemplos.
 - https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen: variáveis, pontuação e classes.
 - https://risco.med.br/nsqip-mica-risco-cirurgico/ — NSQIP-MICA (Gupta): calculadora, variáveis, fórmula e exemplos de risco de infarto ou parada cardíaca em 30 dias.
+- https://risco.med.br/indices-de-risco-cirurgico/ — os 22 índices de risco cirúrgico do Risco MED, por categoria.
+- https://risco.med.br/aub-has2-risco-cirurgico/ — AUB-HAS2: 6 variáveis, classes de risco com taxas de óbito, IAM e AVC em 30 dias, papel na diretriz SBC 2024 e exemplo.
+- https://risco.med.br/dasi-capacidade-funcional/ — DASI (Duke Activity Status Index): 12 itens, conversão em METs, ponto de corte 34 do estudo METS no pré-operatório.
+- https://risco.med.br/escore-de-caprini/ — Escore de Caprini: variáveis, categorias de risco de TEV e profilaxia sugerida pela ACCP 2012 em cirurgia, com exemplo.
+- https://risco.med.br/escore-de-padua/ — Escore de Pádua: risco de TEV no paciente clínico internado, ponto de corte ≥4, limites no pré-operatório e exemplo.
+- https://risco.med.br/improve-vte/ — IMPROVE-VTE: escore de risco de TEV em pacientes clínicos internados, classes de risco, uso no perioperatório e exemplo.
+- https://risco.med.br/improve-bleeding/ — IMPROVE-Bleeding: risco de sangramento no paciente clínico internado, corte de 7 pontos e uso com Pádua e IMPROVE-VTE.
+- https://risco.med.br/ariscat-risco-pulmonar/ — ARISCAT: as 7 variáveis, pontos de corte e risco de complicações pulmonares pós-operatórias, com exemplo e limitações.
+- https://risco.med.br/stop-bang/ — STOP-Bang: os 8 itens, estratos de risco de apneia obstrutiva do sono e implicações perioperatórias, com exemplo.
+- https://risco.med.br/escore-de-apfel/ — Escore de Apfel: os 4 fatores de risco de náuseas e vômitos pós-operatórios (NVPO), interpretação e profilaxia.
+- https://risco.med.br/escala-clinica-de-fragilidade/ — Escala Clínica de Fragilidade (CFS) de Rockwood: os 9 níveis, ponto de corte e impacto no risco cirúrgico do idoso.
+- https://risco.med.br/indice-de-charlson/ — Índice de Comorbidade de Charlson: pontos por condição, ajuste por idade e mortalidade em 1 ano no estudo original.
+- https://risco.med.br/child-pugh-risco-cirurgico/ — Child-Pugh no risco cirúrgico: os 5 critérios, as classes A, B e C e a mortalidade em cirurgia abdominal na cirrose.
+- https://risco.med.br/meld-risco-cirurgico/ — MELD e MELD-Na: fórmula, variáveis e uso na previsão de mortalidade pós-operatória na cirrose (Mayo, Teh 2007).
+- https://risco.med.br/p-possum/ — P-POSSUM: escores fisiológico e operatório, equações de mortalidade e morbidade, diferença para o POSSUM e exemplo.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital do laudo com certificado ICP-Brasil (Resolução CFM 2.299/2021) e validação no ITI.
 
 
@@ -94,7 +134,7 @@ Médicos clínicos, cardiologistas, anestesiologistas, médicos de família, cl�
 Não. Não há mensalidade, taxa de instalação ou fidelidade. O médico paga R$ 1,00 por laudo gerado até 150 laudos por mês. Acima de 150 laudos mensais, não há cobrança adicional.
 
 **Quais índices de risco cirúrgico estão disponíveis?**
-São 8 índices: EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA, Larsen e NSQIP-MICA (Gupta). O médico escolhe quais incluir em cada laudo. Há também avaliação de risco trombótico pelos índices de Pádua e IMPROVE.
+São 22 índices em seis grupos: risco cardíaco (EMAPO, ASA, ACP, Goldman, Lee, Detsky, Larsen, NSQIP-MICA, AUB-HAS2 e DASI), trombótico e de sangramento (Caprini, Pádua, IMPROVE-VTE e IMPROVE-Bleeding), pulmonar e anestésico (ARISCAT, STOP-Bang e Apfel), fragilidade e comorbidades (Escala Clínica de Fragilidade e Charlson), hepático (Child-Pugh e MELD) e desfecho cirúrgico (P-POSSUM). O médico escolhe quais incluir em cada laudo.
 
 **Quanto tempo leva para gerar um laudo de risco cirúrgico?**
 3 minutos. O processo é automatizado — o médico preenche os dados e o sistema gera o laudo completo em PDF.

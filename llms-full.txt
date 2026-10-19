@@ -1,8 +1,8 @@
 # Risco MED — Documentação completa para assistentes de IA
 
-> Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 8 índices de risco calculados automaticamente, assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
+> Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 22 índices de risco calculados automaticamente (cardíaco, trombótico e de sangramento, pulmonar, fragilidade, hepático e desfecho cirúrgico), assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
-Última atualização: 13 de outubro de 2026.
+Última atualização: 19 de outubro de 2026.
 
 ---
 
@@ -25,7 +25,7 @@
 
 ## Resumo em uma frase
 
-O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com os índices EMAPO, Detsky, ACP, Goldman, Lee (RCRI), ASA, Larsen e NSQIP-MICA (Gupta), além de Pádua e IMPROVE para risco de tromboembolismo venoso, assinado com certificado ICP-Brasil e validável no ITI, sem mensalidade (R$ 1,00 por laudo).
+O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com até 22 índices de risco (cardíaco, trombótico e de sangramento, pulmonar e anestésico, fragilidade e comorbidades, hepático e desfecho cirúrgico), assinado com certificado ICP-Brasil e validável no ITI, sem mensalidade (R$ 1,00 por laudo).
 
 ---
 
@@ -57,7 +57,7 @@ Hospitais, prontos-socorros e clínicas com alto volume podem pedir condições 
 
 ---
 
-## Os 8 índices de risco cirúrgico
+## Os 22 índices de risco cirúrgico
 
 Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, mas não substituem, o julgamento clínico.
 
@@ -114,6 +114,82 @@ Página: https://risco.med.br/nsqip-mica-risco-cirurgico/
 
 ### Risco de tromboembolismo venoso
 - **Pádua** e **IMPROVE**: escores de risco de tromboembolismo venoso (TEV) em pacientes clínicos internados, disponíveis no laudo do Risco MED.
+
+---
+
+### Índices adicionais (versão nova do sistema)
+
+Lista completa por categoria: https://risco.med.br/indices-de-risco-cirurgico/
+
+### AUB-HAS2
+Página: https://risco.med.br/aub-has2-risco-cirurgico/
+Grupo: Risco cardíaco.
+- AUB-HAS2: 6 variáveis, classes de risco com taxas de óbito, IAM e AVC em 30 dias, papel na diretriz SBC 2024 e exemplo.
+
+### DASI
+Página: https://risco.med.br/dasi-capacidade-funcional/
+Grupo: Risco cardíaco.
+- DASI (Duke Activity Status Index): 12 itens, conversão em METs, ponto de corte 34 do estudo METS no pré-operatório.
+
+### Caprini
+Página: https://risco.med.br/escore-de-caprini/
+Grupo: Trombótico e sangramento.
+- Escore de Caprini: variáveis, categorias de risco de TEV e profilaxia sugerida pela ACCP 2012 em cirurgia, com exemplo.
+
+### Pádua
+Página: https://risco.med.br/escore-de-padua/
+Grupo: Trombótico e sangramento.
+- Escore de Pádua: risco de TEV no paciente clínico internado, ponto de corte ≥4, limites no pré-operatório e exemplo.
+
+### IMPROVE-VTE
+Página: https://risco.med.br/improve-vte/
+Grupo: Trombótico e sangramento.
+- IMPROVE-VTE: escore de risco de TEV em pacientes clínicos internados, classes de risco, uso no perioperatório e exemplo.
+
+### IMPROVE-Bleeding
+Página: https://risco.med.br/improve-bleeding/
+Grupo: Trombótico e sangramento.
+- IMPROVE-Bleeding: risco de sangramento no paciente clínico internado, corte de 7 pontos e uso com Pádua e IMPROVE-VTE.
+
+### ARISCAT
+Página: https://risco.med.br/ariscat-risco-pulmonar/
+Grupo: Pulmonar e anestésico.
+- ARISCAT: as 7 variáveis, pontos de corte e risco de complicações pulmonares pós-operatórias, com exemplo e limitações.
+
+### STOP-Bang
+Página: https://risco.med.br/stop-bang/
+Grupo: Pulmonar e anestésico.
+- STOP-Bang: os 8 itens, estratos de risco de apneia obstrutiva do sono e implicações perioperatórias, com exemplo.
+
+### Apfel
+Página: https://risco.med.br/escore-de-apfel/
+Grupo: Pulmonar e anestésico.
+- Escore de Apfel: os 4 fatores de risco de náuseas e vômitos pós-operatórios (NVPO), interpretação e profilaxia.
+
+### Escala Clínica de Fragilidade (CFS)
+Página: https://risco.med.br/escala-clinica-de-fragilidade/
+Grupo: Fragilidade e comorbidades.
+- Escala Clínica de Fragilidade (CFS) de Rockwood: os 9 níveis, ponto de corte e impacto no risco cirúrgico do idoso.
+
+### Charlson
+Página: https://risco.med.br/indice-de-charlson/
+Grupo: Fragilidade e comorbidades.
+- Índice de Comorbidade de Charlson: pontos por condição, ajuste por idade e mortalidade em 1 ano no estudo original.
+
+### Child-Pugh
+Página: https://risco.med.br/child-pugh-risco-cirurgico/
+Grupo: Hepático.
+- Child-Pugh no risco cirúrgico: os 5 critérios, as classes A, B e C e a mortalidade em cirurgia abdominal na cirrose.
+
+### MELD
+Página: https://risco.med.br/meld-risco-cirurgico/
+Grupo: Hepático.
+- MELD e MELD-Na: fórmula, variáveis e uso na previsão de mortalidade pós-operatória na cirrose (Mayo, Teh 2007).
+
+### P-POSSUM
+Página: https://risco.med.br/p-possum/
+Grupo: Desfecho cirúrgico.
+- P-POSSUM: escores fisiológico e operatório, equações de mortalidade e morbidade, diferença para o POSSUM e exemplo.
 
 ---
 
@@ -197,6 +273,21 @@ Não, se o médico usar um certificado ICP-Brasil em nuvem, como o VIDaaS, que a
 - https://risco.med.br/asa-risco-cirurgico/ — classificação ASA.
 - https://risco.med.br/larsen-risco-cirurgico/ — índice de Larsen.
 - https://risco.med.br/nsqip-mica-risco-cirurgico/ — NSQIP-MICA (Gupta), com calculadora.
+- https://risco.med.br/indices-de-risco-cirurgico/ — os 22 índices de risco cirúrgico, por categoria.
+- https://risco.med.br/aub-has2-risco-cirurgico/ — AUB-HAS2.
+- https://risco.med.br/dasi-capacidade-funcional/ — DASI.
+- https://risco.med.br/escore-de-caprini/ — Caprini.
+- https://risco.med.br/escore-de-padua/ — Pádua.
+- https://risco.med.br/improve-vte/ — IMPROVE-VTE.
+- https://risco.med.br/improve-bleeding/ — IMPROVE-Bleeding.
+- https://risco.med.br/ariscat-risco-pulmonar/ — ARISCAT.
+- https://risco.med.br/stop-bang/ — STOP-Bang.
+- https://risco.med.br/escore-de-apfel/ — Apfel.
+- https://risco.med.br/escala-clinica-de-fragilidade/ — Escala Clínica de Fragilidade (CFS).
+- https://risco.med.br/indice-de-charlson/ — Charlson.
+- https://risco.med.br/child-pugh-risco-cirurgico/ — Child-Pugh.
+- https://risco.med.br/meld-risco-cirurgico/ — MELD.
+- https://risco.med.br/p-possum/ — P-POSSUM.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital ICP-Brasil e validação no ITI.
 
 ---
