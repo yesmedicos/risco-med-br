@@ -154,7 +154,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -168,10 +168,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -192,24 +192,28 @@
             </aside>
 
             <h2>Variáveis e pontuação</h2>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Ritmo não sinusal, ou sinusal com extrassístoles atriais no último ECG</td><td class="pts">7</td></tr>
-                    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
-                    <tr><td>Estenose aórtica importante</td><td class="pts">3</td></tr>
-                    <tr><td>Cirurgia intraperitoneal, intratorácica ou aórtica</td><td class="pts">3</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do índice de Goldman no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+<tbody>
+    <tr><td>Ritmo não sinusal, ou sinusal com extrassístoles atriais no último ECG</td><td class="pts">7</td></tr>
+    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
+    <tr><td>Estenose aórtica importante</td><td class="pts">3</td></tr>
+    <tr><td>Cirurgia intraperitoneal, intratorácica ou aórtica</td><td class="pts">3</td></tr>
+    <tr><td>Terceira bulha (B3) ou turgência jugular no pré-operatório</td><td class="pts">11</td></tr>
+    <tr><td>Infarto do miocárdio nos últimos 6 meses</td><td class="pts">10</td></tr>
+    <tr><td>Mais de 5 extrassístoles ventriculares por minuto, documentadas em qualquer momento antes da cirurgia</td><td class="pts">7</td></tr>
+    <tr><td>Cirurgia de emergência</td><td class="pts">4</td></tr>
+    <tr><td>Mau estado geral: PaO<sub>2</sub> &lt; 60 mmHg ou PaCO<sub>2</sub> &gt; 50 mmHg; potássio &lt; 3,0 mEq/L ou bicarbonato &lt; 20 mEq/L; nitrogênio ureico (BUN) &gt; 50 mg/dL (ureia &gt; 107 mg/dL) ou creatinina &gt; 3,0 mg/dL; TGO (AST) elevada ou sinais de hepatopatia crônica; ou paciente acamado por causa não cardíaca (qualquer um destes)</td><td class="pts">3</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (9 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>Goldman calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>
@@ -263,10 +267,10 @@
         <div class="container">
           
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> • 
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> • 
+                <a href="https://risco.med.br#precos">Preços</a> • 
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -275,5 +279,6 @@
     </footer>
 	
 	
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -199,24 +199,24 @@
 
             <h2>Os 8 itens do STOP-Bang</h2>
             <p>Cada resposta positiva vale 1 ponto, e o total vai de 0 a 8. O nome é um acrônimo dos itens em inglês: os quatro primeiros são perguntas ao paciente; os quatro últimos, dados objetivos.</p>
-            <div class="locked">
-                <div class="locked-preview is-list">
-                    <ul>
-                        <li>Ronco alto, mais alto que a fala ou audível com a porta fechada</li>
-                        <li>Cansaço, fadiga ou sonolência diurna frequentes</li>
-                        <li>Apneia observada: alguém já viu o paciente parar de respirar ou engasgar durante o sono</li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                    </ul>
-                </div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do STOP-Bang no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <ul>
+    <li>Ronco alto, mais alto que a fala ou audível com a porta fechada</li>
+    <li>Cansaço, fadiga ou sonolência diurna frequentes</li>
+    <li>Apneia observada: alguém já viu o paciente parar de respirar ou engasgar durante o sono</li>
+    <li>Pressão arterial elevada: hipertensão arterial, em tratamento ou não</li>
+    <li>IMC acima de 35 kg/m²</li>
+    <li>Idade acima de 50 anos</li>
+    <li>Circunferência cervical acima de 40 cm, medida na altura da proeminência laríngea (a versão atual do questionário usa ≥ 43 cm em homens e ≥ 41 cm em mulheres)</li>
+    <li>Sexo masculino</li>
+</ul>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (8 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>STOP-Bang calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Interpretação do STOP-Bang</h2>
             <div class="table-wrap"><table>
@@ -273,10 +273,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -285,5 +285,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

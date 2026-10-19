@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -199,23 +199,30 @@
 
             <h2>As 11 variáveis do escore de Pádua</h2>
             <p>Cada fator presente soma de 1 a 3 pontos, até o máximo de 20:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
                 <thead><tr><th>Fator de risco</th><th>Pontos</th></tr></thead>
                 <tbody>
-                    <tr><td>Câncer ativo</td><td class="pts">3</td></tr>
+                    <tr><td>Câncer ativo (metástases locais ou a distância e/ou quimioterapia ou radioterapia nos últimos 6 meses)</td><td class="pts">3</td></tr>
                     <tr><td>TEV prévio (exceto trombose venosa superficial)</td><td class="pts">3</td></tr>
-                    <tr><td>Mobilidade reduzida</td><td class="pts">3</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr><td>Mobilidade reduzida (repouso no leito, com ida ao banheiro, previsto por pelo menos 3 dias, por limitação do paciente ou prescrição médica)</td><td class="pts">3</td></tr>
+                    <tr><td>Trombofilia conhecida (deficiência de antitrombina, proteína C ou proteína S, fator V de Leiden, mutação G20210A da protrombina, síndrome antifosfolípide)</td><td class="pts">3</td></tr>
+                    <tr><td>Trauma e/ou cirurgia recente (≤1 mês)</td><td class="pts">2</td></tr>
+                    <tr><td>Idade ≥70 anos</td><td class="pts">1</td></tr>
+                    <tr><td>Insuficiência cardíaca e/ou respiratória</td><td class="pts">1</td></tr>
+                    <tr><td>Infarto agudo do miocárdio e/ou acidente vascular cerebral isquêmico</td><td class="pts">1</td></tr>
+                    <tr><td>Infecção aguda e/ou doença reumatológica</td><td class="pts">1</td></tr>
+                    <tr><td>Obesidade (IMC ≥30 kg/m²)</td><td class="pts">1</td></tr>
+                    <tr><td>Tratamento hormonal em curso</td><td class="pts">1</td></tr>
                 </tbody>
             </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do escore de Pádua no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (11 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>Pádua calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco e ponto de corte</h2>
             <div class="table-wrap"><table>
@@ -271,10 +278,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -283,5 +290,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -200,26 +200,41 @@
             <h2>POSSUM e P-POSSUM: o que mudou</h2>
             <p>As variáveis são as mesmas nos dois modelos, cada uma pontuada em 1, 2, 4 ou 8 pontos conforme a gravidade. A diferença está na equação de mortalidade: o POSSUM original superestimava os óbitos, de forma mais acentuada em pacientes de baixo risco, e o grupo de Portsmouth propôs uma nova equação, calibrada em sua própria série de cirurgia geral. Para morbidade, continua-se usando a equação do POSSUM.</p>
 
-            <h2>As variáveis do escore fisiológico</h2>
-            <p>Cada variável recebe 1, 2, 4 ou 8 pontos, e a soma forma o escore fisiológico (EF):</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>1 ponto</th><th>2 pontos</th><th>4 pontos</th><th>8 pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Idade</td><td>Até 60 anos</td><td>61 a 70 anos</td><td>71 anos ou mais</td><td>–</td></tr>
-                    <tr><td>Sinais cardíacos</td><td>Sem insuficiência cardíaca</td><td>Diurético, digoxina, antianginoso ou anti-hipertensivo</td><td>Edema periférico, varfarina ou cardiomegalia limítrofe</td><td>Turgência jugular ou cardiomegalia</td></tr>
-                    <tr><td>Sinais respiratórios</td><td>Sem dispneia</td><td>Dispneia aos esforços ou DPOC leve</td><td>Dispneia limitante ou DPOC moderada</td><td>Dispneia em repouso</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do P-POSSUM no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <h2>As variáveis dos escores fisiológico e operatório</h2>
+            <p>Cada variável recebe 1, 2, 4 ou 8 pontos. As 12 primeiras somam o escore fisiológico (EF) e as 6 últimas, o escore operatório (EO):</p>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>1 ponto</th><th>2 pontos</th><th>4 pontos</th><th>8 pontos</th></tr></thead>
+<tbody>
+    <tr><th colspan="5">Escore fisiológico (EF): 12 variáveis</th></tr>
+    <tr><td>Idade</td><td>Até 60 anos</td><td>61 a 70 anos</td><td>71 anos ou mais</td><td>–</td></tr>
+    <tr><td>Sinais cardíacos</td><td>Sem insuficiência cardíaca</td><td>Diurético, digoxina, antianginoso ou anti-hipertensivo</td><td>Edema periférico, varfarina ou cardiomegalia limítrofe</td><td>Turgência jugular ou cardiomegalia</td></tr>
+    <tr><td>Sinais respiratórios</td><td>Sem dispneia</td><td>Dispneia aos esforços ou DPOC leve na radiografia</td><td>Dispneia limitante (ao subir um lance de escada) ou DPOC moderada na radiografia</td><td>Dispneia em repouso ou fibrose ou consolidação na radiografia</td></tr>
+    <tr><td>Pressão arterial sistólica (mmHg)</td><td>110 a 130</td><td>131 a 170 ou 100 a 109</td><td>171 ou mais, ou 90 a 99</td><td>89 ou menos</td></tr>
+    <tr><td>Frequência cardíaca (bpm)</td><td>50 a 80</td><td>81 a 100 ou 40 a 49</td><td>101 a 120</td><td>121 ou mais, ou 39 ou menos</td></tr>
+    <tr><td>Escala de coma de Glasgow</td><td>15</td><td>12 a 14</td><td>9 a 11</td><td>8 ou menos</td></tr>
+    <tr><td>Hemoglobina (g/dL)</td><td>13,0 a 16,0</td><td>11,5 a 12,9 ou 16,1 a 17,0</td><td>10,0 a 11,4 ou 17,1 a 18,0</td><td>9,9 ou menos, ou 18,1 ou mais</td></tr>
+    <tr><td>Leucócitos (× 10⁹/L, isto é, mil/mm³)</td><td>4,0 a 10,0</td><td>10,1 a 20,0 ou 3,1 a 3,9</td><td>20,1 ou mais, ou 3,0 ou menos</td><td>–</td></tr>
+    <tr><td>Ureia (mmol/L; entre parênteses, ureia em mg/dL)</td><td>7,5 ou menos (até 45)</td><td>7,6 a 10,0 (46 a 60)</td><td>10,1 a 15,0 (61 a 90)</td><td>15,1 ou mais (91 ou mais)</td></tr>
+    <tr><td>Sódio (mmol/L)</td><td>136 ou mais</td><td>131 a 135</td><td>126 a 130</td><td>125 ou menos</td></tr>
+    <tr><td>Potássio (mmol/L)</td><td>3,5 a 5,0</td><td>3,2 a 3,4 ou 5,1 a 5,3</td><td>2,9 a 3,1 ou 5,4 a 5,9</td><td>2,8 ou menos, ou 6,0 ou mais</td></tr>
+    <tr><td>Eletrocardiograma</td><td>Normal</td><td>–</td><td>Fibrilação atrial com FC de 60 a 90 bpm</td><td>Qualquer outro ritmo anormal, 5 ou mais extrassístoles por minuto, ondas Q ou alterações de ST-T</td></tr>
+    <tr><th colspan="5">Escore operatório (EO): 6 variáveis</th></tr>
+    <tr><td>Porte da cirurgia</td><td>Pequeno (ex.: herniorrafia)</td><td>Médio (ex.: apendicectomia, colecistectomia)</td><td>Grande (ex.: laparotomia, ressecção intestinal)</td><td>Grande porte+ (ex.: cirurgia de aorta, amputação abdominoperineal, ressecção pancreática ou hepática)</td></tr>
+    <tr><td>Número de procedimentos</td><td>1</td><td>–</td><td>2</td><td>Mais de 2</td></tr>
+    <tr><td>Perda sanguínea total (mL)</td><td>100 ou menos</td><td>101 a 500</td><td>501 a 999</td><td>1.000 ou mais</td></tr>
+    <tr><td>Contaminação peritoneal</td><td>Nenhuma</td><td>Mínima (líquido seroso)</td><td>Pus localizado</td><td>Conteúdo intestinal, pus ou sangue livres na cavidade</td></tr>
+    <tr><td>Neoplasia maligna</td><td>Nenhuma</td><td>Somente tumor primário</td><td>Metástase linfonodal</td><td>Metástase a distância</td></tr>
+    <tr><td>Caráter da cirurgia</td><td>Eletiva</td><td>–</td><td>Urgência: reanimação possível por mais de 2 horas, cirurgia em até 24 horas da admissão</td><td>Emergência: cirurgia imediata, em menos de 2 horas</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (20 itens)</button>
             </div>
-            <p>O escore operatório (EO) é formado por 6 variáveis da cirurgia, pontuadas da mesma forma.</p>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>P-POSSUM calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Equações e interpretação do P-POSSUM</h2>
             <p>O P-POSSUM não tem classes fixas: o resultado é um risco contínuo, obtido por regressão logística, em que R é o risco previsto e ln[R/(1 − R)] é calculado como abaixo.</p>
@@ -282,10 +297,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -294,5 +309,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

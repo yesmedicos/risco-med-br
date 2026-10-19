@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -199,23 +199,59 @@
 
             <h2>Variáveis do escore de Caprini</h2>
             <p>Cada fator de risco presente soma 1, 2, 3 ou 5 pontos, e o resultado é a soma de todos os fatores:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
                 <thead><tr><th>Fator de risco</th><th>Pontos</th></tr></thead>
                 <tbody>
                     <tr><td>Idade de 41 a 60 anos</td><td class="pts">1</td></tr>
                     <tr><td>Cirurgia de pequeno porte</td><td class="pts">1</td></tr>
                     <tr><td>Índice de massa corporal (IMC) &gt;25 kg/m²</td><td class="pts">1</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr><td>Cirurgia de grande porte prévia (&lt;1 mês)</td><td class="pts">1</td></tr>
+                    <tr><td>Varizes de membros inferiores</td><td class="pts">1</td></tr>
+                    <tr><td>História de doença inflamatória intestinal</td><td class="pts">1</td></tr>
+                    <tr><td>Edema atual de membros inferiores</td><td class="pts">1</td></tr>
+                    <tr><td>Infarto agudo do miocárdio</td><td class="pts">1</td></tr>
+                    <tr><td>Insuficiência cardíaca congestiva (&lt;1 mês)</td><td class="pts">1</td></tr>
+                    <tr><td>Sepse (&lt;1 mês)</td><td class="pts">1</td></tr>
+                    <tr><td>Doença pulmonar grave, incluindo pneumonia (&lt;1 mês)</td><td class="pts">1</td></tr>
+                    <tr><td>Função pulmonar anormal (doença pulmonar obstrutiva crônica, DPOC)</td><td class="pts">1</td></tr>
+                    <tr><td>Paciente clínico atualmente em repouso no leito</td><td class="pts">1</td></tr>
+                    <tr><td>Outros fatores de risco</td><td class="pts">1</td></tr>
+                    <tr><td>Somente mulheres: contraceptivo oral ou terapia de reposição hormonal</td><td class="pts">1</td></tr>
+                    <tr><td>Somente mulheres: gestação ou puerpério (&lt;1 mês)</td><td class="pts">1</td></tr>
+                    <tr><td>Somente mulheres: história de natimorto sem causa aparente, abortamentos espontâneos de repetição (≥3), parto prematuro com toxemia ou recém-nascido com restrição de crescimento</td><td class="pts">1</td></tr>
+                    <tr><td>Idade de 61 a 74 anos</td><td class="pts">2</td></tr>
+                    <tr><td>Cirurgia artroscópica</td><td class="pts">2</td></tr>
+                    <tr><td>Neoplasia maligna (atual ou prévia)</td><td class="pts">2</td></tr>
+                    <tr><td>Cirurgia de grande porte (&gt;45 minutos)</td><td class="pts">2</td></tr>
+                    <tr><td>Cirurgia laparoscópica (&gt;45 minutos)</td><td class="pts">2</td></tr>
+                    <tr><td>Paciente restrito ao leito (&gt;72 horas)</td><td class="pts">2</td></tr>
+                    <tr><td>Imobilização com aparelho gessado (&lt;1 mês)</td><td class="pts">2</td></tr>
+                    <tr><td>Acesso venoso central</td><td class="pts">2</td></tr>
+                    <tr><td>Idade ≥75 anos</td><td class="pts">3</td></tr>
+                    <tr><td>História de trombose venosa profunda ou embolia pulmonar</td><td class="pts">3</td></tr>
+                    <tr><td>História familiar de trombose</td><td class="pts">3</td></tr>
+                    <tr><td>Fator V de Leiden positivo</td><td class="pts">3</td></tr>
+                    <tr><td>Mutação G20210A da protrombina positiva</td><td class="pts">3</td></tr>
+                    <tr><td>Homocisteína sérica elevada</td><td class="pts">3</td></tr>
+                    <tr><td>Anticoagulante lúpico positivo</td><td class="pts">3</td></tr>
+                    <tr><td>Anticorpos anticardiolipina elevados</td><td class="pts">3</td></tr>
+                    <tr><td>Trombocitopenia induzida por heparina</td><td class="pts">3</td></tr>
+                    <tr><td>Outra trombofilia congênita ou adquirida</td><td class="pts">3</td></tr>
+                    <tr><td>Artroplastia eletiva de grande porte de membro inferior</td><td class="pts">5</td></tr>
+                    <tr><td>Fratura de quadril, pelve ou perna (&lt;1 mês)</td><td class="pts">5</td></tr>
+                    <tr><td>Acidente vascular cerebral (&lt;1 mês)</td><td class="pts">5</td></tr>
+                    <tr><td>Politrauma (&lt;1 mês)</td><td class="pts">5</td></tr>
+                    <tr><td>Lesão medular aguda com paralisia (&lt;1 mês)</td><td class="pts">5</td></tr>
                 </tbody>
             </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do escore de Caprini no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (40 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>Caprini calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Categorias de risco e profilaxia (ACCP 2012)</h2>
             <div class="table-wrap"><table>
@@ -271,10 +307,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -283,5 +319,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

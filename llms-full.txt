@@ -43,7 +43,6 @@ No Risco MED, o médico preenche os dados do paciente uma vez, escolhe os índic
 |---|---|---|
 | Laudo gerado | R$ 1,00 | Até 150 laudos por mês |
 | Laudos acima de 150 no mês | Gratuitos | A partir do 151º laudo |
-| Assinatura digital | R$ 0,50 | Por assinatura |
 | Mensalidade | R$ 0,00 | Sem mensalidade |
 | Taxa de adesão | R$ 0,00 | Sem taxa |
 | Fidelidade | Nenhuma | Cancele quando quiser |
@@ -65,7 +64,7 @@ Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, ma
 Página: https://risco.med.br/emapo-risco-cirurgico/
 - Escore brasileiro, desenvolvido e validado em estudo multicêntrico (Pinho C et al., Clinics, 2007).
 - 27 variáveis clínicas e cirúrgicas, como idade acima de 70 anos, infarto prévio e tipo de cirurgia. A lista completa de variáveis e a pontuação ficam disponíveis no Risco MED, que calcula o índice automaticamente no laudo.
-- Classificação pela soma dos pontos, para óbito e/ou eventos cardíacos: muito baixo (0 ponto, < 1%), baixo (1 a 5, 1% a 3%), moderado (6 a 10, 3% a 7%), elevado (11 a 15, 7% a 13%) e muito elevado (> 15, > 13%).
+- Classificação pela soma dos pontos, para óbito e/ou eventos cardíacos: muito baixo (0 ponto, < 1%), baixo (1 a 5, < 3%), moderado (6 a 10, < 7%), elevado (11 a 15, 7% a 13%) e muito elevado (> 15, > 13%).
 
 ### Detsky (índice de Detsky modificado)
 Página: https://risco.med.br/detsky-risco-cirurgico/

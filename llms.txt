@@ -34,7 +34,6 @@ O Risco MED é um sistema SaaS para médicos gerarem laudos de risco cirúrgico 
 - Sem fidelidade
 - R$ 1,00 por laudo gerado (até 150 laudos/mês)
 - Laudos acima de 150/mês: gratuitos
-- R$ 0,50 por assinatura digital
 - Bônus inicial: R$ 5,00 de crédito para testes
 
 ## Os 22 índices de risco cirúrgico disponíveis

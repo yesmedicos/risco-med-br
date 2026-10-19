@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -198,24 +198,43 @@
             </aside>
 
             <h2>As condições do índice de Charlson e seus pesos</h2>
-            <p>São 19 condições, cada uma com peso de 1, 2, 3 ou 6 pontos, proporcional ao risco relativo de morte no estudo de derivação. A soma é o escore:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Infarto agudo do miocárdio prévio</td><td class="pts">1</td></tr>
-                    <tr><td>Insuficiência cardíaca congestiva</td><td class="pts">1</td></tr>
-                    <tr><td>Doença arterial periférica</td><td class="pts">1</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do índice de Charlson no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <p>São 19 condições, cada uma com peso de 1, 2, 3 ou 6 pontos, proporcional ao risco relativo de morte no estudo de derivação. A soma é o escore; na versão ajustada por idade, somam-se também os pontos da faixa etária (últimas linhas da tabela):</p>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+<tbody>
+    <tr><td>Infarto agudo do miocárdio prévio</td><td class="pts">1</td></tr>
+    <tr><td>Insuficiência cardíaca congestiva</td><td class="pts">1</td></tr>
+    <tr><td>Doença arterial periférica</td><td class="pts">1</td></tr>
+    <tr><td>Doença cerebrovascular (AVC com sequela mínima ou ausente, ou ataque isquêmico transitório)</td><td class="pts">1</td></tr>
+    <tr><td>Demência</td><td class="pts">1</td></tr>
+    <tr><td>Doença pulmonar crônica</td><td class="pts">1</td></tr>
+    <tr><td>Doença do tecido conjuntivo</td><td class="pts">1</td></tr>
+    <tr><td>Doença ulcerosa péptica (tratamento prévio de úlcera ou sangramento por úlcera)</td><td class="pts">1</td></tr>
+    <tr><td>Doença hepática leve (hepatite crônica ou cirrose sem hipertensão portal)</td><td class="pts">1</td></tr>
+    <tr><td>Diabetes sem lesão de órgão-alvo (em tratamento com antidiabético oral ou insulina; controle só com dieta não pontua)</td><td class="pts">1</td></tr>
+    <tr><td>Hemiplegia ou paraplegia</td><td class="pts">2</td></tr>
+    <tr><td>Doença renal moderada ou grave (creatinina &gt; 3 mg/dL, diálise, transplante renal ou uremia)</td><td class="pts">2</td></tr>
+    <tr><td>Diabetes com lesão de órgão-alvo (retinopatia, nefropatia ou neuropatia; substitui o item diabetes sem lesão)</td><td class="pts">2</td></tr>
+    <tr><td>Tumor sólido sem metástase</td><td class="pts">2</td></tr>
+    <tr><td>Leucemia (aguda ou crônica)</td><td class="pts">2</td></tr>
+    <tr><td>Linfoma</td><td class="pts">2</td></tr>
+    <tr><td>Doença hepática moderada ou grave (cirrose com hipertensão portal, com ou sem sangramento varicoso; substitui o item doença hepática leve)</td><td class="pts">3</td></tr>
+    <tr><td>Tumor sólido metastático (substitui o item tumor sólido sem metástase)</td><td class="pts">6</td></tr>
+    <tr><td>AIDS</td><td class="pts">6</td></tr>
+    <tr><td>Idade de 50 a 59 anos (somente na versão ajustada por idade)</td><td class="pts">1</td></tr>
+    <tr><td>Idade de 60 a 69 anos (somente na versão ajustada por idade)</td><td class="pts">2</td></tr>
+    <tr><td>Idade de 70 a 79 anos (somente na versão ajustada por idade)</td><td class="pts">3</td></tr>
+    <tr><td>Idade de 80 anos ou mais (somente na versão ajustada por idade)</td><td class="pts">4</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (23 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>Charlson calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Mortalidade por faixa do índice de Charlson</h2>
             <div class="table-wrap"><table>
@@ -271,10 +290,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -283,5 +302,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

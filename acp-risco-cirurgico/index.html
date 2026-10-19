@@ -154,7 +154,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -168,10 +168,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -193,42 +193,50 @@
 
             <h2>Etapa 1: variáveis de Detsky</h2>
             <p>Calcule a pontuação do <a href="/detsky-risco-cirurgico/">índice de Detsky modificado</a>:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Infarto há mais de 6 meses</td><td class="pts">5</td></tr>
-                    <tr><td>Angina classe III</td><td class="pts">10</td></tr>
-                    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do algoritmo do ACP no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+<tbody>
+    <tr><td>Infarto do miocárdio há mais de 6 meses</td><td class="pts">5</td></tr>
+    <tr><td>Angina classe III (Canadian Cardiovascular Society)</td><td class="pts">10</td></tr>
+    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
+    <tr><td>Infarto do miocárdio há menos de 6 meses</td><td class="pts">10</td></tr>
+    <tr><td>Angina classe IV (Canadian Cardiovascular Society)</td><td class="pts">20</td></tr>
+    <tr><td>Angina instável nos últimos 6 meses</td><td class="pts">10</td></tr>
+    <tr><td>Edema agudo de pulmão (alveolar) na última semana</td><td class="pts">10</td></tr>
+    <tr><td>Edema agudo de pulmão (alveolar) alguma vez, há mais de 1 semana</td><td class="pts">5</td></tr>
+    <tr><td>Suspeita de estenose aórtica crítica</td><td class="pts">20</td></tr>
+    <tr><td>Ritmo não sinusal, ou sinusal com extrassístoles atriais no último ECG pré-operatório</td><td class="pts">5</td></tr>
+    <tr><td>Mais de 5 extrassístoles ventriculares por minuto em qualquer momento antes da cirurgia</td><td class="pts">5</td></tr>
+    <tr><td>Mau estado geral (mesmos critérios do índice de Goldman: PaO<sub>2</sub> &lt; 60 mmHg ou PaCO<sub>2</sub> &gt; 50 mmHg; potássio &lt; 3,0 mEq/L ou bicarbonato &lt; 20 mEq/L; nitrogênio ureico (BUN) &gt; 50 mg/dL (ureia &gt; 107 mg/dL) ou creatinina &gt; 3,0 mg/dL; TGO (AST) elevada ou sinais de hepatopatia crônica; ou paciente acamado por causa não cardíaca)</td><td class="pts">5</td></tr>
+    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (13 itens)</button>
             </div>
             <p>Com <strong>mais de 15 pontos</strong>, o paciente é de <strong>alto risco</strong> e a avaliação termina aqui. Com 15 pontos ou menos, siga para a etapa 2.</p>
 
             <h2>Etapa 2: variáveis de Eagle e Vanzetto</h2>
             <p>Conte quantas destas condições o paciente tem.</p>
-            <div class="locked">
-                <div class="locked-preview is-list">
-                    <ul>
-                        <li>Diabetes melito (critério de Eagle)</li>
-                        <li>História de infarto (critério de Vanzetto)</li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                        <li class="ghost" aria-hidden="true"><span class="ghost-bar"></span></li>
-                    </ul>
-                </div>
-                <div class="locked-cta">
-                    <p><strong>Veja todos os critérios de Eagle e Vanzetto no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <ul>
+    <li>Diabetes melito (critério de Eagle e de Vanzetto)</li>
+    <li>História de infarto (critério de Vanzetto)</li>
+    <li>Idade acima de 70 anos (critério de Eagle e de Vanzetto)</li>
+    <li>História de angina (critério de Eagle e de Vanzetto)</li>
+    <li>Ondas Q no eletrocardiograma (critério de Eagle e de Vanzetto)</li>
+    <li>História de arritmia ventricular (extrassístoles ventriculares) (critério de Eagle)</li>
+    <li>História de insuficiência cardíaca (critério de Vanzetto)</li>
+    <li>Alterações isquêmicas do segmento ST no eletrocardiograma de repouso (critério de Vanzetto)</li>
+    <li>Hipertensão arterial com hipertrofia ventricular esquerda importante (critério de Vanzetto)</li>
+</ul>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (9 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>ACP calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>
@@ -279,10 +287,10 @@
         <div class="container">
           
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> • 
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> • 
+                <a href="https://risco.med.br#precos">Preços</a> • 
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -291,5 +299,6 @@
     </footer>
 	
 	
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

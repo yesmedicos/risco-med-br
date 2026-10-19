@@ -113,7 +113,7 @@
           "name": "O que significa a letra E na classificação ASA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Indica cirurgia de emergência e pode ser acrescentada a qualquer classe, por exemplo ASA II E."
+            "text": "Indica cirurgia de emergência e pode ser acrescentada às classes I a V, por exemplo ASA II E."
           }
         },
         {
@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -200,22 +200,26 @@
             </aside>
 
             <h2>As classes ASA</h2>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
                 <thead><tr><th>Classe</th><th>Definição</th><th>Exemplos em adultos</th></tr></thead>
                 <tbody>
                     <tr><td>ASA I</td><td>Paciente saudável</td><td>Sem doença, não fumante, uso mínimo ou nenhum de álcool</td></tr>
-                    <tr><td>ASA II</td><td>Doença sistêmica leve</td><td>Tabagismo atual, gestação, obesidade (IMC 30–40), diabetes ou hipertensão bem controlados, doença pulmonar leve</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr><td>ASA II</td><td>Doença sistêmica leve</td><td>Tabagismo atual, gestação, obesidade (IMC 30–40), diabetes ou hipertensão bem controlados, doença pulmonar leve; consumo social de álcool. Doenças leves, sem limitação funcional substancial</td></tr>
+                    <tr><td>ASA III</td><td>Doença sistêmica grave</td><td>Uma ou mais doenças moderadas a graves, com limitação funcional substancial: diabetes ou hipertensão mal controlados, DPOC, obesidade mórbida (IMC ≥ 40), hepatite ativa, dependência ou abuso de álcool, marca-passo implantado, redução moderada da fração de ejeção, doença renal crônica terminal em diálise regular, história (há mais de 3 meses) de infarto do miocárdio, AVC, AIT ou doença coronariana com stent</td></tr>
+                    <tr><td>ASA IV</td><td>Doença sistêmica grave que representa ameaça constante à vida</td><td>Infarto do miocárdio, AVC, AIT ou doença coronariana com stent recentes (há menos de 3 meses), isquemia miocárdica em curso, disfunção valvar grave, redução grave da fração de ejeção, sepse, coagulação intravascular disseminada, doença renal crônica terminal sem diálise regular</td></tr>
+                    <tr><td>ASA V</td><td>Paciente moribundo, sem expectativa de sobreviver sem a operação</td><td>Ruptura de aneurisma de aorta abdominal ou torácica, politrauma grave, hemorragia intracraniana com efeito de massa, isquemia intestinal associada a cardiopatia significativa ou a disfunção de múltiplos órgãos</td></tr>
+                    <tr><td>ASA VI</td><td>Paciente com morte encefálica declarada, cujos órgãos estão sendo removidos para doação</td><td>Sem exemplos clínicos: uso restrito à captação de órgãos</td></tr>
+                    <tr><td>Sufixo E</td><td>Cirurgia de emergência: o atraso no tratamento aumentaria de forma significativa a ameaça à vida ou a um segmento corporal</td><td>Acrescentado à classe de I a V (por exemplo, ASA III E); não se aplica à classe VI</td></tr>
                 </tbody>
             </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as classes da classificação ASA, com exemplos, no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (7 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>ASA calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
             <p>Acrescente a letra <strong>E</strong> à classe quando a cirurgia é de emergência (por exemplo, ASA III E).</p>
 
             <h2>ASA não é um índice de risco cardíaco</h2>
@@ -232,7 +236,7 @@
             <h3>O que significa ASA III?</h3>
             <p>Paciente com doença sistêmica grave, como diabetes ou hipertensão mal controlados, DPOC ou obesidade com IMC de 40 ou mais.</p>
             <h3>O que significa a letra E na classificação ASA?</h3>
-            <p>Indica cirurgia de emergência e pode ser acrescentada a qualquer classe, por exemplo ASA II E.</p>
+            <p>Indica cirurgia de emergência e pode ser acrescentada às classes I a V, por exemplo ASA II E.</p>
             <h3>A classificação ASA substitui a avaliação de risco cardíaco?</h3>
             <p>Não. Ela descreve o estado físico geral e costuma ser usada junto com índices cardíacos como Lee, EMAPO ou ACP.</p>
 
@@ -253,10 +257,10 @@
         <div class="container">
           
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> • 
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> • 
+                <a href="https://risco.med.br#precos">Preços</a> • 
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -265,5 +269,6 @@
     </footer>
 	
 	
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

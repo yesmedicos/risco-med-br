@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -207,32 +207,54 @@
 
             <h2>Variáveis e pontuação do EMAPO</h2>
             <p>Some os pontos de todas as condições presentes no paciente:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
                 <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
                 <tbody>
-                    <tr><td>Cirurgia intraperitoneal, da aorta e seus ramos, intratorácica ou ortopédica</td><td class="pts">4</td></tr>
+                    <tr><td>Cirurgia intraperitoneal, intratorácica, da aorta e seus ramos ou ortopédica de grande porte</td><td class="pts">4</td></tr>
                     <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
                     <tr><td>Infarto do miocárdio há mais de 6 meses</td><td class="pts">5</td></tr>
                     <tr><td>Fibrilação atrial crônica, taquiarritmias atriais paroxísticas ou taquicardia ventricular não sustentada documentada</td><td class="pts">5</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr><td>Paciente inativo e acamado</td><td class="pts">4</td></tr>
+                    <tr><td>Hipertensão arterial sistêmica com hipertrofia ventricular esquerda e alteração de ST-T</td><td class="pts">4</td></tr>
+                    <tr><td>Acidente vascular cerebral isquêmico há menos de 3 meses</td><td class="pts">4</td></tr>
+                    <tr><td>Diabetes melito com nefropatia ou cardiopatia, ou em uso de insulina</td><td class="pts">4</td></tr>
+                    <tr><td>Doença arterial coronariana crônica com teste ergométrico negativo (há menos de 3 meses)</td><td class="pts">4</td></tr>
+                    <tr><td>Aneurisma de aorta assintomático, sem indicação cirúrgica</td><td class="pts">4</td></tr>
+                    <tr><td>Edema agudo de pulmão secundário a insuficiência cardíaca há mais de 1 semana</td><td class="pts">5</td></tr>
+                    <tr><td>Mau estado clínico geral: K<sup>+</sup> &lt; 3,0 mEq/L ou HCO<sub>3</sub><sup>-</sup> &lt; 20 mEq/L; pO<sub>2</sub> &lt; 60 mmHg ou pCO<sub>2</sub> &gt; 50 mmHg; ureia &gt; 50 mg/dL ou creatinina &gt; 2,3 mg/dL; AST elevada ou doença hepática ativa</td><td class="pts">5</td></tr>
+                    <tr><td>Infarto do miocárdio há menos de 6 meses, fora da fase aguda</td><td class="pts">10</td></tr>
+                    <tr><td>Angina estável atual</td><td class="pts">10</td></tr>
+                    <tr><td>Episódio de angina instável há menos de 3 meses, atualmente ausente</td><td class="pts">10</td></tr>
+                    <tr><td>Edema agudo de pulmão secundário a insuficiência cardíaca há menos de 1 semana</td><td class="pts">10</td></tr>
+                    <tr><td>Taquiarritmia supraventricular sustentada com resposta ventricular elevada; arritmia ventricular sustentada repetitiva documentada; história de fibrilação ventricular ou de morte súbita abortada (há mais de 3 meses); portador de cardiodesfibrilador implantável</td><td class="pts">10</td></tr>
+                    <tr><td>Angina classe III da Canadian Cardiovascular Society (CCS)</td><td class="pts">10</td></tr>
+                    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+                    <tr><td>Cirurgia de transplante: receptor de rim ou fígado</td><td class="pts">10</td></tr>
+                    <tr><td>Estenose mitral grave</td><td class="pts">10</td></tr>
+                    <tr><td>Angina classe IV da Canadian Cardiovascular Society (CCS)</td><td class="pts">20</td></tr>
+                    <tr><td>Estenose aórtica crítica</td><td class="pts">20</td></tr>
+                    <tr><td>Insuficiência cardíaca classe IV</td><td class="pts">20</td></tr>
+                    <tr><td>Infarto agudo do miocárdio (fase aguda)</td><td class="pts">20</td></tr>
+                    <tr><td>Episódio recente de fibrilação ventricular ou morte súbita abortada em paciente sem cardiodesfibrilador implantável</td><td class="pts">20</td></tr>
+                    <tr><td>Cirurgia de transplante: receptor de pulmão</td><td class="pts">20</td></tr>
                 </tbody>
             </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do EMAPO no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (27 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>EMAPO calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco e como interpretar</h2>
             <div class="table-wrap"><table>
                 <thead><tr><th>Pontuação</th><th>Nível de risco</th><th>Óbito e/ou eventos cardíacos</th></tr></thead>
                 <tbody>
                     <tr><td>0</td><td>Muito baixo</td><td>&lt; 1%</td></tr>
-                    <tr><td>1 a 5</td><td>Baixo</td><td>1% a 3%</td></tr>
-                    <tr><td>6 a 10</td><td>Moderado</td><td>3% a 7%</td></tr>
+                    <tr><td>1 a 5</td><td>Baixo</td><td>&lt; 3%</td></tr>
+                    <tr><td>6 a 10</td><td>Moderado</td><td>&lt; 7%</td></tr>
                     <tr><td>11 a 15</td><td>Elevado</td><td>7% a 13%</td></tr>
                     <tr><td>&gt; 15</td><td>Muito elevado</td><td>&gt; 13%</td></tr>
                 </tbody>
@@ -287,10 +309,10 @@
         <div class="container">
           
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> • 
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> • 
+                <a href="https://risco.med.br#precos">Preços</a> • 
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -299,5 +321,6 @@
     </footer>
 	
 	
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -202,23 +202,31 @@
 
             <h2>Os 12 itens do DASI</h2>
             <p>Cada resposta afirmativa soma o peso do item; o escore varia de 0 a 58,2:</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
                 <thead><tr><th>Atividade (consegue realizar?)</th><th>Pontos</th></tr></thead>
                 <tbody>
                     <tr><td>Cuidar de si mesmo: comer, vestir-se, tomar banho ou usar o banheiro</td><td class="pts">2,75</td></tr>
                     <tr><td>Caminhar dentro de casa</td><td class="pts">1,75</td></tr>
                     <tr><td>Caminhar um ou dois quarteirões em terreno plano</td><td class="pts">2,75</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
+                    <tr><td>Subir um lance de escada ou caminhar ladeira acima</td><td class="pts">5,50</td></tr>
+                    <tr><td>Correr uma distância curta</td><td class="pts">8,00</td></tr>
+                    <tr><td>Tarefas domésticas leves, como tirar o pó ou lavar a louça</td><td class="pts">2,70</td></tr>
+                    <tr><td>Tarefas domésticas moderadas, como passar aspirador, varrer o chão ou carregar as compras</td><td class="pts">3,50</td></tr>
+                    <tr><td>Tarefas domésticas pesadas, como esfregar o chão ou levantar e deslocar móveis pesados</td><td class="pts">8,00</td></tr>
+                    <tr><td>Trabalho de jardinagem, como recolher folhas, capinar ou empurrar um cortador de grama</td><td class="pts">4,50</td></tr>
+                    <tr><td>Ter relações sexuais</td><td class="pts">5,25</td></tr>
+                    <tr><td>Atividades recreativas moderadas, como boliche, dança ou tênis em dupla</td><td class="pts">6,00</td></tr>
+                    <tr><td>Esportes extenuantes, como natação, tênis individual, futebol ou basquete</td><td class="pts">7,50</td></tr>
                 </tbody>
             </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do DASI no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (12 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>DASI calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Interpretação: do DASI aos METs</h2>
             <div class="table-wrap"><table>
@@ -272,10 +280,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -284,5 +292,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

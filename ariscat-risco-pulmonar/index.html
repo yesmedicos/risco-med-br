@@ -162,7 +162,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -176,10 +176,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -199,24 +199,26 @@
 
             <h2>As 7 variáveis do ARISCAT</h2>
             <p>Cada variável tem peso próprio, derivado do modelo de regressão do estudo original, e o escore total vai de 0 a 123 pontos. Quatro variáveis dependem do paciente e três do procedimento proposto.</p>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Idade: 51 a 80 anos / acima de 80 anos</td><td class="pts">3 / 16</td></tr>
-                    <tr><td>SpO<sub>2</sub> pré-operatória em ar ambiente: 91% a 95% / ≤ 90%</td><td class="pts">8 / 24</td></tr>
-                    <tr><td>Infecção respiratória no último mês</td><td class="pts">17</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do ARISCAT no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+<tbody>
+    <tr><td>Idade: 51 a 80 anos / acima de 80 anos</td><td class="pts">3 / 16</td></tr>
+    <tr><td>SpO<sub>2</sub> pré-operatória em ar ambiente: 91% a 95% / ≤ 90%</td><td class="pts">8 / 24</td></tr>
+    <tr><td>Infecção respiratória no último mês</td><td class="pts">17</td></tr>
+    <tr><td>Anemia pré-operatória (hemoglobina ≤ 10 g/dL)</td><td class="pts">11</td></tr>
+    <tr><td>Incisão cirúrgica: abdominal alta / intratorácica</td><td class="pts">15 / 24</td></tr>
+    <tr><td>Duração da cirurgia: 2 a 3 horas / acima de 3 horas</td><td class="pts">16 / 23</td></tr>
+    <tr><td>Cirurgia de emergência</td><td class="pts">8</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (7 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>ARISCAT calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco do ARISCAT</h2>
             <div class="table-wrap"><table>
@@ -241,7 +243,7 @@
             <p>Total: 28 pontos, risco intermediário. Dos 28 pontos, 17 vêm da infecção recente, o fator mais claramente transitório. Em cirurgia eletiva, o achado sustenta discutir com o cirurgião e o anestesiologista o momento da operação; sem esse fator, o paciente ficaria em risco baixo (11 pontos).</p>
 
             <h2>Uso perioperatório e limitações</h2>
-            <p>O ARISCAT estima risco pulmonar, não cardiovascular: complementa índices como o <a href="/indice-de-lee-rcri/">índice de Lee</a> e o <a href="/emapo-risco-cirurgico/">EMAPO</a>, sem substituí-los, e não equivale à <a href="/asa-risco-cirurgico/">classificação ASA</a>. Como incisão, duração e caráter de urgência entram no cálculo, o escore deve ser feito com a cirurgia efetivamente proposta e com a duração estimada pela equipe cirúrgica; mudar o procedimento muda o resultado.</p>
+            <p>O ARISCAT estima risco pulmonar, não cardiovascular: complementa índices como o <a href="/indice-de-lee-rcri/">índice de Lee</a> e o <a href="/emapo-risco-cirurgico/">EMAPO</a>, sem substituí-los, e não equivale à <a href="/asa-risco-cirurgico/">classificação ASA</a>. Como incisão, duração e caráter de emergência entram no cálculo, o escore deve ser feito com a cirurgia efetivamente proposta e com a duração estimada pela equipe cirúrgica; mudar o procedimento muda o resultado.</p>
             <p>O modelo não inclui diretamente doença pulmonar obstrutiva crônica, tabagismo, obesidade ou apneia obstrutiva do sono, que continuam fazendo parte da avaliação clínica. Para o rastreamento de apneia, o <a href="/stop-bang/">STOP-Bang</a> é complementar. Em risco intermediário ou alto, o resultado serve de base para a equipe discutir estratégias de proteção pulmonar perioperatória.</p>
 
             <h2>Como o ARISCAT aparece no laudo</h2>
@@ -272,10 +274,10 @@
         <div class="container">
 
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> •
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> •
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> •
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> •
+                <a href="https://risco.med.br#precos">Preços</a> •
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> •
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -284,5 +286,6 @@
     </footer>
 
 
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>

@@ -154,7 +154,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://risco.med.br/apple-touch-icon.png">
     <link rel="manifest" href="https://risco.med.br/site.webmanifest">
     <meta name="theme-color" content="#032450">
-    <link rel="stylesheet" href="/assets/conteudo.css?v9">
+    <link rel="stylesheet" href="/assets/conteudo.css?v10">
 </head>
 <body>
     <!-- Announcement + Header -->
@@ -168,10 +168,10 @@
                         </svg>
                         R$ 5,00 de crédito para começar
                     </span>
-                    <span class="announcement-text">Gere laudos completos em minutos com automação e assinatura digital com o app Risco MED</span>
+                    <span class="announcement-text">Laudo de risco cirúrgico com 22 índices e assinatura digital. R$ 1,00 por laudo, sem mensalidade.</span>
                 </div>
-                <a href="https://risco.med.br" class="btn btn-primary" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
-                    Testar agora
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="barra-topo" style="padding:0.75rem 1.1rem; font-size:0.95rem; border-radius:12px;">
+                    Criar conta
                 </a>
             </div>
         </div>
@@ -192,33 +192,43 @@
             </aside>
 
             <h2>Variáveis e pontuação</h2>
-            <div class="locked">
-                <div class="table-wrap locked-preview"><table>
-                <thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
-                <tbody>
-                    <tr><td>Infarto do miocárdio há menos de 6 meses</td><td class="pts">10</td></tr>
-                    <tr><td>Angina classe III (Canadian Cardiovascular Society)</td><td class="pts">10</td></tr>
-                    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                    <tr class="ghost" aria-hidden="true"><td><span class="ghost-bar"></span></td><td><span class="ghost-bar short"></span></td></tr>
-                </tbody>
-            </table></div>
-                <div class="locked-cta">
-                    <p><strong>Veja todas as variáveis e a pontuação completa do índice de Detsky no Risco MED.</strong> Faça seu cadastro gratuito e o índice completo é calculado automaticamente no laudo.</p>
-                    <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Registre-se no Risco MED</a>
-                </div>
+            <div class="def-expand" data-visible="3">
+                <div class="table-wrap"><table>
+<thead><tr><th>Variável</th><th>Pontos</th></tr></thead>
+<tbody>
+    <tr><td>Infarto do miocárdio há menos de 6 meses</td><td class="pts">10</td></tr>
+    <tr><td>Angina classe III (Canadian Cardiovascular Society)</td><td class="pts">10</td></tr>
+    <tr><td>Idade acima de 70 anos</td><td class="pts">5</td></tr>
+    <tr><td>Infarto do miocárdio há mais de 6 meses</td><td class="pts">5</td></tr>
+    <tr><td>Angina classe IV (Canadian Cardiovascular Society)</td><td class="pts">20</td></tr>
+    <tr><td>Angina instável nos últimos 6 meses</td><td class="pts">10</td></tr>
+    <tr><td>Edema agudo de pulmão (alveolar) na última semana</td><td class="pts">10</td></tr>
+    <tr><td>Edema agudo de pulmão (alveolar) alguma vez, há mais de 1 semana</td><td class="pts">5</td></tr>
+    <tr><td>Suspeita de estenose aórtica crítica</td><td class="pts">20</td></tr>
+    <tr><td>Ritmo não sinusal, ou sinusal com extrassístoles atriais no último ECG pré-operatório</td><td class="pts">5</td></tr>
+    <tr><td>Mais de 5 extrassístoles ventriculares por minuto em qualquer momento antes da cirurgia</td><td class="pts">5</td></tr>
+    <tr><td>Mau estado geral (mesmos critérios do índice de Goldman: PaO<sub>2</sub> &lt; 60 mmHg ou PaCO<sub>2</sub> &gt; 50 mmHg; potássio &lt; 3,0 mEq/L ou bicarbonato &lt; 20 mEq/L; nitrogênio ureico (BUN) &gt; 50 mg/dL (ureia &gt; 107 mg/dL) ou creatinina &gt; 3,0 mg/dL; TGO (AST) elevada ou sinais de hepatopatia crônica; ou paciente acamado por causa não cardíaca)</td><td class="pts">5</td></tr>
+    <tr><td>Cirurgia de emergência</td><td class="pts">10</td></tr>
+</tbody>
+</table></div>
+                <button type="button" class="def-toggle" aria-expanded="false" hidden>Ver definição completa (13 itens)</button>
             </div>
+
+            <aside class="cta-after-table" aria-label="Criar conta no Risco MED">
+                <p><strong>Detsky calculado automaticamente no seu laudo</strong>Preencha os dados do paciente uma vez e o laudo sai com este e os demais índices que você escolher, assinado com certificado ICP-Brasil. R$ 5,00 de crédito para testar, sem mensalidade.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="pos-tabela">Criar conta com R$ 5,00 de crédito</a>
+            </aside>
 
             <h2>Classes de risco</h2>
             <div class="table-wrap"><table>
-                <thead><tr><th>Classe</th><th>Pontuação</th><th>Risco relativo</th></tr></thead>
+                <thead><tr><th>Classe</th><th>Pontuação</th><th>Razão de verossimilhança (todas as cirurgias)</th></tr></thead>
                 <tbody>
                     <tr><td>I</td><td>0 a 15</td><td>0,43</td></tr>
                     <tr><td>II</td><td>20 a 30</td><td>3,38</td></tr>
                     <tr><td>III</td><td>&gt; 30</td><td>10,6</td></tr>
                 </tbody>
             </table></div>
+            <p>Os valores da tabela são razões de verossimilhança para o conjunto das cirurgias, não percentuais de risco: multiplicam a chance pré-teste de complicação cardíaca.</p>
             <p>O desfecho avaliado é infarto, edema pulmonar, taquicardia ou fibrilação ventricular com necessidade de choque, ou morte cardíaca nos primeiros 6 dias de pós-operatório. Como todas as variáveis valem 5, 10 ou 20 pontos, não existem totais entre 15 e 20.</p>
 
             <h2>Exemplo prático</h2>
@@ -259,10 +269,10 @@
         <div class="container">
           
             <p style="margin-top: 1rem;">
-                <a href="https://risco.med.br" target="_blank">Início</a> • 
-                <a href="https://risco.med.br#precos" target="_blank">Preços</a> • 
-                <a href="https://risco.med.br" target="_blank">Cadastrar</a> • 
-                <a href="https://risco.med.br#exemplo" target="_blank">Ver Exemplo</a>
+                <a href="https://risco.med.br">Início</a> • 
+                <a href="https://risco.med.br#precos">Preços</a> • 
+                <a href="https://risco.med.br/#cadastro">Cadastrar</a> • 
+                <a href="https://risco.med.br#exemplo">Ver Exemplo</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.7;">
                 © Risco MED - Todos os direitos reservados
@@ -271,5 +281,6 @@
     </footer>
 	
 	
+    <script src="/assets/conteudo.js?v1" defer></script>
 </body>
 </html>
