@@ -466,7 +466,6 @@ p {
 
 .mockup-container {
     position: relative;
-    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.15));
 }
 
 .mockup-image {
@@ -474,6 +473,7 @@ p {
     height: auto;
     border-radius: var(--radius-2xl);
     border: 1px solid var(--gray-200);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .mockup-badge {
@@ -533,10 +533,10 @@ p {
 .gradient-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
     opacity: 0.3;
-    animation: pulse 8s ease-in-out infinite;
-    will-change: transform, opacity;
+    /* Brilho suave com gradiente radial em vez de filter: blur(), que custa caro no celular */
+    -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0, 0, 0, 0.45) 40%, transparent 70%);
+    mask-image: radial-gradient(circle, #000 0%, rgba(0, 0, 0, 0.45) 40%, transparent 70%);
 }
 
 .orb-1 {
@@ -1339,7 +1339,7 @@ p {
     gap: 32px;
 }
 
-.footer-column h4 {
+.footer-column h3 {
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--white);
@@ -1877,4 +1877,27 @@ p {
     .indices-group {
         padding: 20px;
     }
+}
+
+/* Desempenho: efeitos contínuos só no desktop e sem movimento reduzido */
+@media (min-width: 1025px) and (prefers-reduced-motion: no-preference) {
+    .gradient-orb {
+        animation: pulse 8s ease-in-out infinite;
+    }
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+    .mockup-badge,
+    .badge svg {
+        animation: none;
+    }
+
+    .header {
+        backdrop-filter: none;
+        background: var(--white);
+    }
+}
+
+.footer-bottom p {
+    color: var(--gray-400);
 }

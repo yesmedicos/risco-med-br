@@ -508,7 +508,7 @@ body {
 }
 
 .footer a {
-    color: var(--primary);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 600;
 }
