@@ -25,7 +25,7 @@ Desfecho cirúrgico: P-POSSUM
 
 /* TECNOLOGIA */
 Plataforma: Web SaaS (100% online)
-Assinatura digital: ICP-Brasil e VIDaaS CFM
+Assinatura digital: ICP-Brasil, por enquanto com certificado do tipo A1
 Compatibilidade: Chrome, Firefox, Safari, Edge
 Dispositivos: Desktop, tablet, smartphone
 Integração: gratuita, por API REST documentada, com prontuários e outros sistemas; página de cadastro incorporável (embed)
