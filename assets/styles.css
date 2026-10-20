@@ -1979,7 +1979,7 @@ p {
 /* Hero com headline longa (proposta de valor + termo de busca) */
 @media (min-width: 769px) {
     .hero h1 {
-        font-size: clamp(2.3rem, 3.3vw, 3.1rem);
+        font-size: clamp(2.6rem, 4vw, 3.6rem);
         line-height: 1.12;
         letter-spacing: -0.02em;
     }
@@ -2050,4 +2050,19 @@ p {
     margin-top: 6px;
     font-size: 0.75rem;
     color: var(--gray-500);
+}
+
+.hero-proof {
+    margin: 4px 0 6px;
+    font-size: 0.95rem;
+    color: var(--gray-700);
+}
+
+.hero-proof strong {
+    color: var(--navy);
+}
+
+.footer-disclaimer {
+    font-size: 0.8rem;
+    color: var(--gray-400);
 }

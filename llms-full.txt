@@ -23,6 +23,12 @@
 
 ---
 
+## Uso
+
+Cerca de 30 mil laudos emitidos, por médicos em todos os estados do Brasil (outubro de 2026).
+
+---
+
 ## Resumo em uma frase
 
 O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com até 23 índices de risco (cardíaco, trombótico e de sangramento, pulmonar e anestésico, fragilidade e comorbidades, hepático e desfecho cirúrgico), assinado com certificado ICP-Brasil e verificável por QR code e no validador do ITI, sem mensalidade (R$ 1,00 por laudo).

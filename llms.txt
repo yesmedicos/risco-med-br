@@ -4,6 +4,7 @@
 
 Preenchimento inteligente: uma doença marcada em um índice já aparece marcada nos outros, a idade vem do cadastro, exames como creatinina, bilirrubina, INR e hemoglobina preenchem os índices e os betabloqueadores são reconhecidos na lista de medicamentos. O sistema sugere condutas de acordo com o risco (profilaxia de TEV, fisioterapia respiratória, investigação de apneia, profilaxia de náuseas, troponina e UTI para alto risco cardíaco, BNP/NT-proBNP conforme a Diretriz SBC 2024), alerta para medicamentos com risco de sangramento e sugere o veredito, avisando quando a escolha for menos conservadora que o risco calculado. A conclusão é sempre do médico. O laudo sai em um dos 5 modelos prontos ou no modelo com o logotipo da clínica, com CID-10, TUSS e SIGTAP integrados. É uma ferramenta para médicos: pacientes recebem o laudo do próprio médico.
 
+- Uso: cerca de 30 mil laudos emitidos, por médicos em todos os estados do Brasil (outubro de 2026).
 - Público: cardiologistas, clínicos, anestesiologistas, médicos de família e do trabalho, clínicas e hospitais no Brasil.
 - Índices: 23, em seis grupos (risco cardíaco, trombótico e sangramento, pulmonar e anestésico, fragilidade e comorbidades, hepático, desfecho cirúrgico), cada um com a tabela de referência e a citação científica.
 - Preço: pré-pago, sem mensalidade, adesão ou fidelidade; R$ 1,00 por laudo até 150 laudos/mês, acima disso sem custo; recarga por PIX; R$ 5,00 de crédito para começar e paciente de teste gratuito. A assinatura digital é opcional e custa R$ 0,50 por laudo assinado.
