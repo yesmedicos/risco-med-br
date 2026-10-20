@@ -1901,3 +1901,153 @@ p {
 .footer-bottom p {
     color: var(--gray-400);
 }
+
+/* Pilares de valor (seção Funcionalidades) */
+.features-grid.pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-card p a {
+    white-space: nowrap;
+}
+
+.pillar-list {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.pillar-list li {
+    position: relative;
+    padding-left: 26px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+.pillar-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 14px;
+    height: 8px;
+    border-left: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    transform: rotate(-45deg);
+}
+
+.section-header p a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* CTA fixo no celular */
+.mobile-cta {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .features-grid.pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-cta {
+        display: block;
+        position: fixed;
+        left: 12px;
+        right: 88px;
+        bottom: 16px;
+        z-index: 900;
+        padding: 14px 16px;
+        border-radius: 14px;
+        background: var(--gradient-dark);
+        color: var(--white);
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-align: center;
+        box-shadow: 0 10px 24px rgba(3, 36, 80, 0.3);
+    }
+
+    .footer {
+        padding-bottom: 96px;
+    }
+}
+
+/* Hero com headline longa (proposta de valor + termo de busca) */
+@media (min-width: 769px) {
+    .hero h1 {
+        font-size: clamp(2.3rem, 3.3vw, 3.1rem);
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+    }
+}
+
+/* Como começar: 3 passos */
+.steps-section {
+    padding: var(--section-padding) 0;
+    background: var(--white);
+}
+
+.steps-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    counter-reset: none;
+}
+
+.step-card {
+    position: relative;
+    padding: 32px 28px 28px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background: var(--gradient-dark);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+}
+
+.step-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.step-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.pricing-examples {
+    margin: -24px 0 40px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--gray-600);
+}
+
+@media (max-width: 900px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero-disclaimer {
+    margin-top: 6px;
+    font-size: 0.75rem;
+    color: var(--gray-500);
+}

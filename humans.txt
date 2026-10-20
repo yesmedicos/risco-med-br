@@ -9,14 +9,14 @@ Localização: Brasil
 Nome: Risco MED
 URL: https://risco.med.br
 App: https://app.risco.med.br
-Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 22 índices de risco. Sem mensalidade.
+Descrição: Sistema online para gerar laudos de risco cirúrgico pré-operatório com 23 índices de risco. Sem mensalidade.
 Especialidade: Avaliação pré-operatória / Risco cirúrgico / Cardiologia
 Público: Médicos (cardiologistas, clínicos e anestesistas)
 Idioma: Português Brasileiro (pt-BR)
-Última atualização: 2026/10/19
+Última atualização: 2026/10/20
 
 /* ÍNDICES DISPONÍVEIS (22) */
-Risco cardíaco: EMAPO, Lee (RCRI), ASA, ACP, Goldman, Detsky, Larsen, NSQIP-MICA (Gupta), AUB-HAS2, DASI
+Risco cardíaco: EMAPO, Lee (RCRI), ASA, ACP, Goldman, Detsky, Larsen, NSQIP-MICA (Gupta), AUB-HAS2, VSG-CRI, DASI
 Trombótico e sangramento: Caprini, Pádua, IMPROVE-VTE, IMPROVE-Bleeding
 Pulmonar e anestésico: ARISCAT, STOP-Bang, Apfel
 Fragilidade e comorbidades: Escala Clínica de Fragilidade (CFS), Charlson
@@ -28,4 +28,4 @@ Plataforma: Web SaaS (100% online)
 Assinatura digital: ICP-Brasil e VIDaaS CFM
 Compatibilidade: Chrome, Firefox, Safari, Edge
 Dispositivos: Desktop, tablet, smartphone
-API: REST, gratuita para integração com prontuários
+Integração: gratuita, por API REST documentada, com prontuários e outros sistemas; página de cadastro incorporável (embed)

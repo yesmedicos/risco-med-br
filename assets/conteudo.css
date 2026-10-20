@@ -685,3 +685,18 @@ td.pts { white-space: nowrap; font-weight: 700; color: var(--gray-900); }
 .cta-after-table strong { color: #fff; display: block; font-size: 1.05rem; margin-bottom: 0.2rem; }
 .cta-after-table .btn { background: #fff; color: var(--primary-dark); white-space: nowrap; box-shadow: none; }
 .cta-after-table .btn:hover { background: var(--accent); color: #fff; }
+
+/* Página de funcionalidades */
+.article ul.feature-list { list-style: none; margin: 0.75rem 0 1.5rem; padding: 0; display: grid; gap: 0.6rem; }
+.article ul.feature-list li { position: relative; padding-left: 1.6rem; }
+.article ul.feature-list li::before { content: ""; position: absolute; left: 0.1rem; top: 0.5em; width: 0.8rem; height: 0.45rem; border-left: 2px solid var(--secondary); border-bottom: 2px solid var(--secondary); transform: rotate(-45deg); }
+.article ul.feature-list a { color: var(--primary); font-weight: 600; }
+
+/* Passos (página de modelo) */
+.steps-section { padding: 4rem 0; background: #fff; }
+.steps-grid { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.step-card { padding: 1.75rem 1.5rem; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 18px; }
+.step-number { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; margin-bottom: 0.9rem; border-radius: 50%; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); color: #fff; font-weight: 800; }
+.step-card h3 { font-size: 1.1rem; color: var(--gray-900); margin-bottom: 0.4rem; }
+.step-card p { color: var(--gray-600); line-height: 1.6; margin: 0; }
+@media (max-width: 900px) { .steps-grid { grid-template-columns: 1fr; } }
